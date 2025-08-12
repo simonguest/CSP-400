@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: dist
+  render:
+    - "*.qmd"
+    - "*.ipynb"
+    - "!LICENSE.md"
+format:
+  html:
+    theme: 
+      light: flatly
+      dark: darkly
+website:
+  title: "CSP-400"
+  page-navigation: true
+  sidebar:
+    style: "docked"
+    collapse-level: 2
+    search: true
+    contents:
+      - text: "Overview"
+        href: index.qmd
+      - text: "---"
+      - section: "Teaching Module: Introducing AI Agents"
+        contents:
+          - text: "Slides"
+            href: src/00/teaching_lecture.qmd
+            target: blank
+          - text: "Further Reading"
+            href: src/00/resources.qmd
