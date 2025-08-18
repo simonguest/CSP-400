@@ -1,7 +1,14 @@
 ---
 title: "Introducing AI Agents"
-format: revealjs
+format: 
+  revealjs:
+    incremental: true
+    center-title-slide: true
+    theme: default
+logo: DigiPen_RGB_Red.jpg
 ---
+
+# Recap of Last Lecture 
 
 ## Recap of Last Lecture
 
@@ -11,8 +18,6 @@ We used the OpenAI SDK to build our first AI-powered chatbot!
 - Screenshot of the chatbot interface
 :::
 
----
-
 ## What Did We Learn?
 
 ::: {.incremental}
@@ -21,22 +26,148 @@ We used the OpenAI SDK to build our first AI-powered chatbot!
 - Available models, features, and costs
 :::
 
----
-
 ## But We Discovered Limitations
 
-Our simple chatbot had several constraints...
+Our simple chatbot had several...
 
-::: {.incremental}
-- **Not Proactive**: No ability to plan beyond a single interaction
-- **No Autonomy**: Needs constant human input every turn
-- **Not Reactive**: Cannot respond to different conditions
-- **No Memory**: Everything has to be replayed in the context window
-- **No Interactivity**: Cannot reach out to other LLMs and external systems
-:::
+- No ability to plan beyond a single interaction
+- Needs constant human input every turn
+- Cannot respond to different conditions
+- Everything has to be replayed in the context window
+- Cannot reach out to other LLMs and external systems
 
----
+# How can Agents solve this?
 
-## The Need for AI Agents
+## What is an Agent?
 
-These limitations point to a fundamental gap in our current approach...
+- Screenshot of all the media headlines to go here
+
+## Five Characteristics of Agents
+
+Imagine a DigiPen Campus Assistant...
+
+- "Can you tell me more about FLM201?"
+- "Where can I find the 'Hopper' room?"
+- "Oh, and what's today's vegetarian option at the Bytes Cafe?"
+
+## Five Characteristics of Agents
+
+1. Agents are **Proactive**
+
+- Agents are driven by goals
+- And they can put together a plan for the steps to complete that goal.
+  - "First, I will discover where course information is located"
+  - "Then I will search for any courses that reference FLM201"
+  - "Then I summarize all of the key points for the student"
+
+## Five Characterisics of Agents
+
+2. Agents are **Autonomous**
+
+- Agents can then go off and execute the plan, independent of human input
+- The concept of "human in the loop" still applies for confirmation
+  - e.g. "Do you really want to place this order at the Bytes Cafe?"
+
+## Five Characterisics of Agents
+
+3. Agents are **Reactive**
+
+- Agents can change mid-course depending on what they find and/or the environment.
+  - e.g. "I couldn't find any course information on FLM201. I'm going to whether there are other 200-level FLM courses before responding to the student."
+
+## Five Characterisics of Agents
+
+4. Agents have **Persistence**
+
+- Agents often have memory systems beyond the current conversation
+- Broadly classified as short and long term memory 
+  - Short term memory could be the options at the Bytes Cafe
+  - Long term memory could be your food preferences
+
+## Five Characterisics of Agents
+
+5. Agents are **Interactive**
+
+- Agents can delegate to other agents for complex tasks
+  - (Or for tasks where other agents are better suited for.)
+  - e.g., Campus Assistant -> delegating to a Course Agent
+- Agents can also be given access to external tools
+  - e.g., File search, Web search, access to the Bytes Cafe API
+
+# Let's Try This!
+
+## Let's Try This!
+
+(QR Code to go here - 5 min activity)
+
+## Oberservations and Questions
+
+Get into groups of 2 or 3
+
+Q: What worked? What surprised you?
+Q: What didn't work? Where did the agent fail?
+Q: What other examples of agents can you think of?
+
+## Other Examples for Agents
+
+- Customer service agent
+- Travel booking agent
+- Research assistant
+- Code generation agent (very popular right now)
+- Agents within games
+  - Traditional NPCs are pre-written dialogue trees
+  - Whereas agents can be more independent within the game environment
+
+# How does the Campus Assistant work?
+
+## Agent Handoffs
+
+(Diagram of agent handoffs)
+
+## How about the UI?
+
+(Sidebar on Gradio)
+
+# Creating Your First Agent
+
+## So many agent frameworks...
+
+(Diagram here)
+
+## The popular ones
+
+(Table here)
+
+## What should you be considering?
+
+- Where will your agent run?
+  - Server or client? On the web? In game?
+  - This will likely determine the language
+  - How will you manage API keys?
+- Support
+  - Will this agent framework be around in 3-5 years?
+  - Is there a cost/hosting component to it?
+- Easy vs. Simple
+  - Is your choice "easy" or "simple"?
+
+## Sidebar: Easy vs. Simple
+
+- Details here
+
+## OpenAI Agents SDK (Python)
+
+Creating and running a new agent
+
+```{.python code-line-numbers="|1|3-8|9|10"}
+from agents import Agent, Runner
+
+agent = Agent(
+    name="DigiPen Campus Assistant",
+    instructions="You are a helpful campus assistant that can plan and execute tasks for students at DigiPen. Please be concise and accurate in handing off tasks to other agents as needed.",
+    handoffs=[building_agent, course_agent, handbook_agent, cafe_agent],
+)
+
+messages.append({"role": "user", "content": user_msg})
+result = Runner.run_streamed(agent, messages)
+```
+
