@@ -1,7 +1,7 @@
 [
   {
-    "objectID": "src/00/teaching_lecture.html#recap-of-last-lecture",
-    "href": "src/00/teaching_lecture.html#recap-of-last-lecture",
+    "objectID": "src/00/teaching_lecture.html#recap-of-last-lecture-1",
+    "href": "src/00/teaching_lecture.html#recap-of-last-lecture-1",
     "title": "Introducing AI Agents",
     "section": "Recap of Last Lecture",
     "text": "Recap of Last Lecture\nWe used the OpenAI SDK to build our first AI-powered chatbot!\n\n\nScreenshot of the chatbot interface",
@@ -26,18 +26,194 @@
     "href": "src/00/teaching_lecture.html#but-we-discovered-limitations",
     "title": "Introducing AI Agents",
     "section": "But We Discovered Limitations",
-    "text": "But We Discovered Limitations\nOur simple chatbot had several constraints…\n\nNot Proactive: No ability to plan beyond a single interaction\nNo Autonomy: Needs constant human input every turn\nNot Reactive: Cannot respond to different conditions\nNo Memory: Everything has to be replayed in the context window\nNo Interactivity: Cannot reach out to other LLMs and external systems",
+    "text": "But We Discovered Limitations\nOur simple chatbot had several…\n\nNo ability to plan beyond a single interaction\nNeeds constant human input every turn\nCannot respond to different conditions\nEverything has to be replayed in the context window\nCannot reach out to other LLMs and external systems",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
     ]
   },
   {
-    "objectID": "src/00/teaching_lecture.html#the-need-for-ai-agents",
-    "href": "src/00/teaching_lecture.html#the-need-for-ai-agents",
+    "objectID": "src/00/teaching_lecture.html#what-is-an-agent",
+    "href": "src/00/teaching_lecture.html#what-is-an-agent",
     "title": "Introducing AI Agents",
-    "section": "The Need for AI Agents",
-    "text": "The Need for AI Agents\nThese limitations point to a fundamental gap in our current approach…",
+    "section": "What is an Agent?",
+    "text": "What is an Agent?\n\nScreenshot of all the media headlines to go here",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#five-characteristics-of-agents",
+    "href": "src/00/teaching_lecture.html#five-characteristics-of-agents",
+    "title": "Introducing AI Agents",
+    "section": "Five Characteristics of Agents",
+    "text": "Five Characteristics of Agents\nImagine a DigiPen Campus Assistant…\n\n“Can you tell me more about FLM201?”\n“Where can I find the ‘Hopper’ room?”\n“Oh, and what’s today’s vegetarian option at the Bytes Cafe?”",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#five-characteristics-of-agents-1",
+    "href": "src/00/teaching_lecture.html#five-characteristics-of-agents-1",
+    "title": "Introducing AI Agents",
+    "section": "Five Characteristics of Agents",
+    "text": "Five Characteristics of Agents\n\nAgents are Proactive\n\n\nAgents are driven by goals\nAnd they can put together a plan for the steps to complete that goal.\n\n“First, I will discover where course information is located”\n“Then I will search for any courses that reference FLM201”\n“Then I summarize all of the key points for the student”",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#five-characterisics-of-agents",
+    "href": "src/00/teaching_lecture.html#five-characterisics-of-agents",
+    "title": "Introducing AI Agents",
+    "section": "Five Characterisics of Agents",
+    "text": "Five Characterisics of Agents\n\nAgents are Autonomous\n\n\nAgents can then go off and execute the plan, independent of human input\nThe concept of “human in the loop” still applies for confirmation\n\ne.g. “Do you really want to place this order at the Bytes Cafe?”",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#five-characterisics-of-agents-1",
+    "href": "src/00/teaching_lecture.html#five-characterisics-of-agents-1",
+    "title": "Introducing AI Agents",
+    "section": "Five Characterisics of Agents",
+    "text": "Five Characterisics of Agents\n\nAgents are Reactive\n\n\nAgents can change mid-course depending on what they find and/or the environment.\n\ne.g. “I couldn’t find any course information on FLM201. I’m going to whether there are other 200-level FLM courses before responding to the student.”",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#five-characterisics-of-agents-2",
+    "href": "src/00/teaching_lecture.html#five-characterisics-of-agents-2",
+    "title": "Introducing AI Agents",
+    "section": "Five Characterisics of Agents",
+    "text": "Five Characterisics of Agents\n\nAgents have Persistence\n\n\nAgents often have memory systems beyond the current conversation\nBroadly classified as short and long term memory\n\nShort term memory could be the options at the Bytes Cafe\nLong term memory could be your food preferences",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#five-characterisics-of-agents-3",
+    "href": "src/00/teaching_lecture.html#five-characterisics-of-agents-3",
+    "title": "Introducing AI Agents",
+    "section": "Five Characterisics of Agents",
+    "text": "Five Characterisics of Agents\n\nAgents are Interactive\n\n\nAgents can delegate to other agents for complex tasks\n\n(Or for tasks where other agents are better suited for.)\ne.g., Campus Assistant -&gt; delegating to a Course Agent\n\nAgents can also be given access to external tools\n\ne.g., File search, Web search, access to the Bytes Cafe API",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#lets-try-this-1",
+    "href": "src/00/teaching_lecture.html#lets-try-this-1",
+    "title": "Introducing AI Agents",
+    "section": "Let’s Try This!",
+    "text": "Let’s Try This!\n(QR Code to go here - 5 min activity)",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#oberservations-and-questions",
+    "href": "src/00/teaching_lecture.html#oberservations-and-questions",
+    "title": "Introducing AI Agents",
+    "section": "Oberservations and Questions",
+    "text": "Oberservations and Questions\nGet into groups of 2 or 3\nQ: What worked? What surprised you? Q: What didn’t work? Where did the agent fail? Q: What other examples of agents can you think of?",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#other-examples-for-agents",
+    "href": "src/00/teaching_lecture.html#other-examples-for-agents",
+    "title": "Introducing AI Agents",
+    "section": "Other Examples for Agents",
+    "text": "Other Examples for Agents\n\nCustomer service agent\nTravel booking agent\nResearch assistant\nCode generation agent (very popular right now)\nAgents within games\n\nTraditional NPCs are pre-written dialogue trees\nWhereas agents can be more independent within the game environment",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#agent-handoffs",
+    "href": "src/00/teaching_lecture.html#agent-handoffs",
+    "title": "Introducing AI Agents",
+    "section": "Agent Handoffs",
+    "text": "Agent Handoffs\n(Diagram of agent handoffs)",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#how-about-the-ui",
+    "href": "src/00/teaching_lecture.html#how-about-the-ui",
+    "title": "Introducing AI Agents",
+    "section": "How about the UI?",
+    "text": "How about the UI?\n(Sidebar on Gradio)",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#so-many-agent-frameworks",
+    "href": "src/00/teaching_lecture.html#so-many-agent-frameworks",
+    "title": "Introducing AI Agents",
+    "section": "So many agent frameworks…",
+    "text": "So many agent frameworks…\n(Diagram here)",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#the-popular-ones",
+    "href": "src/00/teaching_lecture.html#the-popular-ones",
+    "title": "Introducing AI Agents",
+    "section": "The popular ones",
+    "text": "The popular ones\n(Table here)",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#what-should-you-be-considering",
+    "href": "src/00/teaching_lecture.html#what-should-you-be-considering",
+    "title": "Introducing AI Agents",
+    "section": "What should you be considering?",
+    "text": "What should you be considering?\n\nWhere will your agent run?\n\nServer or client? On the web? In game?\nThis will likely determine the language\nHow will you manage API keys?\n\nSupport\n\nWill this agent framework be around in 3-5 years?\nIs there a cost/hosting component to it?\n\nEasy vs. Simple\n\nIs your choice “easy” or “simple”?",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#sidebar-easy-vs.-simple",
+    "href": "src/00/teaching_lecture.html#sidebar-easy-vs.-simple",
+    "title": "Introducing AI Agents",
+    "section": "Sidebar: Easy vs. Simple",
+    "text": "Sidebar: Easy vs. Simple\n\nDetails here",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#openai-agents-sdk-python",
+    "href": "src/00/teaching_lecture.html#openai-agents-sdk-python",
+    "title": "Introducing AI Agents",
+    "section": "OpenAI Agents SDK (Python)",
+    "text": "OpenAI Agents SDK (Python)\nCreating and running a new agent\nfrom agents import Agent, Runner\n\nagent = Agent(\n    name=\"DigiPen Campus Assistant\",\n    instructions=\"You are a helpful campus assistant that can plan and execute tasks for students at DigiPen. Please be concise and accurate in handing off tasks to other agents as needed.\",\n    handoffs=[building_agent, course_agent, handbook_agent, cafe_agent],\n)\n\nmessages.append({\"role\": \"user\", \"content\": user_msg})\nresult = Runner.run_streamed(agent, messages)",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
