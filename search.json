@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "src/00/teaching_lecture.html#recap-of-last-lecture-1",
-    "href": "src/00/teaching_lecture.html#recap-of-last-lecture-1",
+    "objectID": "src/00/teaching_lecture.html#recap-of-last-lecture",
+    "href": "src/00/teaching_lecture.html#recap-of-last-lecture",
     "title": "Introducing AI Agents",
     "section": "Recap of Last Lecture",
-    "text": "Recap of Last Lecture\nWe used the OpenAI SDK to build our first AI-powered chatbot!\n\n\nScreenshot of the chatbot interface",
+    "text": "Recap of Last Lecture\nWe used the OpenAI SDK to build our first AI-powered chatbot!\n\n\n\n\nLast Lesson",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -26,7 +26,7 @@
     "href": "src/00/teaching_lecture.html#but-we-discovered-limitations",
     "title": "Introducing AI Agents",
     "section": "But We Discovered Limitations",
-    "text": "But We Discovered Limitations\nOur simple chatbot had several…\n\nNo ability to plan beyond a single interaction\nNeeds constant human input every turn\nCannot respond to different conditions\nEverything has to be replayed in the context window\nCannot reach out to other LLMs and external systems",
+    "text": "But We Discovered Limitations\nOur simple chatbot had several…\n\nNeeds constant human input every turn\nNo ability to plan beyond a single interaction\nCannot respond to different conditions\nEverything has to be replayed in the context window\nCannot reach out to other LLMs and external systems",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -37,7 +37,51 @@
     "href": "src/00/teaching_lecture.html#what-is-an-agent",
     "title": "Introducing AI Agents",
     "section": "What is an Agent?",
-    "text": "What is an Agent?\n\nScreenshot of all the media headlines to go here",
+    "text": "What is an Agent?\n\nSource: https://www.youtube.com/watch?v=bwXaJXgezf4",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#what-is-an-agent-1",
+    "href": "src/00/teaching_lecture.html#what-is-an-agent-1",
+    "title": "Introducing AI Agents",
+    "section": "What is an Agent?",
+    "text": "What is an Agent?\n\nSource: https://www.weforum.org/stories/2025/06/cognitive-enterprise-agentic-business-revolution/",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#what-is-an-agent-2",
+    "href": "src/00/teaching_lecture.html#what-is-an-agent-2",
+    "title": "Introducing AI Agents",
+    "section": "What is an Agent?",
+    "text": "What is an Agent?\n\nSource: https://www.crn.com/news/ai/2025/10-hottest-agentic-ai-tools-and-agents-of-2025-so-far",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#what-is-an-agent-3",
+    "href": "src/00/teaching_lecture.html#what-is-an-agent-3",
+    "title": "Introducing AI Agents",
+    "section": "What is an Agent?",
+    "text": "What is an Agent?\n\nSource: https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#what-is-an-agent-4",
+    "href": "src/00/teaching_lecture.html#what-is-an-agent-4",
+    "title": "Introducing AI Agents",
+    "section": "What is an Agent?",
+    "text": "What is an Agent?\nImagine a DigiPen Campus Assistant… An AI Agent that can help you navigate everything at DigiPen!\n\n“Where can I find the ‘Hopper’ room?”\n“Can you tell me more about FLM201?”\n“Oh, and what’s today’s vegetarian option at the Bytes Cafe?”",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -46,17 +90,6 @@
   {
     "objectID": "src/00/teaching_lecture.html#five-characteristics-of-agents",
     "href": "src/00/teaching_lecture.html#five-characteristics-of-agents",
-    "title": "Introducing AI Agents",
-    "section": "Five Characteristics of Agents",
-    "text": "Five Characteristics of Agents\nImagine a DigiPen Campus Assistant…\n\n“Can you tell me more about FLM201?”\n“Where can I find the ‘Hopper’ room?”\n“Oh, and what’s today’s vegetarian option at the Bytes Cafe?”",
-    "crumbs": [
-      "Teaching Module: Introducing AI Agents",
-      "Slides"
-    ]
-  },
-  {
-    "objectID": "src/00/teaching_lecture.html#five-characteristics-of-agents-1",
-    "href": "src/00/teaching_lecture.html#five-characteristics-of-agents-1",
     "title": "Introducing AI Agents",
     "section": "Five Characteristics of Agents",
     "text": "Five Characteristics of Agents\n\nAgents are Proactive\n\n\nAgents are driven by goals\nAnd they can put together a plan for the steps to complete that goal.\n\n“First, I will discover where course information is located”\n“Then I will search for any courses that reference FLM201”\n“Then I summarize all of the key points for the student”",
@@ -103,7 +136,7 @@
     "href": "src/00/teaching_lecture.html#five-characterisics-of-agents-3",
     "title": "Introducing AI Agents",
     "section": "Five Characterisics of Agents",
-    "text": "Five Characterisics of Agents\n\nAgents are Interactive\n\n\nAgents can delegate to other agents for complex tasks\n\n(Or for tasks where other agents are better suited for.)\ne.g., Campus Assistant -&gt; delegating to a Course Agent\n\nAgents can also be given access to external tools\n\ne.g., File search, Web search, access to the Bytes Cafe API",
+    "text": "Five Characterisics of Agents\n\nAgents are Interactive\n\n\nAgents can delegate to other agents for complex tasks\n\n(Or for tasks where other agents are better suited for.)\ne.g., Campus Agent -&gt; delegating to a Course Agent\n\nAgents can also be given access to external tools\n\ne.g., File search, Web search, access to the Bytes Cafe API",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -125,7 +158,7 @@
     "href": "src/00/teaching_lecture.html#oberservations-and-questions",
     "title": "Introducing AI Agents",
     "section": "Oberservations and Questions",
-    "text": "Oberservations and Questions\nGet into groups of 2 or 3\nQ: What worked? What surprised you? Q: What didn’t work? Where did the agent fail? Q: What other examples of agents can you think of?",
+    "text": "Oberservations and Questions\nGet into groups of 2 or 3\n\nQ: What worked? What surprised you?\nQ: What didn’t work? Where did the agent fail?\nQ: What other examples of agents can you think of?",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -143,22 +176,44 @@
     ]
   },
   {
-    "objectID": "src/00/teaching_lecture.html#agent-handoffs",
-    "href": "src/00/teaching_lecture.html#agent-handoffs",
+    "objectID": "src/00/teaching_lecture.html#gradio-based-ui",
+    "href": "src/00/teaching_lecture.html#gradio-based-ui",
     "title": "Introducing AI Agents",
-    "section": "Agent Handoffs",
-    "text": "Agent Handoffs\n(Diagram of agent handoffs)",
+    "section": "Gradio-based UI",
+    "text": "Gradio-based UI\n\nSource: https://www.gradio.app/",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
     ]
   },
   {
-    "objectID": "src/00/teaching_lecture.html#how-about-the-ui",
-    "href": "src/00/teaching_lecture.html#how-about-the-ui",
+    "objectID": "src/00/teaching_lecture.html#gradio-based-ui-1",
+    "href": "src/00/teaching_lecture.html#gradio-based-ui-1",
     "title": "Introducing AI Agents",
-    "section": "How about the UI?",
-    "text": "How about the UI?\n(Sidebar on Gradio)",
+    "section": "Gradio-based UI",
+    "text": "Gradio-based UI\nimport time\nimport gradio as gr\n\ndef slow_echo(message, history):\n    for i in range(len(message)):\n        time.sleep(0.05)\n        yield \"You typed: \" + message[: i + 1]\n\ndemo = gr.ChatInterface(\n    slow_echo,\n    flagging_mode=\"manual\",\n    flagging_options=[\"Like\", \"Spam\", \"Inappropriate\", \"Other\"],\n    save_history=True,\n)\n\nif __name__ == \"__main__\":\n    demo.launch()",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#gradio-based-ui-2",
+    "href": "src/00/teaching_lecture.html#gradio-based-ui-2",
+    "title": "Introducing AI Agents",
+    "section": "Gradio-based UI",
+    "text": "Gradio-based UI\n\nSource: https://gradio.app",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#agent-structure",
+    "href": "src/00/teaching_lecture.html#agent-structure",
+    "title": "Introducing AI Agents",
+    "section": "Agent Structure",
+    "text": "Agent Structure\n\nAuto-generated Agent Graph (https://openai.github.io/openai-agents-python/visualization/#showing-the-graph)",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -169,18 +224,51 @@
     "href": "src/00/teaching_lecture.html#so-many-agent-frameworks",
     "title": "Introducing AI Agents",
     "section": "So many agent frameworks…",
-    "text": "So many agent frameworks…\n(Diagram here)",
+    "text": "So many agent frameworks…\n\nSource: https://e2b.dev",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
     ]
   },
   {
-    "objectID": "src/00/teaching_lecture.html#the-popular-ones",
-    "href": "src/00/teaching_lecture.html#the-popular-ones",
+    "objectID": "src/00/teaching_lecture.html#openai-agents-sdk",
+    "href": "src/00/teaching_lecture.html#openai-agents-sdk",
     "title": "Introducing AI Agents",
-    "section": "The popular ones",
-    "text": "The popular ones\n(Table here)",
+    "section": "OpenAI Agents SDK",
+    "text": "OpenAI Agents SDK\n\nUsed for our demo\nhttps://openai.github.io/openai-agents-python/\nPython and JavaScript/TypeScript\nMIT License",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#langgraph",
+    "href": "src/00/teaching_lecture.html#langgraph",
+    "title": "Introducing AI Agents",
+    "section": "LangGraph",
+    "text": "LangGraph\n\nhttps://langchain-ai.github.io/langgraph/\nPython only\nMIT License",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#crew.ai",
+    "href": "src/00/teaching_lecture.html#crew.ai",
+    "title": "Introducing AI Agents",
+    "section": "Crew.ai",
+    "text": "Crew.ai\n\nhttps://github.com/crewaiinc/crewai\nPython only\nMIT License",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#microsoft",
+    "href": "src/00/teaching_lecture.html#microsoft",
+    "title": "Introducing AI Agents",
+    "section": "Microsoft",
+    "text": "Microsoft\n\nAutoGen\n\nhttps://microsoft.github.io/autogen/stable/\nPython (.NET coming soon)\nMIT License\n\nMicrosoft Semantic Kernel\n\nhttps://github.com/microsoft/semantic-kernel\nPython, .NET, Java\nMIT License",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -202,7 +290,7 @@
     "href": "src/00/teaching_lecture.html#sidebar-easy-vs.-simple",
     "title": "Introducing AI Agents",
     "section": "Sidebar: Easy vs. Simple",
-    "text": "Sidebar: Easy vs. Simple\n\nDetails here",
+    "text": "Sidebar: Easy vs. Simple\n\nhttps://www.youtube.com/watch?v=SxdOUGdseq4",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -246,7 +334,7 @@
     "href": "src/00/teaching_lecture.html#example-of-multiple-agents",
     "title": "Introducing AI Agents",
     "section": "Example of Multiple Agents",
-    "text": "Example of Multiple Agents\n\nCode generation\n\nAgents for ‘architect’, code writer, tester, debugger, etc.\n\nContent generation\n\nAgent to create content, other agents to generate images, translate content, etc.\n\nTBD - one more example",
+    "text": "Example of Multiple Agents\n\nCode generation\n\nAgents for ‘architect’, code writer, tester, debugger, etc.\n\nContent generation\n\nAgent to create content, other agents to generate images, translate content, etc.\n\nTravel booking\n\nAgent to book flights, hotels, cars, etc. for packages",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -257,84 +345,106 @@
     "href": "src/00/teaching_lecture.html#patterns-for-agents",
     "title": "Introducing AI Agents",
     "section": "Patterns for Agents",
-    "text": "Patterns for Agents\n\nAs you get deeper into building agents, patterns start to emerge\n\ne.g., router (which is what we used in our demo), orchestrator (using other agents as tools), parallel agents\n\nhttps://www.anthropic.com/engineering/building-effective-agents",
+    "text": "Patterns for Agents\n\nAs you get deeper into building agents, patterns start to emerge\n\ne.g., router (which is what we used in our demo), orchestrator (using other agents as tools), parallel agents",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
     ]
   },
   {
-    "objectID": "src/00/teaching_lecture.html#why-are-tools-needed",
-    "href": "src/00/teaching_lecture.html#why-are-tools-needed",
+    "objectID": "src/00/teaching_lecture.html#patterns-for-agents-1",
+    "href": "src/00/teaching_lecture.html#patterns-for-agents-1",
     "title": "Introducing AI Agents",
-    "section": "Why are tools needed?",
-    "text": "Why are tools needed?\n\nThe scope of the agents ability is contained within the model\nTools enable the agent to reach out to systems beyond the model\nExamples\n\nRead a file from disk\nSearch the web\nCall an API\nCalculator (because LLMs aren’t great at math)\nCode interpreter (running code on the fly)",
+    "section": "Patterns for Agents",
+    "text": "Patterns for Agents\n\nSource: https://www.anthropic.com/engineering/building-effective-agents",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
     ]
   },
   {
-    "objectID": "src/00/teaching_lecture.html#how-to-call-tools-openai-functiontool-call",
-    "href": "src/00/teaching_lecture.html#how-to-call-tools-openai-functiontool-call",
+    "objectID": "src/00/teaching_lecture.html#why-do-agents-need-tools",
+    "href": "src/00/teaching_lecture.html#why-do-agents-need-tools",
     "title": "Introducing AI Agents",
-    "section": "How to call tools (OpenAI Function/Tool Call)",
-    "text": "How to call tools (OpenAI Function/Tool Call)\n\nIntroduced by OpenAI in XXX\nTools are provided as functions\nOption for the LLM to decide when to call the tool",
+    "section": "Why do agents need tools?",
+    "text": "Why do agents need tools?\n\nThe scope of the agents ability is contained within the model\nTools enable the agent to reach out to systems beyond the model\nExamples\n\nRead a file from disk\nSearch the web\nCall an API\nCalculator (because LLMs aren’t great at math)\nCode interpreter (running code on the fly)",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
     ]
   },
   {
-    "objectID": "src/00/teaching_lecture.html#how-to-call-tools-openai-functiontool-call-1",
-    "href": "src/00/teaching_lecture.html#how-to-call-tools-openai-functiontool-call-1",
+    "objectID": "src/00/teaching_lecture.html#openai-functiontool-call",
+    "href": "src/00/teaching_lecture.html#openai-functiontool-call",
     "title": "Introducing AI Agents",
-    "section": "How to call tools (OpenAI Function/Tool Call)",
-    "text": "How to call tools (OpenAI Function/Tool Call)\nfrom agents import Agent, function_tool\n\n@function_tool\ndef get_bytes_cafe_menu(date: str) -&gt; any:\n    \"\"\"Returns the menu for the Bytes Cafe for the date provided.\"\"\"\n    return { f\"{date}\": {\n            \"daily byte\": {\n                \"name\": \"Steak Quesadilla\", \"price\": 12, \"description\": \"Flank steak, mixed cheese in a flour tortilla served with air fried potatoes, sour cream and salsa\",\n            },\n        } }\n\ncafe_agent = Agent(\n    name=\"Cafe Agent\",\n    instructions=\"You help students locate and provide information about the Bytes Cafe.\",\n    tools=[\n        get_bytes_cafe_menu,\n    ])",
+    "section": "OpenAI Function/Tool Call",
+    "text": "OpenAI Function/Tool Call\n\nIntroduced by OpenAI in June 2023\nModels are fine-tuned to return a structured function_call JSON object, specifying which function to call and with what arguments.\nTools are provided as functions\nOption for the LLM to decide when to call the tool (always, never, auto)",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
     ]
   },
   {
-    "objectID": "src/00/teaching_lecture.html#how-to-call-tools-openai-functiontool-call-2",
-    "href": "src/00/teaching_lecture.html#how-to-call-tools-openai-functiontool-call-2",
+    "objectID": "src/00/teaching_lecture.html#openai-functiontool-call-1",
+    "href": "src/00/teaching_lecture.html#openai-functiontool-call-1",
     "title": "Introducing AI Agents",
-    "section": "How to call tools (OpenAI Function/Tool Call)",
-    "text": "How to call tools (OpenAI Function/Tool Call)\nfrom agents import Agent, FileSearchTool\n\nVECTOR_STORE_ID = \"vs_6896d8c959008191981d645850b42313\"\n\nbuilding_agent = Agent(\n    name=\"Building Agent\",\n    instructions=\"You help students locate and provide information about buildings and rooms on campus. Be descriptive when giving locations.\",\n    tools=[\n        FileSearchTool(\n            max_num_results=3,\n            vector_store_ids=[VECTOR_STORE_ID],\n            include_search_results=True,\n        )\n    ],\n)",
+    "section": "OpenAI Function/Tool Call",
+    "text": "OpenAI Function/Tool Call\nfrom agents import Agent, function_tool\n\n@function_tool\ndef get_bytes_cafe_menu(date: str) -&gt; any:\n    \"\"\"Returns the menu for the Bytes Cafe for the date provided.\"\"\"\n    return { f\"{date}\": {\n            \"daily byte\": {\n                \"name\": \"Steak Quesadilla\", \"price\": 12, \"description\": \"Flank steak, mixed cheese in a flour tortilla served with air fried potatoes, sour cream and salsa\",\n            },\n        } }\n\ncafe_agent = Agent(\n    name=\"Cafe Agent\",\n    instructions=\"You help students locate and provide information about the Bytes Cafe.\",\n    tools=[\n        get_bytes_cafe_menu,\n    ])",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
     ]
   },
   {
-    "objectID": "src/00/teaching_lecture.html#how-to-call-tools-model-context-protocol",
-    "href": "src/00/teaching_lecture.html#how-to-call-tools-model-context-protocol",
+    "objectID": "src/00/teaching_lecture.html#openai-functiontool-call-2",
+    "href": "src/00/teaching_lecture.html#openai-functiontool-call-2",
     "title": "Introducing AI Agents",
-    "section": "How to call tools (Model Context Protocol)",
-    "text": "How to call tools (Model Context Protocol)\n\nOpenAI’s tool/function calling works if you have local access to the tools\nBut how about external systems?\n\ne.g., Access to calendar, other systems, hardware, etc.\n\nYou could build local tools to call APIs\nMCP: Model Context Protocol\nReleased by Anthropic in XXX\nMore details: https://modelcontextprototcol.io",
+    "section": "OpenAI Function/Tool Call",
+    "text": "OpenAI Function/Tool Call\nfrom agents import Agent, FileSearchTool\n\nVECTOR_STORE_ID = \"vs_6896d8c959008191981d645850b42313\"\n\nbuilding_agent = Agent(\n    name=\"Building Agent\",\n    instructions=\"You help students locate and provide information about buildings and rooms on campus. Be descriptive when giving locations.\",\n    tools=[\n        FileSearchTool(\n            max_num_results=3,\n            vector_store_ids=[VECTOR_STORE_ID],\n            include_search_results=True,\n        )\n    ],\n)",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
     ]
   },
   {
-    "objectID": "src/00/teaching_lecture.html#how-might-agents-be-useful-for-your-own-project",
-    "href": "src/00/teaching_lecture.html#how-might-agents-be-useful-for-your-own-project",
+    "objectID": "src/00/teaching_lecture.html#model-context-protocol",
+    "href": "src/00/teaching_lecture.html#model-context-protocol",
     "title": "Introducing AI Agents",
-    "section": "How might agents be useful for your own project?",
-    "text": "How might agents be useful for your own project?\n\nHow could your project benefit?\nWhat might be some of the challenges to overcome?",
+    "section": "Model Context Protocol",
+    "text": "Model Context Protocol\n\nOpenAI’s tool/function calling works if you have local access to the tools\nBut how about external systems?\n\ne.g., Access to calendar, other systems, hardware, etc.\n\nYou could build local tools to call APIs\nMCP: Model Context Protocol\nStandardized tooling interface, released by Anthropic in March 2024\nMore details: https://modelcontextprototcol.io",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
     ]
   },
   {
-    "objectID": "src/00/teaching_lecture.html#explore-resources",
-    "href": "src/00/teaching_lecture.html#explore-resources",
+    "objectID": "src/00/teaching_lecture.html#using-an-agent-for-your-project",
+    "href": "src/00/teaching_lecture.html#using-an-agent-for-your-project",
     "title": "Introducing AI Agents",
-    "section": "Explore resources",
-    "text": "Explore resources\n\nCode here: TBD\nModify by adding a new agent to it.\nCreate your own use case/agent in the Gradio interface\nLink to resources page / QR Code here: TBD",
+    "section": "Using an agent for your project",
+    "text": "Using an agent for your project\n\nHow could your project benefit from agents?\nOne or more agents?\nHow would agents interact with the user?\nWhat might be some of the challenges to overcome?",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#resources-12",
+    "href": "src/00/teaching_lecture.html#resources-12",
+    "title": "Introducing AI Agents",
+    "section": "Resources (1/2)",
+    "text": "Resources (1/2)\n\nCampus agent code:\n\nhttps://github.com/simonguest/CSP-400/blob/main/demos/00/campus-agent/main.py\nClone the repo, get it running locally\nModify by adding a new agent to it\nCreate your own use case/agent in the Gradio interface",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/00/teaching_lecture.html#resources-22",
+    "href": "src/00/teaching_lecture.html#resources-22",
+    "title": "Introducing AI Agents",
+    "section": "Resources (2/2)",
+    "text": "Resources (2/2)\n\nThis slide deck:\n\nhttps://simonguest.github.io/CSP-400/src/00/teaching_lecture.html\n\nIndex of resources:\n\nhttps://simonguest.github.io/CSP-400/src/00/resources.html",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"

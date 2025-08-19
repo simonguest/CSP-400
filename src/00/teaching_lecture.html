@@ -198,18 +198,16 @@
 </div>
 
 </section>
-<section>
-<section id="recap-of-last-lecture" class="title-slide slide level1 center">
-<h1>Recap of Last Lecture</h1>
-
-</section>
-<section id="recap-of-last-lecture-1" class="slide level2">
+<section id="recap-of-last-lecture" class="slide level2">
 <h2>Recap of Last Lecture</h2>
 <p>We used the OpenAI SDK to build our first AI-powered chatbot!</p>
 <div class="fragment">
-<ul>
-<li class="fragment">Screenshot of the chatbot interface</li>
-</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./images/last-lesson.png"></p>
+<figcaption>Last Lesson</figcaption>
+</figure>
+</div>
 </div>
 </section>
 <section id="what-did-we-learn" class="slide level2">
@@ -224,34 +222,44 @@
 <h2>But We Discovered Limitations</h2>
 <p>Our simple chatbot had several…</p>
 <ul>
-<li class="fragment">No ability to plan beyond a single interaction</li>
 <li class="fragment">Needs constant human input every turn</li>
+<li class="fragment">No ability to plan beyond a single interaction</li>
 <li class="fragment">Cannot respond to different conditions</li>
 <li class="fragment">Everything has to be replayed in the context window</li>
 <li class="fragment">Cannot reach out to other LLMs and external systems</li>
 </ul>
-</section></section>
+</section>
 <section>
-<section id="how-can-agents-solve-this" class="title-slide slide level1 center">
-<h1>How can Agents solve this?</h1>
+<section id="introducing-agents" class="title-slide slide level1 center">
+<h1>Introducing Agents!</h1>
 
 </section>
 <section id="what-is-an-agent" class="slide level2">
 <h2>What is an Agent?</h2>
+
+<img data-src="./images/quote-1.png" class="r-stretch quarto-figure-center"><p class="caption">Source: https://www.youtube.com/watch?v=bwXaJXgezf4</p></section>
+<section id="what-is-an-agent-1" class="slide level2">
+<h2>What is an Agent?</h2>
+
+<img data-src="./images/quote-2.png" class="r-stretch quarto-figure-center"><p class="caption">Source: https://www.weforum.org/stories/2025/06/cognitive-enterprise-agentic-business-revolution/</p></section>
+<section id="what-is-an-agent-2" class="slide level2">
+<h2>What is an Agent?</h2>
+
+<img data-src="./images/quote-3.png" class="r-stretch quarto-figure-center"><p class="caption">Source: https://www.crn.com/news/ai/2025/10-hottest-agentic-ai-tools-and-agents-of-2025-so-far</p></section>
+<section id="what-is-an-agent-3" class="slide level2">
+<h2>What is an Agent?</h2>
+
+<img data-src="./images/quote-4.png" class="r-stretch quarto-figure-center"><p class="caption">Source: https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027</p></section>
+<section id="what-is-an-agent-4" class="slide level2">
+<h2>What is an Agent?</h2>
+<p>Imagine a DigiPen Campus Assistant… An AI Agent that can help you navigate everything at DigiPen!</p>
 <ul>
-<li class="fragment">Screenshot of all the media headlines to go here</li>
-</ul>
-</section>
-<section id="five-characteristics-of-agents" class="slide level2">
-<h2>Five Characteristics of Agents</h2>
-<p>Imagine a DigiPen Campus Assistant…</p>
-<ul>
-<li class="fragment">“Can you tell me more about FLM201?”</li>
 <li class="fragment">“Where can I find the ‘Hopper’ room?”</li>
+<li class="fragment">“Can you tell me more about FLM201?”</li>
 <li class="fragment">“Oh, and what’s today’s vegetarian option at the Bytes Cafe?”</li>
 </ul>
 </section>
-<section id="five-characteristics-of-agents-1" class="slide level2">
+<section id="five-characteristics-of-agents" class="slide level2">
 <h2>Five Characteristics of Agents</h2>
 <ol type="1">
 <li class="fragment">Agents are <strong>Proactive</strong></li>
@@ -314,7 +322,7 @@
 <li class="fragment">Agents can delegate to other agents for complex tasks
 <ul>
 <li class="fragment">(Or for tasks where other agents are better suited for.)</li>
-<li class="fragment">e.g., Campus Assistant -&gt; delegating to a Course Agent</li>
+<li class="fragment">e.g., Campus Agent -&gt; delegating to a Course Agent</li>
 </ul></li>
 <li class="fragment">Agents can also be given access to external tools
 <ul>
@@ -341,7 +349,11 @@
 <section id="oberservations-and-questions" class="slide level2">
 <h2>Oberservations and Questions</h2>
 <p>Get into groups of 2 or 3</p>
-<p>Q: What worked? What surprised you? Q: What didn’t work? Where did the agent fail? Q: What other examples of agents can you think of?</p>
+<ul>
+<li class="fragment">Q: What worked? What surprised you?</li>
+<li class="fragment">Q: What didn’t work? Where did the agent fail?</li>
+<li class="fragment">Q: What other examples of agents can you think of?</li>
+</ul>
 </section>
 <section id="other-examples-for-agents" class="slide level2">
 <h2>Other Examples for Agents</h2>
@@ -358,30 +370,92 @@
 </ul>
 </section></section>
 <section>
-<section id="how-does-the-campus-assistant-work" class="title-slide slide level1 center">
-<h1>How does the Campus Assistant work?</h1>
+<section id="how-does-our-campus-assistant-work" class="title-slide slide level1 center">
+<h1>How does our Campus Assistant work?</h1>
 
 </section>
-<section id="agent-handoffs" class="slide level2">
-<h2>Agent Handoffs</h2>
-<p>(Diagram of agent handoffs)</p>
+<section id="gradio-based-ui" class="slide level2">
+<h2>Gradio-based UI</h2>
+
+<img data-src="./images/gradio-website.png" class="r-stretch quarto-figure-center"><p class="caption">Source: https://www.gradio.app/</p></section>
+<section id="gradio-based-ui-1" class="slide level2">
+<h2>Gradio-based UI</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> time</span>
+<span id="cb1-2"><a></a><span class="im">import</span> gradio <span class="im">as</span> gr</span>
+<span id="cb1-3"><a></a></span>
+<span id="cb1-4"><a></a><span class="kw">def</span> slow_echo(message, history):</span>
+<span id="cb1-5"><a></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(message)):</span>
+<span id="cb1-6"><a></a>        time.sleep(<span class="fl">0.05</span>)</span>
+<span id="cb1-7"><a></a>        <span class="cf">yield</span> <span class="st">"You typed: "</span> <span class="op">+</span> message[: i <span class="op">+</span> <span class="dv">1</span>]</span>
+<span id="cb1-8"><a></a></span>
+<span id="cb1-9"><a></a>demo <span class="op">=</span> gr.ChatInterface(</span>
+<span id="cb1-10"><a></a>    slow_echo,</span>
+<span id="cb1-11"><a></a>    flagging_mode<span class="op">=</span><span class="st">"manual"</span>,</span>
+<span id="cb1-12"><a></a>    flagging_options<span class="op">=</span>[<span class="st">"Like"</span>, <span class="st">"Spam"</span>, <span class="st">"Inappropriate"</span>, <span class="st">"Other"</span>],</span>
+<span id="cb1-13"><a></a>    save_history<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb1-14"><a></a>)</span>
+<span id="cb1-15"><a></a></span>
+<span id="cb1-16"><a></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
+<span id="cb1-17"><a></a>    demo.launch()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="how-about-the-ui" class="slide level2">
-<h2>How about the UI?</h2>
-<p>(Sidebar on Gradio)</p>
-</section></section>
+<section id="gradio-based-ui-2" class="slide level2">
+<h2>Gradio-based UI</h2>
+
+<img data-src="./images/gradio-helloworld.png" class="r-stretch quarto-figure-center"><p class="caption">Source: https://gradio.app</p></section></section>
 <section>
-<section id="creating-your-first-agent" class="title-slide slide level1 center">
-<h1>Creating Your First Agent</h1>
+<section id="creating-the-agents" class="title-slide slide level1 center">
+<h1>Creating the Agents</h1>
 
 </section>
+<section id="agent-structure" class="slide level2">
+<h2>Agent Structure</h2>
+
+<img data-src="../../demos/00/campus-agent/agent_graph.png" class="r-stretch quarto-figure-center"><p class="caption">Auto-generated Agent Graph (https://openai.github.io/openai-agents-python/visualization/#showing-the-graph)</p></section>
 <section id="so-many-agent-frameworks" class="slide level2">
 <h2>So many agent frameworks…</h2>
-<p>(Diagram here)</p>
+
+<img data-src="./images/ai-agents-landscape.png" class="r-stretch quarto-figure-center"><p class="caption">Source: https://e2b.dev</p></section>
+<section id="openai-agents-sdk" class="slide level2">
+<h2>OpenAI Agents SDK</h2>
+<ul>
+<li class="fragment">Used for our demo</li>
+<li class="fragment">https://openai.github.io/openai-agents-python/</li>
+<li class="fragment">Python and JavaScript/TypeScript</li>
+<li class="fragment">MIT License</li>
+</ul>
 </section>
-<section id="the-popular-ones" class="slide level2">
-<h2>The popular ones</h2>
-<p>(Table here)</p>
+<section id="langgraph" class="slide level2">
+<h2>LangGraph</h2>
+<ul>
+<li class="fragment">https://langchain-ai.github.io/langgraph/</li>
+<li class="fragment">Python only</li>
+<li class="fragment">MIT License</li>
+</ul>
+</section>
+<section id="crew.ai" class="slide level2">
+<h2>Crew.ai</h2>
+<ul>
+<li class="fragment">https://github.com/crewaiinc/crewai</li>
+<li class="fragment">Python only</li>
+<li class="fragment">MIT License</li>
+</ul>
+</section>
+<section id="microsoft" class="slide level2">
+<h2>Microsoft</h2>
+<ul>
+<li class="fragment">AutoGen
+<ul>
+<li class="fragment">https://microsoft.github.io/autogen/stable/</li>
+<li class="fragment">Python (.NET coming soon)</li>
+<li class="fragment">MIT License</li>
+</ul></li>
+<li class="fragment">Microsoft Semantic Kernel
+<ul>
+<li class="fragment">https://github.com/microsoft/semantic-kernel</li>
+<li class="fragment">Python, .NET, Java</li>
+<li class="fragment">MIT License</li>
+</ul></li>
+</ul>
 </section>
 <section id="what-should-you-be-considering" class="slide level2">
 <h2>What should you be considering?</h2>
@@ -405,33 +479,12 @@
 </section>
 <section id="sidebar-easy-vs.-simple" class="slide level2">
 <h2>Sidebar: Easy vs.&nbsp;Simple</h2>
-<ul>
-<li class="fragment">Details here</li>
-</ul>
-</section>
+
+<img data-src="./images/simple-made-easy.png" class="r-stretch quarto-figure-center"><p class="caption">https://www.youtube.com/watch?v=SxdOUGdseq4</p></section>
 <section id="openai-agents-sdk-python" class="slide level2">
 <h2>OpenAI Agents SDK (Python)</h2>
 <p>Creating and running a new agent</p>
-<div class="sourceCode" id="cb1" data-code-line-numbers="|1|3-8|9|10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">from</span> agents <span class="im">import</span> Agent, Runner</span>
-<span id="cb1-2"><a></a></span>
-<span id="cb1-3"><a></a>agent <span class="op">=</span> Agent(</span>
-<span id="cb1-4"><a></a>    name<span class="op">=</span><span class="st">"DigiPen Campus Assistant"</span>,</span>
-<span id="cb1-5"><a></a>    instructions<span class="op">=</span><span class="st">"You are a helpful campus assistant that can plan and execute tasks for students at DigiPen. Please be concise and accurate in handing off tasks to other agents as needed."</span>,</span>
-<span id="cb1-6"><a></a>    handoffs<span class="op">=</span>[building_agent, course_agent, handbook_agent, cafe_agent],</span>
-<span id="cb1-7"><a></a>)</span>
-<span id="cb1-8"><a></a></span>
-<span id="cb1-9"><a></a>messages.append({<span class="st">"role"</span>: <span class="st">"user"</span>, <span class="st">"content"</span>: user_msg})</span>
-<span id="cb1-10"><a></a>result <span class="op">=</span> Runner.run_streamed(agent, messages)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section></section>
-<section>
-<section id="multiple-agents" class="title-slide slide level1 center">
-<h1>Multiple Agents</h1>
-
-</section>
-<section id="openai-agents-sdk-python-1" class="slide level2">
-<h2>OpenAI Agents SDK (Python)</h2>
-<p>Specifying handoffs</p>
-<div class="sourceCode" id="cb2" data-code-line-numbers="|6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="im">from</span> agents <span class="im">import</span> Agent, Runner</span>
+<div class="sourceCode" id="cb2" data-code-line-numbers="|1|3-8|9|10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="im">from</span> agents <span class="im">import</span> Agent, Runner</span>
 <span id="cb2-2"><a></a></span>
 <span id="cb2-3"><a></a>agent <span class="op">=</span> Agent(</span>
 <span id="cb2-4"><a></a>    name<span class="op">=</span><span class="st">"DigiPen Campus Assistant"</span>,</span>
@@ -441,6 +494,25 @@
 <span id="cb2-8"><a></a></span>
 <span id="cb2-9"><a></a>messages.append({<span class="st">"role"</span>: <span class="st">"user"</span>, <span class="st">"content"</span>: user_msg})</span>
 <span id="cb2-10"><a></a>result <span class="op">=</span> Runner.run_streamed(agent, messages)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section></section>
+<section>
+<section id="multiple-agents" class="title-slide slide level1 center">
+<h1>Multiple Agents</h1>
+
+</section>
+<section id="openai-agents-sdk-python-1" class="slide level2">
+<h2>OpenAI Agents SDK (Python)</h2>
+<p>Specifying handoffs</p>
+<div class="sourceCode" id="cb3" data-code-line-numbers="|6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="im">from</span> agents <span class="im">import</span> Agent, Runner</span>
+<span id="cb3-2"><a></a></span>
+<span id="cb3-3"><a></a>agent <span class="op">=</span> Agent(</span>
+<span id="cb3-4"><a></a>    name<span class="op">=</span><span class="st">"DigiPen Campus Assistant"</span>,</span>
+<span id="cb3-5"><a></a>    instructions<span class="op">=</span><span class="st">"You are a helpful campus assistant that can plan and execute tasks for students at DigiPen. Please be concise and accurate in handing off tasks to other agents as needed."</span>,</span>
+<span id="cb3-6"><a></a>    handoffs<span class="op">=</span>[building_agent, course_agent, handbook_agent, cafe_agent],</span>
+<span id="cb3-7"><a></a>)</span>
+<span id="cb3-8"><a></a></span>
+<span id="cb3-9"><a></a>messages.append({<span class="st">"role"</span>: <span class="st">"user"</span>, <span class="st">"content"</span>: user_msg})</span>
+<span id="cb3-10"><a></a>result <span class="op">=</span> Runner.run_streamed(agent, messages)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="why-multiple-agents" class="slide level2">
 <h2>Why Multiple Agents?</h2>
@@ -466,7 +538,10 @@
 <ul>
 <li class="fragment">Agent to create content, other agents to generate images, translate content, etc.</li>
 </ul></li>
-<li class="fragment">TBD - one more example</li>
+<li class="fragment">Travel booking
+<ul>
+<li class="fragment">Agent to book flights, hotels, cars, etc. for packages</li>
+</ul></li>
 </ul>
 </section>
 <section id="patterns-for-agents" class="slide level2">
@@ -476,16 +551,19 @@
 <ul>
 <li class="fragment">e.g., router (which is what we used in our demo), orchestrator (using other agents as tools), parallel agents</li>
 </ul></li>
-<li class="fragment">https://www.anthropic.com/engineering/building-effective-agents</li>
 </ul>
-</section></section>
+</section>
+<section id="patterns-for-agents-1" class="slide level2">
+<h2>Patterns for Agents</h2>
+
+<img data-src="./images/agent-patterns.png" class="r-stretch quarto-figure-center"><p class="caption">Source: https://www.anthropic.com/engineering/building-effective-agents</p></section></section>
 <section>
-<section id="providing-agents-access-to-tools" class="title-slide slide level1 center">
-<h1>Providing Agents Access to Tools</h1>
+<section id="giving-agents-access-to-tools" class="title-slide slide level1 center">
+<h1>Giving Agents Access to Tools</h1>
 
 </section>
-<section id="why-are-tools-needed" class="slide level2">
-<h2>Why are tools needed?</h2>
+<section id="why-do-agents-need-tools" class="slide level2">
+<h2>Why do agents need tools?</h2>
 <ul>
 <li class="fragment">The scope of the agents ability is contained within the model</li>
 <li class="fragment">Tools enable the agent to reach out to systems beyond the model</li>
@@ -499,54 +577,55 @@
 </ul></li>
 </ul>
 </section>
-<section id="how-to-call-tools-openai-functiontool-call" class="slide level2">
-<h2>How to call tools (OpenAI Function/Tool Call)</h2>
+<section id="openai-functiontool-call" class="slide level2">
+<h2>OpenAI Function/Tool Call</h2>
 <ul>
-<li class="fragment">Introduced by OpenAI in XXX</li>
+<li class="fragment">Introduced by OpenAI in June 2023</li>
+<li class="fragment">Models are fine-tuned to return a structured function_call JSON object, specifying which function to call and with what arguments.</li>
 <li class="fragment">Tools are provided as functions</li>
-<li class="fragment">Option for the LLM to decide when to call the tool</li>
+<li class="fragment">Option for the LLM to decide when to call the tool (always, never, auto)</li>
 </ul>
 </section>
-<section id="how-to-call-tools-openai-functiontool-call-1" class="slide level2">
-<h2>How to call tools (OpenAI Function/Tool Call)</h2>
-<div class="sourceCode" id="cb3" data-code-line-numbers="|1|3-10|12-17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="im">from</span> agents <span class="im">import</span> Agent, function_tool</span>
-<span id="cb3-2"><a></a></span>
-<span id="cb3-3"><a></a><span class="at">@function_tool</span></span>
-<span id="cb3-4"><a></a><span class="kw">def</span> get_bytes_cafe_menu(date: <span class="bu">str</span>) <span class="op">-&gt;</span> <span class="bu">any</span>:</span>
-<span id="cb3-5"><a></a>    <span class="co">"""Returns the menu for the Bytes Cafe for the date provided."""</span></span>
-<span id="cb3-6"><a></a>    <span class="cf">return</span> { <span class="ss">f"</span><span class="sc">{</span>date<span class="sc">}</span><span class="ss">"</span>: {</span>
-<span id="cb3-7"><a></a>            <span class="st">"daily byte"</span>: {</span>
-<span id="cb3-8"><a></a>                <span class="st">"name"</span>: <span class="st">"Steak Quesadilla"</span>, <span class="st">"price"</span>: <span class="dv">12</span>, <span class="st">"description"</span>: <span class="st">"Flank steak, mixed cheese in a flour tortilla served with air fried potatoes, sour cream and salsa"</span>,</span>
-<span id="cb3-9"><a></a>            },</span>
-<span id="cb3-10"><a></a>        } }</span>
-<span id="cb3-11"><a></a></span>
-<span id="cb3-12"><a></a>cafe_agent <span class="op">=</span> Agent(</span>
-<span id="cb3-13"><a></a>    name<span class="op">=</span><span class="st">"Cafe Agent"</span>,</span>
-<span id="cb3-14"><a></a>    instructions<span class="op">=</span><span class="st">"You help students locate and provide information about the Bytes Cafe."</span>,</span>
-<span id="cb3-15"><a></a>    tools<span class="op">=</span>[</span>
-<span id="cb3-16"><a></a>        get_bytes_cafe_menu,</span>
-<span id="cb3-17"><a></a>    ])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="how-to-call-tools-openai-functiontool-call-2" class="slide level2">
-<h2>How to call tools (OpenAI Function/Tool Call)</h2>
-<div class="sourceCode" id="cb4" data-code-line-numbers="|1|3|5-15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="im">from</span> agents <span class="im">import</span> Agent, FileSearchTool</span>
+<section id="openai-functiontool-call-1" class="slide level2">
+<h2>OpenAI Function/Tool Call</h2>
+<div class="sourceCode" id="cb4" data-code-line-numbers="|1|3-10|12-17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="im">from</span> agents <span class="im">import</span> Agent, function_tool</span>
 <span id="cb4-2"><a></a></span>
-<span id="cb4-3"><a></a>VECTOR_STORE_ID <span class="op">=</span> <span class="st">"vs_6896d8c959008191981d645850b42313"</span></span>
-<span id="cb4-4"><a></a></span>
-<span id="cb4-5"><a></a>building_agent <span class="op">=</span> Agent(</span>
-<span id="cb4-6"><a></a>    name<span class="op">=</span><span class="st">"Building Agent"</span>,</span>
-<span id="cb4-7"><a></a>    instructions<span class="op">=</span><span class="st">"You help students locate and provide information about buildings and rooms on campus. Be descriptive when giving locations."</span>,</span>
-<span id="cb4-8"><a></a>    tools<span class="op">=</span>[</span>
-<span id="cb4-9"><a></a>        FileSearchTool(</span>
-<span id="cb4-10"><a></a>            max_num_results<span class="op">=</span><span class="dv">3</span>,</span>
-<span id="cb4-11"><a></a>            vector_store_ids<span class="op">=</span>[VECTOR_STORE_ID],</span>
-<span id="cb4-12"><a></a>            include_search_results<span class="op">=</span><span class="va">True</span>,</span>
-<span id="cb4-13"><a></a>        )</span>
-<span id="cb4-14"><a></a>    ],</span>
-<span id="cb4-15"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-3"><a></a><span class="at">@function_tool</span></span>
+<span id="cb4-4"><a></a><span class="kw">def</span> get_bytes_cafe_menu(date: <span class="bu">str</span>) <span class="op">-&gt;</span> <span class="bu">any</span>:</span>
+<span id="cb4-5"><a></a>    <span class="co">"""Returns the menu for the Bytes Cafe for the date provided."""</span></span>
+<span id="cb4-6"><a></a>    <span class="cf">return</span> { <span class="ss">f"</span><span class="sc">{</span>date<span class="sc">}</span><span class="ss">"</span>: {</span>
+<span id="cb4-7"><a></a>            <span class="st">"daily byte"</span>: {</span>
+<span id="cb4-8"><a></a>                <span class="st">"name"</span>: <span class="st">"Steak Quesadilla"</span>, <span class="st">"price"</span>: <span class="dv">12</span>, <span class="st">"description"</span>: <span class="st">"Flank steak, mixed cheese in a flour tortilla served with air fried potatoes, sour cream and salsa"</span>,</span>
+<span id="cb4-9"><a></a>            },</span>
+<span id="cb4-10"><a></a>        } }</span>
+<span id="cb4-11"><a></a></span>
+<span id="cb4-12"><a></a>cafe_agent <span class="op">=</span> Agent(</span>
+<span id="cb4-13"><a></a>    name<span class="op">=</span><span class="st">"Cafe Agent"</span>,</span>
+<span id="cb4-14"><a></a>    instructions<span class="op">=</span><span class="st">"You help students locate and provide information about the Bytes Cafe."</span>,</span>
+<span id="cb4-15"><a></a>    tools<span class="op">=</span>[</span>
+<span id="cb4-16"><a></a>        get_bytes_cafe_menu,</span>
+<span id="cb4-17"><a></a>    ])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="how-to-call-tools-model-context-protocol" class="slide level2">
-<h2>How to call tools (Model Context Protocol)</h2>
+<section id="openai-functiontool-call-2" class="slide level2">
+<h2>OpenAI Function/Tool Call</h2>
+<div class="sourceCode" id="cb5" data-code-line-numbers="|1|3|5-15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="im">from</span> agents <span class="im">import</span> Agent, FileSearchTool</span>
+<span id="cb5-2"><a></a></span>
+<span id="cb5-3"><a></a>VECTOR_STORE_ID <span class="op">=</span> <span class="st">"vs_6896d8c959008191981d645850b42313"</span></span>
+<span id="cb5-4"><a></a></span>
+<span id="cb5-5"><a></a>building_agent <span class="op">=</span> Agent(</span>
+<span id="cb5-6"><a></a>    name<span class="op">=</span><span class="st">"Building Agent"</span>,</span>
+<span id="cb5-7"><a></a>    instructions<span class="op">=</span><span class="st">"You help students locate and provide information about buildings and rooms on campus. Be descriptive when giving locations."</span>,</span>
+<span id="cb5-8"><a></a>    tools<span class="op">=</span>[</span>
+<span id="cb5-9"><a></a>        FileSearchTool(</span>
+<span id="cb5-10"><a></a>            max_num_results<span class="op">=</span><span class="dv">3</span>,</span>
+<span id="cb5-11"><a></a>            vector_store_ids<span class="op">=</span>[VECTOR_STORE_ID],</span>
+<span id="cb5-12"><a></a>            include_search_results<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb5-13"><a></a>        )</span>
+<span id="cb5-14"><a></a>    ],</span>
+<span id="cb5-15"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="model-context-protocol" class="slide level2">
+<h2>Model Context Protocol</h2>
 <ul>
 <li class="fragment">OpenAI’s tool/function calling works if you have local access to the tools</li>
 <li class="fragment">But how about external systems?
@@ -555,7 +634,7 @@
 </ul></li>
 <li class="fragment">You could build local tools to call APIs</li>
 <li class="fragment">MCP: Model Context Protocol</li>
-<li class="fragment">Released by Anthropic in XXX</li>
+<li class="fragment">Standardized tooling interface, released by Anthropic in March 2024</li>
 <li class="fragment">More details: https://modelcontextprototcol.io</li>
 </ul>
 </section></section>
@@ -564,20 +643,38 @@
 <h1>Next Steps</h1>
 
 </section>
-<section id="how-might-agents-be-useful-for-your-own-project" class="slide level2">
-<h2>How might agents be useful for your own project?</h2>
+<section id="using-an-agent-for-your-project" class="slide level2">
+<h2>Using an agent for your project</h2>
 <ul>
-<li class="fragment">How could your project benefit?</li>
+<li class="fragment">How could your project benefit from agents?</li>
+<li class="fragment">One or more agents?</li>
+<li class="fragment">How would agents interact with the user?</li>
 <li class="fragment">What might be some of the challenges to overcome?</li>
 </ul>
 </section>
-<section id="explore-resources" class="slide level2">
-<h2>Explore resources</h2>
+<section id="resources-12" class="slide level2">
+<h2>Resources (1/2)</h2>
 <ul>
-<li class="fragment">Code here: TBD</li>
-<li class="fragment">Modify by adding a new agent to it.</li>
+<li class="fragment">Campus agent code:
+<ul>
+<li class="fragment">https://github.com/simonguest/CSP-400/blob/main/demos/00/campus-agent/main.py</li>
+<li class="fragment">Clone the repo, get it running locally</li>
+<li class="fragment">Modify by adding a new agent to it</li>
 <li class="fragment">Create your own use case/agent in the Gradio interface</li>
-<li class="fragment">Link to resources page / QR Code here: TBD</li>
+</ul></li>
+</ul>
+</section>
+<section id="resources-22" class="slide level2">
+<h2>Resources (2/2)</h2>
+<ul>
+<li class="fragment">This slide deck:
+<ul>
+<li class="fragment">https://simonguest.github.io/CSP-400/src/00/teaching_lecture.html</li>
+</ul></li>
+<li class="fragment">Index of resources:
+<ul>
+<li class="fragment">https://simonguest.github.io/CSP-400/src/00/resources.html</li>
+</ul></li>
 </ul>
 
 
