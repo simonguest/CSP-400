@@ -107,8 +107,15 @@ Imagine a DigiPen Campus Assistant... An AI Agent that can help you navigate eve
 ## Let's Try This!
 
 :::{.r-stack}
+![[https://simonguest-campus-agent.hf.space/](https://simonguest-campus-agent.hf.space/){.external target="_blank"}](./demo-qr-code-dragon.png)
+:::
+
+## Let's Try This!
+
+:::{.r-stack}
 ![[https://simonguest-campus-agent.hf.space/](https://simonguest-campus-agent.hf.space/){.external target="_blank"}](./demo-qr-code.png)
 :::
+
 
 ## Oberservations and Questions
 
