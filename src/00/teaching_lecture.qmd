@@ -8,14 +8,12 @@ format:
 logo: DigiPen_RGB_Red.jpg
 ---
 
-# Recap of Last Lecture 
-
 ## Recap of Last Lecture
 
 We used the OpenAI SDK to build our first AI-powered chatbot!
 
 ::: {.fragment}
-- Screenshot of the chatbot interface
+![Last Lesson](./images/last-lesson.png)
 :::
 
 ## What Did We Learn?
@@ -28,24 +26,36 @@ We used the OpenAI SDK to build our first AI-powered chatbot!
 
 Our simple chatbot had several...
 
-- No ability to plan beyond a single interaction
 - Needs constant human input every turn
+- No ability to plan beyond a single interaction
 - Cannot respond to different conditions
 - Everything has to be replayed in the context window
 - Cannot reach out to other LLMs and external systems
 
-# How can Agents solve this?
+# Introducing Agents!
 
 ## What is an Agent?
 
-- Screenshot of all the media headlines to go here
+![Source: https://www.youtube.com/watch?v=bwXaJXgezf4](./images/quote-1.png)
 
-## Five Characteristics of Agents
+## What is an Agent?
 
-Imagine a DigiPen Campus Assistant...
+![Source: https://www.weforum.org/stories/2025/06/cognitive-enterprise-agentic-business-revolution/](./images/quote-2.png)
 
-- "Can you tell me more about FLM201?"
+## What is an Agent?
+
+![Source: https://www.crn.com/news/ai/2025/10-hottest-agentic-ai-tools-and-agents-of-2025-so-far](./images/quote-3.png)
+
+## What is an Agent?
+
+![Source: https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027](./images/quote-4.png)
+
+## What is an Agent?
+
+Imagine a DigiPen Campus Assistant... An AI Agent that can help you navigate everything at DigiPen!
+
 - "Where can I find the 'Hopper' room?"
+- "Can you tell me more about FLM201?"
 - "Oh, and what's today's vegetarian option at the Bytes Cafe?"
 
 ## Five Characteristics of Agents
@@ -88,7 +98,7 @@ Imagine a DigiPen Campus Assistant...
 
 - Agents can delegate to other agents for complex tasks
   - (Or for tasks where other agents are better suited for.)
-  - e.g., Campus Assistant -> delegating to a Course Agent
+  - e.g., Campus Agent -> delegating to a Course Agent
 - Agents can also be given access to external tools
   - e.g., File search, Web search, access to the Bytes Cafe API
 
@@ -104,9 +114,9 @@ Imagine a DigiPen Campus Assistant...
 
 Get into groups of 2 or 3
 
-Q: What worked? What surprised you?
-Q: What didn't work? Where did the agent fail?
-Q: What other examples of agents can you think of?
+- Q: What worked? What surprised you?
+- Q: What didn't work? Where did the agent fail?
+- Q: What other examples of agents can you think of?
 
 ## Other Examples for Agents
 
@@ -118,25 +128,76 @@ Q: What other examples of agents can you think of?
   - Traditional NPCs are pre-written dialogue trees
   - Whereas agents can be more independent within the game environment
 
-# How does the Campus Assistant work?
+# How does our Campus Assistant work?
 
-## Agent Handoffs
+## Gradio-based UI
 
-(Diagram of agent handoffs)
+![Source: https://www.gradio.app/](./images/gradio-website.png)
 
-## How about the UI?
+## Gradio-based UI
 
-(Sidebar on Gradio)
+```{.python}
+import time
+import gradio as gr
 
-# Creating Your First Agent
+def slow_echo(message, history):
+    for i in range(len(message)):
+        time.sleep(0.05)
+        yield "You typed: " + message[: i + 1]
+
+demo = gr.ChatInterface(
+    slow_echo,
+    flagging_mode="manual",
+    flagging_options=["Like", "Spam", "Inappropriate", "Other"],
+    save_history=True,
+)
+
+if __name__ == "__main__":
+    demo.launch()
+```
+
+## Gradio-based UI
+
+![Source: https://gradio.app](./images/gradio-helloworld.png)
+
+# Creating the Agents
+
+## Agent Structure
+
+![Auto-generated Agent Graph (https://openai.github.io/openai-agents-python/visualization/#showing-the-graph)](../../demos/00/campus-agent/agent_graph.png)
 
 ## So many agent frameworks...
 
-(Diagram here)
+![Source: https://e2b.dev](./images/ai-agents-landscape.png)
 
-## The popular ones
+## OpenAI Agents SDK
 
-(Table here)
+- Used for our demo
+- https://openai.github.io/openai-agents-python/
+- Python and JavaScript/TypeScript
+- MIT License
+
+## LangGraph 
+- https://langchain-ai.github.io/langgraph/
+- Python only
+- MIT License
+
+## Crew.ai
+
+- https://github.com/crewaiinc/crewai
+- Python only
+- MIT License
+
+## Microsoft 
+
+- AutoGen
+  - https://microsoft.github.io/autogen/stable/
+  - Python (.NET coming soon)
+  - MIT License
+- Microsoft Semantic Kernel
+  - https://github.com/microsoft/semantic-kernel
+  - Python, .NET, Java
+  - MIT License
 
 ## What should you be considering?
 
@@ -152,7 +213,7 @@ Q: What other examples of agents can you think of?
 
 ## Sidebar: Easy vs. Simple
 
-- Details here
+![https://www.youtube.com/watch?v=SxdOUGdseq4](./images/simple-made-easy.png)
 
 ## OpenAI Agents SDK (Python)
 
@@ -205,17 +266,21 @@ result = Runner.run_streamed(agent, messages)
   - Agents for 'architect', code writer, tester, debugger, etc.
 - Content generation
   - Agent to create content, other agents to generate images, translate content, etc.
-- TBD - one more example
+- Travel booking
+  - Agent to book flights, hotels, cars, etc. for packages
 
 ## Patterns for Agents
 
 - As you get deeper into building agents, patterns start to emerge
   - e.g., router (which is what we used in our demo), orchestrator (using other agents as tools), parallel agents
-- https://www.anthropic.com/engineering/building-effective-agents
 
-# Providing Agents Access to Tools
+## Patterns for Agents
 
-## Why are tools needed?
+![Source: https://www.anthropic.com/engineering/building-effective-agents](./images/agent-patterns.png)
+
+# Giving Agents Access to Tools
+
+## Why do agents need tools?
 
 - The scope of the agents ability is contained within the model
 - Tools enable the agent to reach out to systems beyond the model
@@ -226,13 +291,14 @@ result = Runner.run_streamed(agent, messages)
   - Calculator (because LLMs aren't great at math)
   - Code interpreter (running code on the fly)
 
-## How to call tools (OpenAI Function/Tool Call)
+## OpenAI Function/Tool Call
 
-- Introduced by OpenAI in XXX
+- Introduced by OpenAI in June 2023
+- Models are fine-tuned to return a structured function_call JSON object, specifying which function to call and with what arguments.
 - Tools are provided as functions
-- Option for the LLM to decide when to call the tool
+- Option for the LLM to decide when to call the tool (always, never, auto)
 
-## How to call tools (OpenAI Function/Tool Call)
+## OpenAI Function/Tool Call
 
 ```{.python code-line-numbers="|1|3-10|12-17"}
 from agents import Agent, function_tool
@@ -254,7 +320,7 @@ cafe_agent = Agent(
     ])
 ```
 
-## How to call tools (OpenAI Function/Tool Call)
+## OpenAI Function/Tool Call
 
 ```{.python code-line-numbers="|1|3|5-15"}
 from agents import Agent, FileSearchTool
@@ -274,26 +340,36 @@ building_agent = Agent(
 )
 ```
 
-## How to call tools (Model Context Protocol)
+## Model Context Protocol
 
 - OpenAI's tool/function calling works if you have local access to the tools
 - But how about external systems?
   - e.g., Access to calendar, other systems, hardware, etc.
 - You could build local tools to call APIs
 - MCP: Model Context Protocol
-- Released by Anthropic in XXX
+- Standardized tooling interface, released by Anthropic in March 2024
 - More details: https://modelcontextprototcol.io
 
 # Next Steps
 
-## How might agents be useful for your own project?
+## Using an agent for your project
 
-- How could your project benefit?
+- How could your project benefit from agents?
+- One or more agents?
+- How would agents interact with the user?
 - What might be some of the challenges to overcome?
 
-## Explore resources
+## Resources (1/2)
 
-- Code here: TBD
-- Modify by adding a new agent to it.
-- Create your own use case/agent in the Gradio interface
-- Link to resources page / QR Code here: TBD
+- Campus agent code: 
+  - https://github.com/simonguest/CSP-400/blob/main/demos/00/campus-agent/main.py
+  - Clone the repo, get it running locally
+  - Modify by adding a new agent to it
+  - Create your own use case/agent in the Gradio interface
+
+## Resources (2/2)
+
+- This slide deck: 
+  - https://simonguest.github.io/CSP-400/src/00/teaching_lecture.html
+- Index of resources: 
+  - https://simonguest.github.io/CSP-400/src/00/resources.html
