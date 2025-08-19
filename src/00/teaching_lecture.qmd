@@ -20,11 +20,9 @@ We used the OpenAI SDK to build our first AI-powered chatbot!
 
 ## What Did We Learn?
 
-::: {.incremental}
 - How to use OpenAI API and SDK
 - Context windows and conversation structure
 - Available models, features, and costs
-:::
 
 ## But We Discovered Limitations
 
@@ -98,7 +96,9 @@ Imagine a DigiPen Campus Assistant...
 
 ## Let's Try This!
 
-(QR Code to go here - 5 min activity)
+:::{.r-stack}
+![[https://simonguest-campus-agent.hf.space/](https://simonguest-campus-agent.hf.space/){.external target="_blank"}](./demo-qr-code.png)
+:::
 
 ## Oberservations and Questions
 
