@@ -151,14 +151,10 @@ demo = gr.ChatInterface(
         primary_hue="red", secondary_hue="slate", font=[gr.themes.GoogleFont("Inter")]
     ),
     examples=[
-        "Where is the 'Hopper' room located?",
         "I'm trying to find the WANIC classrooms. Can you help?",
         "What's the policy for eating in auditoriums?",
-        "Where do I pickup my parking pass?",
         "What's today's vegetarian dish at the Bytes Cafe?",
-        "Tell me more about CS 205...",
-        "What are the prerequisites for FLM201?",
-        "Which courses should I consider if I'm interested in audio mixing techniques?",
+        "What are the prerequisites for FLM201?"
     ],
     submit_btn=True,
     flagging_mode="manual",
@@ -168,4 +164,4 @@ demo = gr.ChatInterface(
 )
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(server_name="0.0.0.0", server_port=7860)
