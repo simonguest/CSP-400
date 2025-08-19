@@ -464,21 +464,21 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "CSP-400 (DigiPen)",
+    "title": "CSP-400",
     "section": "",
-    "text": "TBD",
+    "text": "This site contains a collection of slides, code, and other resources for lectures held within the 25/26 CSP-400 course.",
     "crumbs": [
-      "Overview"
+      "CSP-400"
     ]
   },
   {
     "objectID": "index.html#about",
     "href": "index.html#about",
-    "title": "CSP-400 (DigiPen)",
+    "title": "CSP-400",
     "section": "",
-    "text": "TBD",
+    "text": "This site contains a collection of slides, code, and other resources for lectures held within the 25/26 CSP-400 course.",
     "crumbs": [
-      "Overview"
+      "CSP-400"
     ]
   },
   {
@@ -486,10 +486,76 @@
     "href": "src/00/resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Resources\n\nTBD",
+    "text": "This document contains all the external resources, links, and references mentioned in the “Introducing AI Agents” lecture.",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
-      "Further Reading"
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "src/00/resources.html#demo-agent",
+    "href": "src/00/resources.html#demo-agent",
+    "title": "Resources",
+    "section": "Demo Agent",
+    "text": "Demo Agent\n\nCampus Agent Demo: https://simonguest-campus-agent.hf.space/\n\nInteractive demo of the DigiPen Campus Assistant agent\n\nCampus Agent Source Code: https://github.com/simonguest/CSP-400/blob/main/demos/00/campus-agent\n\nComplete source code for the DigiPen Campus Assistant demo",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "src/00/resources.html#development-tools-and-platforms",
+    "href": "src/00/resources.html#development-tools-and-platforms",
+    "title": "Resources",
+    "section": "Development Tools and Platforms",
+    "text": "Development Tools and Platforms\n\nUI Frameworks\n\nGradio: https://www.gradio.app/\n\nPython library for building machine learning web interfaces\n\nGradio Documentation: https://gradio.app\n\nOfficial Gradio documentation and tutorials\n\n\n\n\nAgent Frameworks\n\nOpenAI\n\nOpenAI Agents SDK (Python): https://openai.github.io/openai-agents-python/\n\nOfficial OpenAI agents framework for Python\n\nOpenAI Agents Visualization: https://openai.github.io/openai-agents-python/visualization/#showing-the-graph\n\nTool for visualizing agent graphs and interactions\n\n\n\n\nLangChain\n\nLangGraph: https://langchain-ai.github.io/langgraph/\n\nPython framework for building stateful, multi-actor applications with LLMs\n\n\n\n\nCrew AI\n\nCrew.ai: https://github.com/crewaiinc/crewai\n\nFramework for orchestrating role-playing, autonomous AI agents\n\n\n\n\nMicrosoft\n\nAutoGen: https://microsoft.github.io/autogen/stable/\n\nMicrosoft’s framework for building conversational AI systems\n\nMicrosoft Semantic Kernel: https://github.com/microsoft/semantic-kernel\n\nSDK for integrating AI services with conventional programming languages",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "src/00/resources.html#protocols-and-standards",
+    "href": "src/00/resources.html#protocols-and-standards",
+    "title": "Resources",
+    "section": "Protocols and Standards",
+    "text": "Protocols and Standards\n\nModel Context Protocol (MCP): https://modelcontextprototcol.io\n\nStandardized protocol for connecting AI models with external tools and data sources",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "src/00/resources.html#license-information",
+    "href": "src/00/resources.html#license-information",
+    "title": "Resources",
+    "section": "License Information",
+    "text": "License Information\nMost of the agent frameworks mentioned use the MIT License, making them suitable for both academic and commercial use: - OpenAI Agents SDK - LangGraph - Crew.ai - Microsoft AutoGen - Microsoft Semantic Kernel",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "src/00/resources.html#sidebars",
+    "href": "src/00/resources.html#sidebars",
+    "title": "Resources",
+    "section": "Sidebars",
+    "text": "Sidebars\n\nSimple Made Easy: https://www.youtube.com/watch?v=SxdOUGdseq4\n\nRich Hickey’s talk on the difference between “easy” and “simple”",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "src/00/resources.html#articles-and-industry-reports",
+    "href": "src/00/resources.html#articles-and-industry-reports",
+    "title": "Resources",
+    "section": "Articles and Industry Reports",
+    "text": "Articles and Industry Reports\n\nWorld Economic Forum - Cognitive Enterprise: https://www.weforum.org/stories/2025/06/cognitive-enterprise-agentic-business-revolution/\n\nArticle on the agentic business revolution\n\nCRN - Hottest Agentic AI Tools: https://www.crn.com/news/ai/2025/10-hottest-agentic-ai-tools-and-agents-of-2025-so-far\n\nOverview of the top agentic AI tools of 2025\n\nGartner Press Release: https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027\n\nGartner’s predictions about agentic AI project success rates\n\nAnthropic - Building Effective Agents: https://www.anthropic.com/engineering/building-effective-agents\n\nEngineering guide on building effective AI agents and patterns\n\nE2B - AI Agents Landscape: https://e2b.dev\n\nOverview of the AI agents ecosystem and available frameworks",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Resources"
     ]
   }
 ]
