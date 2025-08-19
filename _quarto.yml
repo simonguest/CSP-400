@@ -14,11 +14,12 @@ website:
   title: "CSP-400"
   page-navigation: true
   sidebar:
+    logo: src/logos/DigiPen_Dragon_Shield_RGB_Black.png
     style: "docked"
     collapse-level: 2
     search: true
     contents:
-      - text: "Overview"
+      - text: "CSP-400"
         href: index.qmd
       - text: "---"
       - section: "Teaching Module: Introducing AI Agents"
@@ -26,5 +27,5 @@ website:
           - text: "Slides"
             href: src/00/teaching_lecture.qmd
             target: blank
-          - text: "Further Reading"
+          - text: "Resources"
             href: src/00/resources.qmd

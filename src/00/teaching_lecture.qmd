@@ -5,7 +5,7 @@ format:
     incremental: true
     center-title-slide: true
     theme: default
-logo: DigiPen_RGB_Red.jpg
+logo: ../../src/logos/DigiPen_RGB_Red.png
 ---
 
 ## Recap of Last Lecture

@@ -1,5 +1,5 @@
-# CSP-400 (DigiPen)
+# CSP-400
 
 ## About
 
-TBD
+This site contains a collection of slides, code, and other resources for lectures held within the 25/26 CSP-400 course.
