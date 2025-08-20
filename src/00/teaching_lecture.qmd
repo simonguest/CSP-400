@@ -167,6 +167,10 @@ if __name__ == "__main__":
 
 ![Source: https://gradio.app](./images/gradio-helloworld.png)
 
+## Hosted on Hugging Face Spaces
+
+![Source: https://huggingface.co/spaces](./images/hf-spaces.png)
+
 # Creating the Agents
 
 ## Agent Structure

@@ -20,6 +20,8 @@ This document contains all the external resources, links, and references mention
   - Python library for building machine learning web interfaces
 - **Gradio Documentation**: [https://gradio.app](https://gradio.app)
   - Official Gradio documentation and tutorials
+- **Hugging Face Spaces**: [https://huggingface.co/spaces](https://huggingface.co/spaces)
+  - Host and share Gradio-based apps on Hugging Face
 
 ### Agent Frameworks
 
