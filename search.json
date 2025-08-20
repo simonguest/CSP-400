@@ -220,6 +220,17 @@
     ]
   },
   {
+    "objectID": "src/00/teaching_lecture.html#hosted-on-hugging-face-spaces",
+    "href": "src/00/teaching_lecture.html#hosted-on-hugging-face-spaces",
+    "title": "Introducing AI Agents",
+    "section": "Hosted on Hugging Face Spaces",
+    "text": "Hosted on Hugging Face Spaces\n\nSource: https://huggingface.co/spaces",
+    "crumbs": [
+      "Teaching Module: Introducing AI Agents",
+      "Slides"
+    ]
+  },
+  {
     "objectID": "src/00/teaching_lecture.html#agent-structure",
     "href": "src/00/teaching_lecture.html#agent-structure",
     "title": "Introducing AI Agents",
@@ -508,7 +519,7 @@
     "href": "src/00/resources.html#development-tools-and-platforms",
     "title": "Resources",
     "section": "Development Tools and Platforms",
-    "text": "Development Tools and Platforms\n\nUI Frameworks\n\nGradio: https://www.gradio.app/\n\nPython library for building machine learning web interfaces\n\nGradio Documentation: https://gradio.app\n\nOfficial Gradio documentation and tutorials\n\n\n\n\nAgent Frameworks\n\nOpenAI\n\nOpenAI Agents SDK (Python): https://openai.github.io/openai-agents-python/\n\nOfficial OpenAI agents framework for Python\n\nOpenAI Agents Visualization: https://openai.github.io/openai-agents-python/visualization/#showing-the-graph\n\nTool for visualizing agent graphs and interactions\n\n\n\n\nLangChain\n\nLangGraph: https://langchain-ai.github.io/langgraph/\n\nPython framework for building stateful, multi-actor applications with LLMs\n\n\n\n\nCrew AI\n\nCrew.ai: https://github.com/crewaiinc/crewai\n\nFramework for orchestrating role-playing, autonomous AI agents\n\n\n\n\nMicrosoft\n\nAutoGen: https://microsoft.github.io/autogen/stable/\n\nMicrosoft’s framework for building conversational AI systems\n\nMicrosoft Semantic Kernel: https://github.com/microsoft/semantic-kernel\n\nSDK for integrating AI services with conventional programming languages",
+    "text": "Development Tools and Platforms\n\nUI Frameworks\n\nGradio: https://www.gradio.app/\n\nPython library for building machine learning web interfaces\n\nGradio Documentation: https://gradio.app\n\nOfficial Gradio documentation and tutorials\n\nHugging Face Spaces: https://huggingface.co/spaces\n\nHost and share Gradio-based apps on Hugging Face\n\n\n\n\nAgent Frameworks\n\nOpenAI\n\nOpenAI Agents SDK (Python): https://openai.github.io/openai-agents-python/\n\nOfficial OpenAI agents framework for Python\n\nOpenAI Agents Visualization: https://openai.github.io/openai-agents-python/visualization/#showing-the-graph\n\nTool for visualizing agent graphs and interactions\n\n\n\n\nLangChain\n\nLangGraph: https://langchain-ai.github.io/langgraph/\n\nPython framework for building stateful, multi-actor applications with LLMs\n\n\n\n\nCrew AI\n\nCrew.ai: https://github.com/crewaiinc/crewai\n\nFramework for orchestrating role-playing, autonomous AI agents\n\n\n\n\nMicrosoft\n\nAutoGen: https://microsoft.github.io/autogen/stable/\n\nMicrosoft’s framework for building conversational AI systems\n\nMicrosoft Semantic Kernel: https://github.com/microsoft/semantic-kernel\n\nSDK for integrating AI services with conventional programming languages",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Resources"
