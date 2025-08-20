@@ -36,8 +36,8 @@
     "objectID": "src/00/teaching_lecture.html#what-is-an-agent",
     "href": "src/00/teaching_lecture.html#what-is-an-agent",
     "title": "Introducing AI Agents",
-    "section": "What is an Agent?",
-    "text": "What is an Agent?\n\nSource: https://www.youtube.com/watch?v=bwXaJXgezf4",
+    "section": "What Is an Agent?",
+    "text": "What Is an Agent?\n\nSource: https://www.youtube.com/watch?v=bwXaJXgezf4",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -47,8 +47,8 @@
     "objectID": "src/00/teaching_lecture.html#what-is-an-agent-1",
     "href": "src/00/teaching_lecture.html#what-is-an-agent-1",
     "title": "Introducing AI Agents",
-    "section": "What is an Agent?",
-    "text": "What is an Agent?\n\nSource: https://www.weforum.org/stories/2025/06/cognitive-enterprise-agentic-business-revolution/",
+    "section": "What Is an Agent?",
+    "text": "What Is an Agent?\n\nSource: https://www.weforum.org/stories/2025/06/cognitive-enterprise-agentic-business-revolution/",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -58,8 +58,8 @@
     "objectID": "src/00/teaching_lecture.html#what-is-an-agent-2",
     "href": "src/00/teaching_lecture.html#what-is-an-agent-2",
     "title": "Introducing AI Agents",
-    "section": "What is an Agent?",
-    "text": "What is an Agent?\n\nSource: https://www.crn.com/news/ai/2025/10-hottest-agentic-ai-tools-and-agents-of-2025-so-far",
+    "section": "What Is an Agent?",
+    "text": "What Is an Agent?\n\nSource: https://www.crn.com/news/ai/2025/10-hottest-agentic-ai-tools-and-agents-of-2025-so-far",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -69,8 +69,8 @@
     "objectID": "src/00/teaching_lecture.html#what-is-an-agent-3",
     "href": "src/00/teaching_lecture.html#what-is-an-agent-3",
     "title": "Introducing AI Agents",
-    "section": "What is an Agent?",
-    "text": "What is an Agent?\n\nSource: https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027",
+    "section": "What Is an Agent?",
+    "text": "What Is an Agent?\n\nSource: https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -80,8 +80,8 @@
     "objectID": "src/00/teaching_lecture.html#what-is-an-agent-4",
     "href": "src/00/teaching_lecture.html#what-is-an-agent-4",
     "title": "Introducing AI Agents",
-    "section": "What is an Agent?",
-    "text": "What is an Agent?\nImagine a DigiPen Campus Assistant… An AI Agent that can help you navigate everything at DigiPen!\n\n“Where can I find the ‘Hopper’ room?”\n“Can you tell me more about FLM201?”\n“Oh, and what’s today’s vegetarian option at the Bytes Cafe?”",
+    "section": "What Is an Agent?",
+    "text": "What Is an Agent?\nImagine a DigiPen Campus Assistant… An AI Agent that can help you navigate everything at DigiPen!\n\n“Where can I find the ‘Hopper’ room?”\n“Can you tell me more about FLM201?”\n“Oh, and what’s today’s vegetarian option at the Bytes Cafe?”",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -99,44 +99,44 @@
     ]
   },
   {
-    "objectID": "src/00/teaching_lecture.html#five-characterisics-of-agents",
-    "href": "src/00/teaching_lecture.html#five-characterisics-of-agents",
+    "objectID": "src/00/teaching_lecture.html#five-characteristics-of-agents-1",
+    "href": "src/00/teaching_lecture.html#five-characteristics-of-agents-1",
     "title": "Introducing AI Agents",
-    "section": "Five Characterisics of Agents",
-    "text": "Five Characterisics of Agents\n\nAgents are Autonomous\n\n\nAgents can then go off and execute the plan, independent of human input\nThe concept of “human in the loop” still applies for confirmation\n\ne.g. “Do you really want to place this order at the Bytes Cafe?”",
+    "section": "Five Characteristics of Agents",
+    "text": "Five Characteristics of Agents\n\nAgents are Autonomous\n\n\nAgents can then go off and execute the plan, independent of human input\nThe concept of “human in the loop” still applies for confirmation\n\ne.g. “Do you really want to place this order at the Bytes Cafe?”",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
     ]
   },
   {
-    "objectID": "src/00/teaching_lecture.html#five-characterisics-of-agents-1",
-    "href": "src/00/teaching_lecture.html#five-characterisics-of-agents-1",
+    "objectID": "src/00/teaching_lecture.html#five-characteristics-of-agents-2",
+    "href": "src/00/teaching_lecture.html#five-characteristics-of-agents-2",
     "title": "Introducing AI Agents",
-    "section": "Five Characterisics of Agents",
-    "text": "Five Characterisics of Agents\n\nAgents are Reactive\n\n\nAgents can change mid-course depending on what they find and/or the environment.\n\ne.g. “I couldn’t find any course information on FLM201. I’m going to whether there are other 200-level FLM courses before responding to the student.”",
+    "section": "Five Characteristics of Agents",
+    "text": "Five Characteristics of Agents\n\nAgents are Reactive\n\n\nAgents can change mid-course depending on what they find and/or the environment.\n\ne.g. “I couldn’t find any course information on FLM201. I’m going to whether there are other 200-level FLM courses before responding to the student.”",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
     ]
   },
   {
-    "objectID": "src/00/teaching_lecture.html#five-characterisics-of-agents-2",
-    "href": "src/00/teaching_lecture.html#five-characterisics-of-agents-2",
+    "objectID": "src/00/teaching_lecture.html#five-characteristics-of-agents-3",
+    "href": "src/00/teaching_lecture.html#five-characteristics-of-agents-3",
     "title": "Introducing AI Agents",
-    "section": "Five Characterisics of Agents",
-    "text": "Five Characterisics of Agents\n\nAgents have Persistence\n\n\nAgents often have memory systems beyond the current conversation\nBroadly classified as short and long term memory\n\nShort term memory could be the options at the Bytes Cafe\nLong term memory could be your food preferences",
+    "section": "Five Characteristics of Agents",
+    "text": "Five Characteristics of Agents\n\nAgents have Persistence\n\n\nAgents often have memory systems beyond the current conversation\nBroadly classified as short and long term memory\n\nShort term memory could be the options at the Bytes Cafe\nLong term memory could be your food preferences",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
     ]
   },
   {
-    "objectID": "src/00/teaching_lecture.html#five-characterisics-of-agents-3",
-    "href": "src/00/teaching_lecture.html#five-characterisics-of-agents-3",
+    "objectID": "src/00/teaching_lecture.html#five-characteristics-of-agents-4",
+    "href": "src/00/teaching_lecture.html#five-characteristics-of-agents-4",
     "title": "Introducing AI Agents",
-    "section": "Five Characterisics of Agents",
-    "text": "Five Characterisics of Agents\n\nAgents are Interactive\n\n\nAgents can delegate to other agents for complex tasks\n\n(Or for tasks where other agents are better suited for.)\ne.g., Campus Agent -&gt; delegating to a Course Agent\n\nAgents can also be given access to external tools\n\ne.g., File search, Web search, access to the Bytes Cafe API",
+    "section": "Five Characteristics of Agents",
+    "text": "Five Characteristics of Agents\n\nAgents are Interactive\n\n\nAgents can delegate to other agents for complex tasks\n\n(Or for tasks where other agents are better suited for.)\ne.g., Campus Agent -&gt; delegating to a Course Agent\n\nAgents can also be given access to external tools\n\ne.g., File search, Web search, access to the Bytes Cafe API",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -165,11 +165,11 @@
     ]
   },
   {
-    "objectID": "src/00/teaching_lecture.html#oberservations-and-questions",
-    "href": "src/00/teaching_lecture.html#oberservations-and-questions",
+    "objectID": "src/00/teaching_lecture.html#observations-and-questions",
+    "href": "src/00/teaching_lecture.html#observations-and-questions",
     "title": "Introducing AI Agents",
-    "section": "Oberservations and Questions",
-    "text": "Oberservations and Questions\nGet into groups of 2 or 3\n\nQ: What worked? What surprised you?\nQ: What didn’t work? Where did the agent fail?\nQ: What other examples of agents can you think of?",
+    "section": "Observations and Questions",
+    "text": "Observations and Questions\nGet into groups of 2 or 3\n\nQ: What worked? What surprised you?\nQ: What didn’t work? Where did the agent fail?\nQ: What other examples of agents can you think of?",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -190,8 +190,8 @@
     "objectID": "src/00/teaching_lecture.html#gradio-based-ui",
     "href": "src/00/teaching_lecture.html#gradio-based-ui",
     "title": "Introducing AI Agents",
-    "section": "Gradio-based UI",
-    "text": "Gradio-based UI\n\nSource: https://www.gradio.app/",
+    "section": "Gradio-Based UI",
+    "text": "Gradio-Based UI\n\nSource: https://www.gradio.app/",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -201,8 +201,8 @@
     "objectID": "src/00/teaching_lecture.html#gradio-based-ui-1",
     "href": "src/00/teaching_lecture.html#gradio-based-ui-1",
     "title": "Introducing AI Agents",
-    "section": "Gradio-based UI",
-    "text": "Gradio-based UI\nimport time\nimport gradio as gr\n\ndef slow_echo(message, history):\n    for i in range(len(message)):\n        time.sleep(0.05)\n        yield \"You typed: \" + message[: i + 1]\n\ndemo = gr.ChatInterface(\n    slow_echo,\n    flagging_mode=\"manual\",\n    flagging_options=[\"Like\", \"Spam\", \"Inappropriate\", \"Other\"],\n    save_history=True,\n)\n\nif __name__ == \"__main__\":\n    demo.launch()",
+    "section": "Gradio-Based UI",
+    "text": "Gradio-Based UI\nimport time\nimport gradio as gr\n\ndef slow_echo(message, history):\n    for i in range(len(message)):\n        time.sleep(0.05)\n        yield \"You typed: \" + message[: i + 1]\n\ndemo = gr.ChatInterface(\n    slow_echo,\n    flagging_mode=\"manual\",\n    flagging_options=[\"Like\", \"Spam\", \"Inappropriate\", \"Other\"],\n    save_history=True,\n)\n\nif __name__ == \"__main__\":\n    demo.launch()",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -212,8 +212,8 @@
     "objectID": "src/00/teaching_lecture.html#gradio-based-ui-2",
     "href": "src/00/teaching_lecture.html#gradio-based-ui-2",
     "title": "Introducing AI Agents",
-    "section": "Gradio-based UI",
-    "text": "Gradio-based UI\n\nSource: https://gradio.app",
+    "section": "Gradio-Based UI",
+    "text": "Gradio-Based UI\n\nSource: https://gradio.app",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -245,8 +245,8 @@
     "objectID": "src/00/teaching_lecture.html#so-many-agent-frameworks",
     "href": "src/00/teaching_lecture.html#so-many-agent-frameworks",
     "title": "Introducing AI Agents",
-    "section": "So many agent frameworks…",
-    "text": "So many agent frameworks…\n\nSource: https://e2b.dev",
+    "section": "So Many Agent Frameworks…",
+    "text": "So Many Agent Frameworks…\n\nSource: https://e2b.dev",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -300,8 +300,8 @@
     "objectID": "src/00/teaching_lecture.html#what-should-you-be-considering",
     "href": "src/00/teaching_lecture.html#what-should-you-be-considering",
     "title": "Introducing AI Agents",
-    "section": "What should you be considering?",
-    "text": "What should you be considering?\n\nWhere will your agent run?\n\nServer or client? On the web? In game?\nThis will likely determine the language\nHow will you manage API keys?\n\nSupport\n\nWill this agent framework be around in 3-5 years?\nIs there a cost/hosting component to it?\n\nEasy vs. Simple\n\nIs your choice “easy” or “simple”?",
+    "section": "What Should You Be Considering?",
+    "text": "What Should You Be Considering?\n\nWhere will your agent run?\n\nServer or client? On the web? In game?\nThis will likely determine the language\nHow will you manage API keys?\n\nSupport\n\nWill this agent framework be around in 3-5 years?\nIs there a cost/hosting component to it?\n\nEasy vs. Simple\n\nIs your choice “easy” or “simple”?",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -388,8 +388,8 @@
     "objectID": "src/00/teaching_lecture.html#why-do-agents-need-tools",
     "href": "src/00/teaching_lecture.html#why-do-agents-need-tools",
     "title": "Introducing AI Agents",
-    "section": "Why do agents need tools?",
-    "text": "Why do agents need tools?\n\nThe scope of the agents ability is contained within the model\nTools enable the agent to reach out to systems beyond the model\nExamples\n\nRead a file from disk\nSearch the web\nCall an API\nCalculator (because LLMs aren’t great at math)\nCode interpreter (running code on the fly)",
+    "section": "Why Do Agents Need Tools?",
+    "text": "Why Do Agents Need Tools?\n\nThe scope of the agents ability is contained within the model\nTools enable the agent to reach out to systems beyond the model\nExamples\n\nRead a file from disk\nSearch the web\nCall an API\nCalculator (because LLMs aren’t great at math)\nCode interpreter (running code on the fly)",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
@@ -443,8 +443,8 @@
     "objectID": "src/00/teaching_lecture.html#using-an-agent-for-your-project",
     "href": "src/00/teaching_lecture.html#using-an-agent-for-your-project",
     "title": "Introducing AI Agents",
-    "section": "Using an agent for your project",
-    "text": "Using an agent for your project\n\nHow could your project benefit from agents?\nOne or more agents?\nHow would agents interact with the user?\nWhat might be some of the challenges to overcome?",
+    "section": "Using an Agent for Your Project",
+    "text": "Using an Agent for Your Project\n\nHow could your project benefit from agents?\nOne or more agents?\nHow would agents interact with the user?\nWhat might be some of the challenges to overcome?",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
