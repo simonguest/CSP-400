@@ -34,23 +34,23 @@ Our simple chatbot had several...
 
 # Introducing Agents!
 
-## What is an Agent?
+## What Is an Agent?
 
 ![Source: https://www.youtube.com/watch?v=bwXaJXgezf4](./images/quote-1.png)
 
-## What is an Agent?
+## What Is an Agent?
 
 ![Source: https://www.weforum.org/stories/2025/06/cognitive-enterprise-agentic-business-revolution/](./images/quote-2.png)
 
-## What is an Agent?
+## What Is an Agent?
 
 ![Source: https://www.crn.com/news/ai/2025/10-hottest-agentic-ai-tools-and-agents-of-2025-so-far](./images/quote-3.png)
 
-## What is an Agent?
+## What Is an Agent?
 
 ![Source: https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027](./images/quote-4.png)
 
-## What is an Agent?
+## What Is an Agent?
 
 Imagine a DigiPen Campus Assistant... An AI Agent that can help you navigate everything at DigiPen!
 
@@ -68,7 +68,7 @@ Imagine a DigiPen Campus Assistant... An AI Agent that can help you navigate eve
   - "Then I will search for any courses that reference FLM201"
   - "Then I summarize all of the key points for the student"
 
-## Five Characterisics of Agents
+## Five Characteristics of Agents
 
 2. Agents are **Autonomous**
 
@@ -76,14 +76,14 @@ Imagine a DigiPen Campus Assistant... An AI Agent that can help you navigate eve
 - The concept of "human in the loop" still applies for confirmation
   - e.g. "Do you really want to place this order at the Bytes Cafe?"
 
-## Five Characterisics of Agents
+## Five Characteristics of Agents
 
 3. Agents are **Reactive**
 
 - Agents can change mid-course depending on what they find and/or the environment.
   - e.g. "I couldn't find any course information on FLM201. I'm going to whether there are other 200-level FLM courses before responding to the student."
 
-## Five Characterisics of Agents
+## Five Characteristics of Agents
 
 4. Agents have **Persistence**
 
@@ -92,7 +92,7 @@ Imagine a DigiPen Campus Assistant... An AI Agent that can help you navigate eve
   - Short term memory could be the options at the Bytes Cafe
   - Long term memory could be your food preferences
 
-## Five Characterisics of Agents
+## Five Characteristics of Agents
 
 5. Agents are **Interactive**
 
@@ -117,7 +117,7 @@ Imagine a DigiPen Campus Assistant... An AI Agent that can help you navigate eve
 :::
 
 
-## Oberservations and Questions
+## Observations and Questions
 
 Get into groups of 2 or 3
 
@@ -135,13 +135,13 @@ Get into groups of 2 or 3
   - Traditional NPCs are pre-written dialogue trees
   - Whereas agents can be more independent within the game environment
 
-# How does our Campus Assistant work?
+# How Does Our Campus Assistant Work?
 
-## Gradio-based UI
+## Gradio-Based UI
 
 ![Source: https://www.gradio.app/](./images/gradio-website.png)
 
-## Gradio-based UI
+## Gradio-Based UI
 
 ```{.python}
 import time
@@ -163,7 +163,7 @@ if __name__ == "__main__":
     demo.launch()
 ```
 
-## Gradio-based UI
+## Gradio-Based UI
 
 ![Source: https://gradio.app](./images/gradio-helloworld.png)
 
@@ -177,7 +177,7 @@ if __name__ == "__main__":
 
 ![Auto-generated Agent Graph (https://openai.github.io/openai-agents-python/visualization/#showing-the-graph)](../../demos/00/campus-agent/agent_graph.png)
 
-## So many agent frameworks...
+## So Many Agent Frameworks...
 
 ![Source: https://e2b.dev](./images/ai-agents-landscape.png)
 
@@ -210,7 +210,7 @@ if __name__ == "__main__":
   - Python, .NET, Java
   - MIT License
 
-## What should you be considering?
+## What Should You Be Considering?
 
 - Where will your agent run?
   - Server or client? On the web? In game?
@@ -291,7 +291,7 @@ result = Runner.run_streamed(agent, messages)
 
 # Giving Agents Access to Tools
 
-## Why do agents need tools?
+## Why Do Agents Need Tools?
 
 - The scope of the agents ability is contained within the model
 - Tools enable the agent to reach out to systems beyond the model
@@ -363,7 +363,7 @@ building_agent = Agent(
 
 # Next Steps
 
-## Using an agent for your project
+## Using an Agent for Your Project
 
 - How could your project benefit from agents?
 - One or more agents?
