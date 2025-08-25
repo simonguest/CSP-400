@@ -9,7 +9,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.33">
 
-  <title>CSP-400 – Introducing AI Agents</title>
+  <title>CSP-400 – CSP-400 Lecture: Introducing AI Agents</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -192,7 +192,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Introducing AI Agents</h1>
+  <h1 class="title">CSP-400 Lecture: Introducing AI Agents</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -222,11 +222,9 @@
 <h2>But We Discovered Limitations</h2>
 <p>Our simple chatbot had several…</p>
 <ul>
-<li class="fragment">Needs constant human input every turn</li>
-<li class="fragment">No ability to plan beyond a single interaction</li>
-<li class="fragment">Cannot respond to different conditions</li>
-<li class="fragment">Everything has to be replayed in the context window</li>
-<li class="fragment">Cannot reach out to other LLMs and external systems</li>
+<li class="fragment">Needs constant human input every turn; No ability to plan beyond a single interaction</li>
+<li class="fragment">Single model with single context</li>
+<li class="fragment">No interaction with external systems</li>
 </ul>
 </section>
 <section>
@@ -252,7 +250,7 @@
 <img data-src="./images/quote-4.png" class="r-stretch quarto-figure-center"><p class="caption">Source: https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027</p></section>
 <section id="what-is-an-agent-4" class="slide level2">
 <h2>What Is an Agent?</h2>
-<p>Imagine a DigiPen Campus Assistant… An AI Agent that can help you navigate everything at DigiPen!</p>
+<p>Imagine the DigiPen Campus Assistant… An AI Agent that can help you navigate anything and everything at DigiPen!</p>
 <ul>
 <li class="fragment">“Where can I find the ‘Hopper’ room?”</li>
 <li class="fragment">“Can you tell me more about FLM201?”</li>
@@ -391,7 +389,7 @@
 <img data-src="./images/gradio-website.png" class="r-stretch quarto-figure-center"><p class="caption">Source: https://www.gradio.app/</p></section>
 <section id="gradio-based-ui-1" class="slide level2">
 <h2>Gradio-Based UI</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> time</span>
+<div class="sourceCode" id="cb1" data-code-line-numbers="|16-17|9-14|4-7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> time</span>
 <span id="cb1-2"><a></a><span class="im">import</span> gradio <span class="im">as</span> gr</span>
 <span id="cb1-3"><a></a></span>
 <span id="cb1-4"><a></a><span class="kw">def</span> slow_echo(message, history):</span>
@@ -425,7 +423,7 @@
 <section id="agent-structure" class="slide level2">
 <h2>Agent Structure</h2>
 
-<img data-src="../../demos/00/campus-agent/agent_graph.png" class="r-stretch quarto-figure-center"><p class="caption">Auto-generated Agent Graph (https://openai.github.io/openai-agents-python/visualization/#showing-the-graph)</p></section>
+<img data-src="../../demos/00/campus-agent/agent_graph.png" class="r-stretch quarto-figure-center"><p class="caption">Agents and tools for the DigiPen Campus Assistant</p></section>
 <section id="so-many-agent-frameworks" class="slide level2">
 <h2>So Many Agent Frameworks…</h2>
 
@@ -473,6 +471,12 @@
 </ul>
 </section>
 <section id="what-should-you-be-considering" class="slide level2">
+<h2>What Should You Be Considering?</h2>
+<ul>
+<li class="fragment">Question: If most agents run in the browser, why are many of the agent frameworks written in Python? 🤔</li>
+</ul>
+</section>
+<section id="what-should-you-be-considering-1" class="slide level2">
 <h2>What Should You Be Considering?</h2>
 <ul>
 <li class="fragment">Where will your agent run?
@@ -592,17 +596,18 @@
 </ul></li>
 </ul>
 </section>
-<section id="openai-functiontool-call" class="slide level2">
-<h2>OpenAI Function/Tool Call</h2>
+<section id="openai-tool-calling" class="slide level2">
+<h2>OpenAI Tool Calling</h2>
 <ul>
 <li class="fragment">Introduced by OpenAI in June 2023</li>
+<li class="fragment">Originally called Function Calling</li>
 <li class="fragment">Models are fine-tuned to return a structured function_call JSON object, specifying which function to call and with what arguments.</li>
 <li class="fragment">Tools are provided as functions</li>
 <li class="fragment">Option for the LLM to decide when to call the tool (always, never, auto)</li>
 </ul>
 </section>
-<section id="openai-functiontool-call-1" class="slide level2">
-<h2>OpenAI Function/Tool Call</h2>
+<section id="openai-tool-calling-1" class="slide level2">
+<h2>OpenAI Tool Calling</h2>
 <div class="sourceCode" id="cb4" data-code-line-numbers="|1|3-10|12-17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="im">from</span> agents <span class="im">import</span> Agent, function_tool</span>
 <span id="cb4-2"><a></a></span>
 <span id="cb4-3"><a></a><span class="at">@function_tool</span></span>
@@ -621,8 +626,8 @@
 <span id="cb4-16"><a></a>        get_bytes_cafe_menu,</span>
 <span id="cb4-17"><a></a>    ])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="openai-functiontool-call-2" class="slide level2">
-<h2>OpenAI Function/Tool Call</h2>
+<section id="openai-tool-calling-2" class="slide level2">
+<h2>OpenAI Tool Calling</h2>
 <div class="sourceCode" id="cb5" data-code-line-numbers="|1|3|5-15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a><span class="im">from</span> agents <span class="im">import</span> Agent, FileSearchTool</span>
 <span id="cb5-2"><a></a></span>
 <span id="cb5-3"><a></a>VECTOR_STORE_ID <span class="op">=</span> <span class="st">"vs_6896d8c959008191981d645850b42313"</span></span>
@@ -639,8 +644,8 @@
 <span id="cb5-14"><a></a>    ],</span>
 <span id="cb5-15"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="model-context-protocol" class="slide level2">
-<h2>Model Context Protocol</h2>
+<section id="mcp-model-context-protocol" class="slide level2">
+<h2>MCP (Model Context Protocol)</h2>
 <ul>
 <li class="fragment">OpenAI’s tool/function calling works if you have local access to the tools</li>
 <li class="fragment">But how about external systems?
@@ -682,18 +687,17 @@
 <section id="resources-22" class="slide level2">
 <h2>Resources (2/2)</h2>
 <ul>
-<li class="fragment">This slide deck:
+<li class="fragment">This slide deck, resources, links, everything:
 <ul>
-<li class="fragment">https://simonguest.github.io/CSP-400/src/00/teaching_lecture.html</li>
-</ul></li>
-<li class="fragment">Index of resources:
-<ul>
-<li class="fragment">https://simonguest.github.io/CSP-400/src/00/resources.html</li>
+<li class="fragment">https://simonguest.github.io/CSP-400</li>
 </ul></li>
 </ul>
-
-
 </section></section>
+<section id="qa" class="title-slide slide level1 center">
+<h1>Q&amp;A</h1>
+
+
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../../src/logos/DigiPen_RGB_Red.png" class="slide-logo"></p>
@@ -751,7 +755,7 @@
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: false,
+        slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
