@@ -299,11 +299,10 @@ result = Runner.run_streamed(agent, messages)
 - The scope of the agents ability is contained within the model
 - Tools enable the agent to reach out to systems beyond the model
 - Examples
-  - Read a file from disk
-  - Search the web
-  - Call an API
+  - Read a file from disk or search the web (built in)
   - Calculator (because LLMs aren't great at math)
   - Code interpreter (running code on the fly)
+  - What potential tools can you think of? 🤔
 
 ## OpenAI Tool Calling
 
@@ -377,7 +376,7 @@ building_agent = Agent(
 ## Resources (1/2)
 
 - Campus agent code: 
-  - https://github.com/simonguest/CSP-400/blob/main/demos/00/campus-agent/main.py
+  - [https://github.com/simonguest/CSP-400/blob/main/demos/00/campus-agent/main.py](https://github.com/simonguest/CSP-400/blob/main/demos/00/campus-agent/main.py){.external target="_blank"}
   - Clone the repo, get it running locally
   - Modify by adding a new agent to it
   - Create your own use case/agent in the Gradio interface
@@ -385,6 +384,6 @@ building_agent = Agent(
 ## Resources (2/2)
 
 - This slide deck, resources, links, everything: 
-  - https://simonguest.github.io/CSP-400
+  - [https://simonguest.github.io/CSP-400](https://simonguest.github.io/CSP-400){.external target="_blank"}
 
 # Q&A
