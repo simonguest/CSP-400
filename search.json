@@ -400,7 +400,7 @@
     "href": "src/00/teaching_lecture.html#why-do-agents-need-tools",
     "title": "CSP-400 Lecture: Introducing AI Agents",
     "section": "Why Do Agents Need Tools?",
-    "text": "Why Do Agents Need Tools?\n\nThe scope of the agents ability is contained within the model\nTools enable the agent to reach out to systems beyond the model\nExamples\n\nRead a file from disk\nSearch the web\nCall an API\nCalculator (because LLMs aren’t great at math)\nCode interpreter (running code on the fly)",
+    "text": "Why Do Agents Need Tools?\n\nThe scope of the agents ability is contained within the model\nTools enable the agent to reach out to systems beyond the model\nExamples\n\nRead a file from disk or search the web (built in)\nCalculator (because LLMs aren’t great at math)\nCode interpreter (running code on the fly)\nWhat potential tools can you think of? 🤔",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
