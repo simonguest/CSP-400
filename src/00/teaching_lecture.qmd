@@ -1,7 +1,8 @@
 ---
-title: "Introducing AI Agents"
+title: "CSP-400 Lecture: Introducing AI Agents"
 format: 
   revealjs:
+    slide-number: true
     incremental: true
     center-title-slide: true
     theme: default
@@ -26,11 +27,9 @@ We used the OpenAI SDK to build our first AI-powered chatbot!
 
 Our simple chatbot had several...
 
-- Needs constant human input every turn
-- No ability to plan beyond a single interaction
-- Cannot respond to different conditions
-- Everything has to be replayed in the context window
-- Cannot reach out to other LLMs and external systems
+- Needs constant human input every turn; No ability to plan beyond a single interaction
+- Single model with single context
+- No interaction with external systems
 
 # Introducing Agents!
 
@@ -52,7 +51,7 @@ Our simple chatbot had several...
 
 ## What Is an Agent?
 
-Imagine a DigiPen Campus Assistant... An AI Agent that can help you navigate everything at DigiPen!
+Imagine the DigiPen Campus Assistant... An AI Agent that can help you navigate anything and everything at DigiPen!
 
 - "Where can I find the 'Hopper' room?"
 - "Can you tell me more about FLM201?"
@@ -143,7 +142,7 @@ Get into groups of 2 or 3
 
 ## Gradio-Based UI
 
-```{.python}
+```{.python code-line-numbers="|16-17|9-14|4-7"}
 import time
 import gradio as gr
 
@@ -175,7 +174,7 @@ if __name__ == "__main__":
 
 ## Agent Structure
 
-![Auto-generated Agent Graph (https://openai.github.io/openai-agents-python/visualization/#showing-the-graph)](../../demos/00/campus-agent/agent_graph.png)
+![Agents and tools for the DigiPen Campus Assistant](../../demos/00/campus-agent/agent_graph.png)
 
 ## So Many Agent Frameworks...
 
@@ -209,6 +208,10 @@ if __name__ == "__main__":
   - https://github.com/microsoft/semantic-kernel
   - Python, .NET, Java
   - MIT License
+
+## What Should You Be Considering?
+
+- Question: If most agents run in the browser, why are many of the agent frameworks written in Python? 🤔
 
 ## What Should You Be Considering?
 
@@ -302,14 +305,15 @@ result = Runner.run_streamed(agent, messages)
   - Calculator (because LLMs aren't great at math)
   - Code interpreter (running code on the fly)
 
-## OpenAI Function/Tool Call
+## OpenAI Tool Calling
 
 - Introduced by OpenAI in June 2023
+- Originally called Function Calling
 - Models are fine-tuned to return a structured function_call JSON object, specifying which function to call and with what arguments.
 - Tools are provided as functions
 - Option for the LLM to decide when to call the tool (always, never, auto)
 
-## OpenAI Function/Tool Call
+## OpenAI Tool Calling
 
 ```{.python code-line-numbers="|1|3-10|12-17"}
 from agents import Agent, function_tool
@@ -331,7 +335,7 @@ cafe_agent = Agent(
     ])
 ```
 
-## OpenAI Function/Tool Call
+## OpenAI Tool Calling
 
 ```{.python code-line-numbers="|1|3|5-15"}
 from agents import Agent, FileSearchTool
@@ -351,7 +355,7 @@ building_agent = Agent(
 )
 ```
 
-## Model Context Protocol
+## MCP (Model Context Protocol)
 
 - OpenAI's tool/function calling works if you have local access to the tools
 - But how about external systems?
@@ -380,7 +384,7 @@ building_agent = Agent(
 
 ## Resources (2/2)
 
-- This slide deck: 
-  - https://simonguest.github.io/CSP-400/src/00/teaching_lecture.html
-- Index of resources: 
-  - https://simonguest.github.io/CSP-400/src/00/resources.html
+- This slide deck, resources, links, everything: 
+  - https://simonguest.github.io/CSP-400
+
+# Q&A
