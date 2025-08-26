@@ -466,7 +466,7 @@
     "href": "src/00/teaching_lecture.html#resources-12",
     "title": "CSP-400 Lecture: Introducing AI Agents",
     "section": "Resources (1/2)",
-    "text": "Resources (1/2)\n\nCampus agent code:\n\nhttps://github.com/simonguest/CSP-400/blob/main/demos/00/campus-agent/main.py\nClone the repo, get it running locally\nModify by adding a new agent to it\nCreate your own use case/agent in the Gradio interface",
+    "text": "Resources (1/2)\n\nCampus agent code:\n\nhttps://github.com/simonguest/CSP-400/blob/main/demos/00/campus-agent\nClone the repo, get it running locally\nModify by adding a new agent to it\nCreate your own use case/agent in the Gradio interface",
     "crumbs": [
       "Teaching Module: Introducing AI Agents",
       "Slides"
