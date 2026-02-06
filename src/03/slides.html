@@ -207,19 +207,22 @@ Simon Guest
 <section id="overview" class="slide level2">
 <h2>Overview</h2>
 <ul>
-<li class="fragment">TBD - 10 best practices?</li>
+<li class="fragment">Share Ten “Best Practices” I’ve seen (or used) during my career</li>
+<li class="fragment">Topics:
+<ul>
+<li class="fragment">Repo structure, including what <strong>not</strong> to check in</li>
+<li class="fragment">Working with others via branches, pull requests, and issue tracking</li>
+<li class="fragment">Features that GitHub has that you might now know about: Actions and Pages</li>
+</ul></li>
 </ul>
 </section>
 <section id="why-is-this-important" class="slide level2">
-<h2>Why is this important?</h2>
+<h2>Why Is This Important?</h2>
 <ul>
-<li class="fragment">Your project
-<ul>
-<li class="fragment">This semester’s grade :)</li>
-</ul></li>
+<li class="fragment">This semester’s project!</li>
 <li class="fragment">Searching for a job
 <ul>
-<li class="fragment">Hiring Managers looking at your repo/portfolio</li>
+<li class="fragment">Hiring Managers will likely look at your repo/portfolio</li>
 </ul></li>
 <li class="fragment">Starting a job
 <ul>
@@ -286,9 +289,9 @@ Simon Guest
 <ul>
 <li class="fragment">Secrets
 <ul>
-<li class="fragment">API keys and other secrets should be part of a .env file at the root</li>
-<li class="fragment">(add .env to .gitignore)</li>
-<li class="fragment">You can also create .env.example to help other engineers</li>
+<li class="fragment">API keys and other secrets should be part of a <code>.env</code>file at the root</li>
+<li class="fragment">(add <code>.env</code> to <code>.gitignore</code>)</li>
+<li class="fragment">You can also create <code>.env.example</code> to help other engineers</li>
 <li class="fragment">Use <code>dotenv</code> or equivalent libraries to load these at runtime</li>
 </ul></li>
 </ul>
@@ -322,24 +325,268 @@ Simon Guest
 <section id="what-not-to-check-in-4" class="slide level2">
 <h2>2. What Not To Check In</h2>
 <ul>
-<li class="fragment"><p>.gitignore file</p>
+<li class="fragment"><code>.gitignore</code> file
 <ul>
 <li class="fragment">Every repo should have one</li>
 <li class="fragment">List of RegEx patterns to exclude files/folders across your repo</li>
-<li class="fragment">Excludes everything we’ve talked about, plus more (e.g., <strong>pycache</strong>/, .DS_Store)</li>
+<li class="fragment">Excludes everything we’ve talked about, plus more (e.g., <code>__pycache__/</code>, <code>.DS_Store</code>)</li>
 <li class="fragment">AI tools (e.g., Claude Code) are excellent at auto-generating .gitignore files</li>
 </ul></li>
-<li class="fragment"><p>Repo structure</p></li>
-<li class="fragment"><p>What not to check-in</p></li>
-<li class="fragment"><p>Right-sized branching strategy</p></li>
-<li class="fragment"><p>Main is always production ready</p></li>
-<li class="fragment"><p>Frequent commits/rebasing</p></li>
-<li class="fragment"><p>Pull Request Hygene</p></li>
-<li class="fragment"><p>GitHub for Issue and Project Tracking</p></li>
-<li class="fragment"><p>Automating Builds and Testing; Sharing Builds</p></li>
-<li class="fragment"><p>GitHub Pages</p></li>
-<li class="fragment"><p>Documentation</p></li>
-<li class="fragment"><p>Next steps/further reading</p></li>
+</ul>
+</section>
+<section id="right-sized-branching-strategy" class="slide level2">
+<h2>3. Right-sized Branching Strategy</h2>
+<ul>
+<li class="fragment">Use a branching strategy that is right for the size of your team…</li>
+</ul>
+</section>
+<section id="right-sized-branching-strategy-1" class="slide level2">
+<h2>3. Right-sized Branching Strategy</h2>
+<ul>
+<li class="fragment">Solo Developer
+<ul>
+<li class="fragment">Small check-ins into <code>main</code> is acceptable</li>
+<li class="fragment">Use feature branches for major work, especially if working on more than one thing at a time</li>
+</ul></li>
+</ul>
+</section>
+<section id="right-sized-branching-strategy-2" class="slide level2">
+<h2>3. Right-sized Branching Strategy</h2>
+<ul>
+<li class="fragment">Small Team (2 or 3 engineers)
+<ul>
+<li class="fragment">Don’t check-in directly into <code>main</code></li>
+<li class="fragment">Use feature branches for your own work/feature</li>
+<li class="fragment">Merge after discussing with the rest of the team</li>
+<li class="fragment">Pull Requests (PRs) useful if remote team</li>
+</ul></li>
+</ul>
+</section>
+<section id="right-sized-branching-strategy-3" class="slide level2">
+<h2>3. Right-sized Branching Strategy</h2>
+<ul>
+<li class="fragment">Two-Pizza Team (6 - 8 engineers)
+<ul>
+<li class="fragment">Don’t check-in directly into <code>main</code></li>
+<li class="fragment">Use feature branches for your own work/feature</li>
+<li class="fragment">Pull Requests (PR) for majority of work</li>
+</ul></li>
+</ul>
+</section>
+<section id="right-sized-branching-strategy-4" class="slide level2">
+<h2>3. Right-sized Branching Strategy</h2>
+<ul>
+<li class="fragment">Exceptions (Amazon production sites)
+<ul>
+<li class="fragment">Setup a feature flag for your work</li>
+<li class="fragment">Check-in to <code>main</code> with feature flag disabled by default</li>
+<li class="fragment">Enable feature flag (and remove flag conditionals) to release to production</li>
+</ul></li>
+</ul>
+</section>
+<section id="main-is-always-production-ready" class="slide level2">
+<h2>4. Main Is Always Production Ready</h2>
+<ul>
+<li class="fragment">Don’t break <code>main</code>
+<ul>
+<li class="fragment">You’ll annoy your team members :)</li>
+<li class="fragment">You want to be in a workable/demoable state at all times</li>
+<li class="fragment">Build systems will build from <code>main</code> - and you don’t want to break them either</li>
+</ul></li>
+<li class="fragment">Risk of breaking <code>main</code>
+<ul>
+<li class="fragment">Work on a feature branch instead</li>
+</ul></li>
+</ul>
+</section>
+<section id="frequent-small-commits-and-rebasing" class="slide level2">
+<h2>5. Frequent, Small Commits and Rebasing</h2>
+<ul>
+<li class="fragment">Commit frequently (either to <code>main</code> or your feature branch)
+<ul>
+<li class="fragment">Multiple times per day</li>
+<li class="fragment">Saves your work</li>
+<li class="fragment">Your team members won’t have to spend a day debugging a massive commit</li>
+<li class="fragment">Creates a culture where imperfection is OK</li>
+</ul></li>
+</ul>
+</section>
+<section id="good-pull-request-prs-hygene" class="slide level2">
+<h2>6. Good Pull Request (PRs) Hygene</h2>
+<ul>
+<li class="fragment">Small, focused PRs
+<ul>
+<li class="fragment">PRs should be &lt;400 lines, single feature</li>
+<li class="fragment">Avoid the “This is a PR for everything that I’ve been working on this last month”</li>
+<li class="fragment">Makes it easier to review</li>
+<li class="fragment">Makes it easier to revert</li>
+</ul></li>
+</ul>
+</section>
+<section id="good-pull-request-prs-hygene-1" class="slide level2">
+<h2>6. Good Pull Request (PRs) Hygene</h2>
+<ul>
+<li class="fragment">Clear PR descriptions
+<ul>
+<li class="fragment">What the PR does and <strong>why</strong></li>
+<li class="fragment">Include context and link to existing issues (see later section)</li>
+<li class="fragment">Before/after screenshots can be useful</li>
+<li class="fragment">Ask for areas that you want feedback on vs.&nbsp;generic</li>
+<li class="fragment">Templates can help team/organization</li>
+</ul></li>
+</ul>
+</section>
+<section id="good-pull-request-prs-hygene-2" class="slide level2">
+<h2>6. Good Pull Request (PRs) Hygene</h2>
+<ul>
+<li class="fragment">Respond to PR feedback constructively
+<ul>
+<li class="fragment">Engage, even if you disagree</li>
+<li class="fragment">Push updates promptly - especially important for open source projects</li>
+</ul></li>
+</ul>
+</section>
+<section id="issue-and-project-tracking" class="slide level2">
+<h2>7. Issue and Project Tracking</h2>
+<ul>
+<li class="fragment">GitHub’s Issue and Project Tracking
+<ul>
+<li class="fragment">Critical for open source projects (this is where issues will get logged)</li>
+<li class="fragment">Useful for small teams who can choose their own tools</li>
+<li class="fragment">Use labels to tag issues as “bugs” or “enhancements”</li>
+<li class="fragment">When you hear a good idea, file as a GitHub issue/enhancement</li>
+<li class="fragment">Can be useful to triage/prioritize what to work on next</li>
+</ul></li>
+</ul>
+</section>
+<section id="automating-workflows" class="slide level2">
+<h2>8. Automating Workflows</h2>
+<ul>
+<li class="fragment">A commit to <code>main</code> (or a PR merge into <code>main</code>) should trigger a workflow
+<ul>
+<li class="fragment">Build your code</li>
+<li class="fragment">Run your tests</li>
+<li class="fragment">Any deployment to staging/production servers</li>
+<li class="fragment">Email you (the team) when things go wrong (e.g., the build breaks)</li>
+</ul></li>
+</ul>
+</section>
+<section id="automating-workflows-1" class="slide level2">
+<h2>8. Automating Workflows</h2>
+<ul>
+<li class="fragment">GitHub Actions
+<ul>
+<li class="fragment">Container-based workflows that run on GitHub’s servers</li>
+<li class="fragment"><code>.github/workflows/*.yaml</code> get executed on commit</li>
+</ul></li>
+</ul>
+</section>
+<section id="automating-workflows-2" class="slide level2">
+<h2>8. Automating Workflows</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb2-2"><a></a><span class="at">  </span><span class="fu">workflow_dispatch</span><span class="kw">:</span></span>
+<span id="cb2-3"><a></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
+<span id="cb2-4"><a></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> main</span></span>
+<span id="cb2-5"><a></a></span>
+<span id="cb2-6"><a></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Quarto Publish</span></span>
+<span id="cb2-7"><a></a></span>
+<span id="cb2-8"><a></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb2-9"><a></a><span class="at">  </span><span class="fu">build-deploy</span><span class="kw">:</span></span>
+<span id="cb2-10"><a></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
+<span id="cb2-11"><a></a><span class="at">    </span><span class="fu">permissions</span><span class="kw">:</span></span>
+<span id="cb2-12"><a></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> write</span></span>
+<span id="cb2-13"><a></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb2-14"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Check out repository</span></span>
+<span id="cb2-15"><a></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
+<span id="cb2-16"><a></a></span>
+<span id="cb2-17"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Set up Quarto</span></span>
+<span id="cb2-18"><a></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> quarto-dev/quarto-actions/setup@v2</span></span>
+<span id="cb2-19"><a></a></span>
+<span id="cb2-20"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Render and Publish</span></span>
+<span id="cb2-21"><a></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> quarto-dev/quarto-actions/publish@v2</span></span>
+<span id="cb2-22"><a></a><span class="at">        </span><span class="fu">with</span><span class="kw">:</span></span>
+<span id="cb2-23"><a></a><span class="at">          </span><span class="fu">target</span><span class="kw">:</span><span class="at"> gh-pages</span></span>
+<span id="cb2-24"><a></a><span class="at">        </span><span class="fu">env</span><span class="kw">:</span></span>
+<span id="cb2-25"><a></a><span class="at">          </span><span class="fu">GITHUB_TOKEN</span><span class="kw">:</span><span class="at"> ${{ secrets.GITHUB_TOKEN }}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="github-pages" class="slide level2">
+<h2>9. GitHub Pages</h2>
+<ul>
+<li class="fragment">A convenient way to host your content related to your repo
+<ul>
+<li class="fragment">Simple demo app or examples</li>
+<li class="fragment">Doc pages for your open source library</li>
+</ul></li>
+</ul>
+</section>
+<section id="github-pages-1" class="slide level2">
+<h2>9. GitHub Pages</h2>
+<ul>
+<li class="fragment">GitHub Pages
+<ul>
+<li class="fragment">Custom branch of your repo <code>gh-pages</code> that gets published to GitHub servers</li>
+<li class="fragment">Accessed via <code>https://[username].github.io/[reponame]</code></li>
+<li class="fragment">Published manually or automatically via GitHub Actions</li>
+<li class="fragment">Static web content only (HTML, JS, CSS, etc.)</li>
+<li class="fragment">No server side capabilities</li>
+</ul></li>
+</ul>
+</section>
+<section id="repo-documentation" class="slide level2">
+<h2>10. Repo Documentation</h2>
+<ul>
+<li class="fragment">Good documentation starts with <code>README.md</code>
+<ul>
+<li class="fragment">Clear description of how the repo works</li>
+<li class="fragment">Screenshots/videos</li>
+<li class="fragment">How to build the code</li>
+<li class="fragment">How to contribute (if open source project)</li>
+<li class="fragment">Code snippets</li>
+</ul></li>
+</ul>
+</section>
+<section id="repo-documentation-1" class="slide level2">
+<h2>10. Repo Documentation</h2>
+<ul>
+<li class="fragment">Sub <code>README.md</code> files for large components or areas of the repo
+<ul>
+<li class="fragment">e.g., <code>/examples</code> folder</li>
+</ul></li>
+<li class="fragment"><code>ARCHITECUTURE.md</code> file
+<ul>
+<li class="fragment">Can be useful for large systems / deployments</li>
+</ul></li>
+<li class="fragment"><code>LICENSE</code> file
+<ul>
+<li class="fragment">Important to share what open source license you are using</li>
+</ul></li>
+</ul>
+</section>
+<section id="repo-documentation-2" class="slide level2">
+<h2>10. Repo Documentation</h2>
+<ul>
+<li class="fragment">Personal <code>README.md</code> file
+<ul>
+<li class="fragment">Can be used as a “Welcome” page when anyone views your GitHub profile</li>
+<li class="fragment">Useful for portfolios, highlighting other work beyond your repos</li>
+<li class="fragment">To setup, create a new repo with the same name as your GitHub username
+<ul>
+<li class="fragment">Make public and add a top-level <code>README.md</code> file</li>
+</ul></li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="summary" class="title-slide slide level1 center">
+<h1>Summary</h1>
+
+</section>
+<section id="summary-1" class="slide level2">
+<h2>Summary</h2>
+<ul>
+<li class="fragment">Ten “Best Practices” that I’ve seen and/or used throughout my career</li>
+<li class="fragment">Many of these can be useful for your project this semester, personal projects, and common when working with others in open source/industry</li>
+<li class="fragment">Recommend looking at other popular open source projects - great learning experience</li>
 </ul>
 
 

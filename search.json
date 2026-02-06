@@ -59,63 +59,319 @@
     "href": "src/03/slides.html#overview",
     "title": "GitHub Best Practices",
     "section": "Overview",
-    "text": "Overview\n\nTBD - 10 best practices?"
+    "text": "Overview\n\nShare Ten “Best Practices” I’ve seen (or used) during my career\nTopics:\n\nRepo structure, including what not to check in\nWorking with others via branches, pull requests, and issue tracking\nFeatures that GitHub has that you might now know about: Actions and Pages",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
   },
   {
     "objectID": "src/03/slides.html#why-is-this-important",
     "href": "src/03/slides.html#why-is-this-important",
     "title": "GitHub Best Practices",
-    "section": "Why is this important?",
-    "text": "Why is this important?\n\nYour project\n\nThis semester’s grade :)\n\nSearching for a job\n\nHiring Managers looking at your repo/portfolio\n\nStarting a job\n\nConsistency with other engineers on your team\n\nCreating an open source project\n\nConsistency with other contributors"
+    "section": "Why Is This Important?",
+    "text": "Why Is This Important?\n\nThis semester’s project!\nSearching for a job\n\nHiring Managers will likely look at your repo/portfolio\n\nStarting a job\n\nConsistency with other engineers on your team\n\nCreating an open source project\n\nConsistency with other contributors",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
   },
   {
     "objectID": "src/03/slides.html#repo-structure",
     "href": "src/03/slides.html#repo-structure",
     "title": "GitHub Best Practices",
     "section": "1. Repo Structure",
-    "text": "1. Repo Structure\n\nYour repo should have a consistent, easy-to-understand structure\nWhat your repo should contain (at minimum)\n\nREADME.md\nLICENSE\nBuild files (e.g., package.json, .lock files)\ndotfiles for consistency (e.g., .python)\nConsistent folder structure"
+    "text": "1. Repo Structure\n\nYour repo should have a consistent, easy-to-understand structure\nWhat your repo should contain (at minimum)\n\nREADME.md\nLICENSE\nBuild files (e.g., package.json, .lock files)\ndotfiles for consistency (e.g., .python)\nConsistent folder structure",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
   },
   {
     "objectID": "src/03/slides.html#repo-structure-1",
     "href": "src/03/slides.html#repo-structure-1",
     "title": "GitHub Best Practices",
     "section": "1. Repo Structure",
-    "text": "1. Repo Structure\n\nFolder naming best practices\n\nsrc = Source Code\ntests = Tests\ndocs = Docs\nscripts = Scripts, esp. for deployment\nlib = External libraries (to an extent)\ndist or build = Your build files (which you should not check in…)"
+    "text": "1. Repo Structure\n\nFolder naming best practices\n\nsrc = Source Code\ntests = Tests\ndocs = Docs\nscripts = Scripts, esp. for deployment\nlib = External libraries (to an extent)\ndist or build = Your build files (which you should not check in…)",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
   },
   {
     "objectID": "src/03/slides.html#what-not-to-check-in",
     "href": "src/03/slides.html#what-not-to-check-in",
     "title": "GitHub Best Practices",
     "section": "2. What Not To Check In",
-    "text": "2. What Not To Check In\n\nThe output of your project!\n\nYou can share builds via GitHub, but please not via the code tree\n\n3rd party dependencies\n\nOK to add an occasional .js in /lib, but most dependencies should be pulled in as part of your build script\nSupports multiple architectures\nEasier to upgrade\nClearer licensing\nStill pin versions if needed"
+    "text": "2. What Not To Check In\n\nThe output of your project!\n\nYou can share builds via GitHub, but please not via the code tree\n\n3rd party dependencies\n\nOK to add an occasional .js in /lib, but most dependencies should be pulled in as part of your build script\nSupports multiple architectures\nEasier to upgrade\nClearer licensing\nStill pin versions if needed",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
   },
   {
     "objectID": "src/03/slides.html#what-not-to-check-in-1",
     "href": "src/03/slides.html#what-not-to-check-in-1",
     "title": "GitHub Best Practices",
     "section": "2. What Not To Check In",
-    "text": "2. What Not To Check In\n\nSecrets\n\nAPI keys and other secrets should be part of a .env file at the root\n(add .env to .gitignore)\nYou can also create .env.example to help other engineers\nUse dotenv or equivalent libraries to load these at runtime"
+    "text": "2. What Not To Check In\n\nSecrets\n\nAPI keys and other secrets should be part of a .envfile at the root\n(add .env to .gitignore)\nYou can also create .env.example to help other engineers\nUse dotenv or equivalent libraries to load these at runtime",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
   },
   {
     "objectID": "src/03/slides.html#what-not-to-check-in-2",
     "href": "src/03/slides.html#what-not-to-check-in-2",
     "title": "GitHub Best Practices",
     "section": "2. What Not To Check In",
-    "text": "2. What Not To Check In\nimport os\nfrom dotenv import load_dotenv\n\nload_dotenv() # Loads .env as env vars\n\nSECRET = os.environ[\"SECRET\"]"
+    "text": "2. What Not To Check In\nimport os\nfrom dotenv import load_dotenv\n\nload_dotenv() # Loads .env as env vars\n\nSECRET = os.environ[\"SECRET\"]",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
   },
   {
     "objectID": "src/03/slides.html#what-not-to-check-in-3",
     "href": "src/03/slides.html#what-not-to-check-in-3",
     "title": "GitHub Best Practices",
     "section": "2. What Not To Check In",
-    "text": "2. What Not To Check In\n\nLarge binary files\n\nIs there another place to put these instead?\ns3?\nHugging Face (for AI model files)\n\nIf you must check these (&gt;100MB) in…\n\nEnable LFS (Large File Storage)\nWill create pointers to your files, stored on a separate LFS server\nReplaces pointer with file at checkout"
+    "text": "2. What Not To Check In\n\nLarge binary files\n\nIs there another place to put these instead?\ns3?\nHugging Face (for AI model files)\n\nIf you must check these (&gt;100MB) in…\n\nEnable LFS (Large File Storage)\nWill create pointers to your files, stored on a separate LFS server\nReplaces pointer with file at checkout",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
   },
   {
     "objectID": "src/03/slides.html#what-not-to-check-in-4",
     "href": "src/03/slides.html#what-not-to-check-in-4",
     "title": "GitHub Best Practices",
     "section": "2. What Not To Check In",
-    "text": "2. What Not To Check In\n\n.gitignore file\n\nEvery repo should have one\nList of RegEx patterns to exclude files/folders across your repo\nExcludes everything we’ve talked about, plus more (e.g., pycache/, .DS_Store)\nAI tools (e.g., Claude Code) are excellent at auto-generating .gitignore files\n\nRepo structure\nWhat not to check-in\nRight-sized branching strategy\nMain is always production ready\nFrequent commits/rebasing\nPull Request Hygene\nGitHub for Issue and Project Tracking\nAutomating Builds and Testing; Sharing Builds\nGitHub Pages\nDocumentation\nNext steps/further reading"
+    "text": "2. What Not To Check In\n\n.gitignore file\n\nEvery repo should have one\nList of RegEx patterns to exclude files/folders across your repo\nExcludes everything we’ve talked about, plus more (e.g., __pycache__/, .DS_Store)\nAI tools (e.g., Claude Code) are excellent at auto-generating .gitignore files",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/03/slides.html#right-sized-branching-strategy",
+    "href": "src/03/slides.html#right-sized-branching-strategy",
+    "title": "GitHub Best Practices",
+    "section": "3. Right-sized Branching Strategy",
+    "text": "3. Right-sized Branching Strategy\n\nUse a branching strategy that is right for the size of your team…",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/03/slides.html#right-sized-branching-strategy-1",
+    "href": "src/03/slides.html#right-sized-branching-strategy-1",
+    "title": "GitHub Best Practices",
+    "section": "3. Right-sized Branching Strategy",
+    "text": "3. Right-sized Branching Strategy\n\nSolo Developer\n\nSmall check-ins into main is acceptable\nUse feature branches for major work, especially if working on more than one thing at a time",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/03/slides.html#right-sized-branching-strategy-2",
+    "href": "src/03/slides.html#right-sized-branching-strategy-2",
+    "title": "GitHub Best Practices",
+    "section": "3. Right-sized Branching Strategy",
+    "text": "3. Right-sized Branching Strategy\n\nSmall Team (2 or 3 engineers)\n\nDon’t check-in directly into main\nUse feature branches for your own work/feature\nMerge after discussing with the rest of the team\nPull Requests (PRs) useful if remote team",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/03/slides.html#right-sized-branching-strategy-3",
+    "href": "src/03/slides.html#right-sized-branching-strategy-3",
+    "title": "GitHub Best Practices",
+    "section": "3. Right-sized Branching Strategy",
+    "text": "3. Right-sized Branching Strategy\n\nTwo-Pizza Team (6 - 8 engineers)\n\nDon’t check-in directly into main\nUse feature branches for your own work/feature\nPull Requests (PR) for majority of work",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/03/slides.html#right-sized-branching-strategy-4",
+    "href": "src/03/slides.html#right-sized-branching-strategy-4",
+    "title": "GitHub Best Practices",
+    "section": "3. Right-sized Branching Strategy",
+    "text": "3. Right-sized Branching Strategy\n\nExceptions (Amazon production sites)\n\nSetup a feature flag for your work\nCheck-in to main with feature flag disabled by default\nEnable feature flag (and remove flag conditionals) to release to production",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/03/slides.html#main-is-always-production-ready",
+    "href": "src/03/slides.html#main-is-always-production-ready",
+    "title": "GitHub Best Practices",
+    "section": "4. Main Is Always Production Ready",
+    "text": "4. Main Is Always Production Ready\n\nDon’t break main\n\nYou’ll annoy your team members :)\nYou want to be in a workable/demoable state at all times\nBuild systems will build from main - and you don’t want to break them either\n\nRisk of breaking main\n\nWork on a feature branch instead",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/03/slides.html#frequent-small-commits-and-rebasing",
+    "href": "src/03/slides.html#frequent-small-commits-and-rebasing",
+    "title": "GitHub Best Practices",
+    "section": "5. Frequent, Small Commits and Rebasing",
+    "text": "5. Frequent, Small Commits and Rebasing\n\nCommit frequently (either to main or your feature branch)\n\nMultiple times per day\nSaves your work\nYour team members won’t have to spend a day debugging a massive commit\nCreates a culture where imperfection is OK",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/03/slides.html#good-pull-request-prs-hygene",
+    "href": "src/03/slides.html#good-pull-request-prs-hygene",
+    "title": "GitHub Best Practices",
+    "section": "6. Good Pull Request (PRs) Hygene",
+    "text": "6. Good Pull Request (PRs) Hygene\n\nSmall, focused PRs\n\nPRs should be &lt;400 lines, single feature\nAvoid the “This is a PR for everything that I’ve been working on this last month”\nMakes it easier to review\nMakes it easier to revert",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/03/slides.html#good-pull-request-prs-hygene-1",
+    "href": "src/03/slides.html#good-pull-request-prs-hygene-1",
+    "title": "GitHub Best Practices",
+    "section": "6. Good Pull Request (PRs) Hygene",
+    "text": "6. Good Pull Request (PRs) Hygene\n\nClear PR descriptions\n\nWhat the PR does and why\nInclude context and link to existing issues (see later section)\nBefore/after screenshots can be useful\nAsk for areas that you want feedback on vs. generic\nTemplates can help team/organization",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/03/slides.html#good-pull-request-prs-hygene-2",
+    "href": "src/03/slides.html#good-pull-request-prs-hygene-2",
+    "title": "GitHub Best Practices",
+    "section": "6. Good Pull Request (PRs) Hygene",
+    "text": "6. Good Pull Request (PRs) Hygene\n\nRespond to PR feedback constructively\n\nEngage, even if you disagree\nPush updates promptly - especially important for open source projects",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/03/slides.html#issue-and-project-tracking",
+    "href": "src/03/slides.html#issue-and-project-tracking",
+    "title": "GitHub Best Practices",
+    "section": "7. Issue and Project Tracking",
+    "text": "7. Issue and Project Tracking\n\nGitHub’s Issue and Project Tracking\n\nCritical for open source projects (this is where issues will get logged)\nUseful for small teams who can choose their own tools\nUse labels to tag issues as “bugs” or “enhancements”\nWhen you hear a good idea, file as a GitHub issue/enhancement\nCan be useful to triage/prioritize what to work on next",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/03/slides.html#automating-workflows",
+    "href": "src/03/slides.html#automating-workflows",
+    "title": "GitHub Best Practices",
+    "section": "8. Automating Workflows",
+    "text": "8. Automating Workflows\n\nA commit to main (or a PR merge into main) should trigger a workflow\n\nBuild your code\nRun your tests\nAny deployment to staging/production servers\nEmail you (the team) when things go wrong (e.g., the build breaks)",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/03/slides.html#automating-workflows-1",
+    "href": "src/03/slides.html#automating-workflows-1",
+    "title": "GitHub Best Practices",
+    "section": "8. Automating Workflows",
+    "text": "8. Automating Workflows\n\nGitHub Actions\n\nContainer-based workflows that run on GitHub’s servers\n.github/workflows/*.yaml get executed on commit",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/03/slides.html#automating-workflows-2",
+    "href": "src/03/slides.html#automating-workflows-2",
+    "title": "GitHub Best Practices",
+    "section": "8. Automating Workflows",
+    "text": "8. Automating Workflows\non:\n  workflow_dispatch:\n  push:\n    branches: main\n\nname: Quarto Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v4\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n\n      - name: Render and Publish\n        uses: quarto-dev/quarto-actions/publish@v2\n        with:\n          target: gh-pages\n        env:\n          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/03/slides.html#github-pages",
+    "href": "src/03/slides.html#github-pages",
+    "title": "GitHub Best Practices",
+    "section": "9. GitHub Pages",
+    "text": "9. GitHub Pages\n\nA convenient way to host your content related to your repo\n\nSimple demo app or examples\nDoc pages for your open source library",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/03/slides.html#github-pages-1",
+    "href": "src/03/slides.html#github-pages-1",
+    "title": "GitHub Best Practices",
+    "section": "9. GitHub Pages",
+    "text": "9. GitHub Pages\n\nGitHub Pages\n\nCustom branch of your repo gh-pages that gets published to GitHub servers\nAccessed via https://[username].github.io/[reponame]\nPublished manually or automatically via GitHub Actions\nStatic web content only (HTML, JS, CSS, etc.)\nNo server side capabilities",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/03/slides.html#repo-documentation",
+    "href": "src/03/slides.html#repo-documentation",
+    "title": "GitHub Best Practices",
+    "section": "10. Repo Documentation",
+    "text": "10. Repo Documentation\n\nGood documentation starts with README.md\n\nClear description of how the repo works\nScreenshots/videos\nHow to build the code\nHow to contribute (if open source project)\nCode snippets",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/03/slides.html#repo-documentation-1",
+    "href": "src/03/slides.html#repo-documentation-1",
+    "title": "GitHub Best Practices",
+    "section": "10. Repo Documentation",
+    "text": "10. Repo Documentation\n\nSub README.md files for large components or areas of the repo\n\ne.g., /examples folder\n\nARCHITECUTURE.md file\n\nCan be useful for large systems / deployments\n\nLICENSE file\n\nImportant to share what open source license you are using",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/03/slides.html#repo-documentation-2",
+    "href": "src/03/slides.html#repo-documentation-2",
+    "title": "GitHub Best Practices",
+    "section": "10. Repo Documentation",
+    "text": "10. Repo Documentation\n\nPersonal README.md file\n\nCan be used as a “Welcome” page when anyone views your GitHub profile\nUseful for portfolios, highlighting other work beyond your repos\nTo setup, create a new repo with the same name as your GitHub username\n\nMake public and add a top-level README.md file",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/03/slides.html#summary-1",
+    "href": "src/03/slides.html#summary-1",
+    "title": "GitHub Best Practices",
+    "section": "Summary",
+    "text": "Summary\n\nTen “Best Practices” that I’ve seen and/or used throughout my career\nMany of these can be useful for your project this semester, personal projects, and common when working with others in open source/industry\nRecommend looking at other popular open source projects - great learning experience",
+    "crumbs": [
+      "Lecture: GitHub Best Practices",
+      "Slides"
+    ]
   },
   {
     "objectID": "src/02/exploring_genai_p2.html#recap-of-last-weeks-lecture",
