@@ -12,14 +12,17 @@ logo: ../../src/logos/DigiPen_RGB_Red.png
 
 ## Overview
 
-- TBD - 10 best practices?
+- Share Ten "Best Practices" I've seen (or used) during my career
+- Topics:
+  - Repo structure, including what **not** to check in
+  - Working with others via branches, pull requests, and issue tracking
+  - Features that GitHub has that you might now know about: Actions and Pages
 
-## Why is this important?
+## Why Is This Important?
 
-- Your project
-  - This semester's grade :)
+- This semester's project!
 - Searching for a job
-  - Hiring Managers looking at your repo/portfolio
+  - Hiring Managers will likely look at your repo/portfolio
 - Starting a job
   - Consistency with other engineers on your team
 - Creating an open source project
@@ -61,9 +64,9 @@ logo: ../../src/logos/DigiPen_RGB_Red.png
 ## 2. What Not To Check In
 
 - Secrets
-  - API keys and other secrets should be part of a .env file at the root
-  - (add .env to .gitignore)
-  - You can also create .env.example to help other engineers
+  - API keys and other secrets should be part of a `.env`file at the root
+  - (add `.env` to `.gitignore`)
+  - You can also create `.env.example` to help other engineers
   - Use `dotenv` or equivalent libraries to load these at runtime
 
 ## 2. What Not To Check In
@@ -90,27 +93,182 @@ SECRET = os.environ["SECRET"]
 
 ## 2. What Not To Check In
 
-- .gitignore file
+- `.gitignore` file
   - Every repo should have one
   - List of RegEx patterns to exclude files/folders across your repo
-  - Excludes everything we've talked about, plus more (e.g., __pycache__/, .DS_Store)
+  - Excludes everything we've talked about, plus more (e.g., `__pycache__/`, `.DS_Store`)
   - AI tools (e.g., Claude Code) are excellent at auto-generating .gitignore files
 
+## 3. Right-sized Branching Strategy
 
+- Use a branching strategy that is right for the size of your team...
 
-- Repo structure
-- What not to check-in
-- Right-sized branching strategy
-- Main is always production ready
-- Frequent commits/rebasing
-- Pull Request Hygene
-- GitHub for Issue and Project Tracking
-- Automating Builds and Testing; Sharing Builds
+## 3. Right-sized Branching Strategy
+
+- Solo Developer
+  - Small check-ins into `main` is acceptable
+  - Use feature branches for major work, especially if working on more than one thing at a time
+
+## 3. Right-sized Branching Strategy
+
+- Small Team (2 or 3 engineers)
+  - Don't check-in directly into `main`
+  - Use feature branches for your own work/feature
+  - Merge after discussing with the rest of the team
+  - Pull Requests (PRs) useful if remote team
+
+## 3. Right-sized Branching Strategy
+
+- Two-Pizza Team (6 - 8 engineers)
+  - Don't check-in directly into `main`
+  - Use feature branches for your own work/feature
+  - Pull Requests (PR) for majority of work
+
+## 3. Right-sized Branching Strategy
+
+- Exceptions (Amazon production sites)
+  - Setup a feature flag for your work
+  - Check-in to `main` with feature flag disabled by default
+  - Enable feature flag (and remove flag conditionals) to release to production
+
+## 4. Main Is Always Production Ready
+
+- Don't break `main`
+  - You'll annoy your team members :)
+  - You want to be in a workable/demoable state at all times
+  - Build systems will build from `main` - and you don't want to break them either
+- Risk of breaking `main`
+  - Work on a feature branch instead
+
+## 5. Frequent, Small Commits and Rebasing
+
+- Commit frequently (either to `main` or your feature branch)
+  - Multiple times per day
+  - Saves your work
+  - Your team members won't have to spend a day debugging a massive commit
+  - Creates a culture where imperfection is OK
+
+## 6. Good Pull Request (PRs) Hygene
+
+- Small, focused PRs
+  - PRs should be <400 lines, single feature
+  - Avoid the "This is a PR for everything that I've been working on this last month"
+  - Makes it easier to review
+  - Makes it easier to revert
+
+## 6. Good Pull Request (PRs) Hygene
+
+- Clear PR descriptions
+  - What the PR does and **why**
+  - Include context and link to existing issues (see later section)
+  - Before/after screenshots can be useful
+  - Ask for areas that you want feedback on vs. generic
+  - Templates can help team/organization 
+
+## 6. Good Pull Request (PRs) Hygene
+
+- Respond to PR feedback constructively
+  - Engage, even if you disagree
+  - Push updates promptly - especially important for open source projects
+
+## 7. Issue and Project Tracking
+
+- GitHub's Issue and Project Tracking
+  - Critical for open source projects (this is where issues will get logged)
+  - Useful for small teams who can choose their own tools
+  - Use labels to tag issues as "bugs" or "enhancements"
+  - When you hear a good idea, file as a GitHub issue/enhancement
+  - Can be useful to triage/prioritize what to work on next
+
+## 8. Automating Workflows
+
+- A commit to `main` (or a PR merge into `main`) should trigger a workflow
+  - Build your code
+  - Run your tests
+  - Any deployment to staging/production servers
+  - Email you (the team) when things go wrong (e.g., the build breaks)
+
+## 8. Automating Workflows
+
+- GitHub Actions
+  - Container-based workflows that run on GitHub's servers
+  - `.github/workflows/*.yaml` get executed on commit
+
+## 8. Automating Workflows
+
+```yaml
+on:
+  workflow_dispatch:
+  push:
+    branches: main
+
+name: Quarto Publish
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+## 9. GitHub Pages
+
+- A convenient way to host your content related to your repo
+  - Simple demo app or examples
+  - Doc pages for your open source library
+
+## 9. GitHub Pages
+
 - GitHub Pages
-- Documentation
+  - Custom branch of your repo `gh-pages` that gets published to GitHub servers
+  - Accessed via `https://[username].github.io/[reponame]`
+  - Published manually or automatically via GitHub Actions
+  - Static web content only (HTML, JS, CSS, etc.)
+  - No server side capabilities
 
+## 10. Repo Documentation
 
-- Next steps/further reading
+- Good documentation starts with `README.md`
+  - Clear description of how the repo works
+  - Screenshots/videos
+  - How to build the code
+  - How to contribute (if open source project)
+  - Code snippets
 
+## 10. Repo Documentation
 
+- Sub `README.md` files for large components or areas of the repo
+  - e.g., `/examples` folder
+- `ARCHITECUTURE.md` file
+  - Can be useful for large systems / deployments
+- `LICENSE` file
+  - Important to share what open source license you are using
 
+## 10. Repo Documentation
+
+- Personal `README.md` file
+  - Can be used as a "Welcome" page when anyone views your GitHub profile
+  - Useful for portfolios, highlighting other work beyond your repos
+  - To setup, create a new repo with the same name as your GitHub username
+    - Make public and add a top-level `README.md` file
+
+# Summary
+
+## Summary
+
+- Ten "Best Practices" that I've seen and/or used throughout my career
+- Many of these can be useful for your project this semester, personal projects, and common when working with others in open source/industry
+- Recommend looking at other popular open source projects - great learning experience

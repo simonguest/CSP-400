@@ -43,6 +43,11 @@ website:
             target: blank
           - text: "Resources"
             href: src/02/resources.qmd
+      - section: "Lecture: GitHub Best Practices"
+        contents:
+          - text: "Slides"
+            href: src/03/slides.qmd
+            target: blank
       - section: "Networking Protocols"
         contents:
           - text: "WebSockets"
