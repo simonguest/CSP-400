@@ -1,0 +1,116 @@
+---
+title: "GitHub Best Practices"
+author: "Simon Guest"
+format:
+  revealjs:
+    slide-number: true
+    incremental: true
+    center-title-slide: true
+    theme: default
+logo: ../../src/logos/DigiPen_RGB_Red.png
+---
+
+## Overview
+
+- TBD - 10 best practices?
+
+## Why is this important?
+
+- Your project
+  - This semester's grade :)
+- Searching for a job
+  - Hiring Managers looking at your repo/portfolio
+- Starting a job
+  - Consistency with other engineers on your team
+- Creating an open source project
+  - Consistency with other contributors
+
+# Ten Best Practices
+
+## 1. Repo Structure
+
+- Your repo should have a consistent, easy-to-understand structure
+- What your repo should contain (at minimum)
+  - README.md
+  - LICENSE
+  - Build files (e.g., package.json, .lock files)
+  - dotfiles for consistency (e.g., .python)
+  - Consistent folder structure
+
+## 1. Repo Structure
+
+- Folder naming best practices
+  - **src** = Source Code
+  - **tests** = Tests
+  - **docs** = Docs
+  - **scripts** = Scripts, esp. for deployment
+  - **lib** = External libraries (to an extent)
+  - **dist** or **build** = Your build files (which you should not check in...)
+
+## 2. What Not To Check In
+
+- The output of your project!
+  - You can share builds via GitHub, but please not via the code tree
+- 3rd party dependencies
+  - OK to add an occasional .js in /lib, but most dependencies should be pulled in as part of your build script
+  - Supports multiple architectures
+  - Easier to upgrade
+  - Clearer licensing
+  - Still pin versions if needed
+
+## 2. What Not To Check In
+
+- Secrets
+  - API keys and other secrets should be part of a .env file at the root
+  - (add .env to .gitignore)
+  - You can also create .env.example to help other engineers
+  - Use `dotenv` or equivalent libraries to load these at runtime
+
+## 2. What Not To Check In
+
+```python
+import os
+from dotenv import load_dotenv
+
+load_dotenv() # Loads .env as env vars
+
+SECRET = os.environ["SECRET"]
+```
+
+## 2. What Not To Check In
+
+- Large binary files
+  - Is there another place to put these instead?
+  - s3?
+  - Hugging Face (for AI model files)
+- If you must check these (>100MB) in...
+  - Enable LFS (Large File Storage)
+  - Will create pointers to your files, stored on a separate LFS server
+  - Replaces pointer with file at checkout
+
+## 2. What Not To Check In
+
+- .gitignore file
+  - Every repo should have one
+  - List of RegEx patterns to exclude files/folders across your repo
+  - Excludes everything we've talked about, plus more (e.g., __pycache__/, .DS_Store)
+  - AI tools (e.g., Claude Code) are excellent at auto-generating .gitignore files
+
+
+
+- Repo structure
+- What not to check-in
+- Right-sized branching strategy
+- Main is always production ready
+- Frequent commits/rebasing
+- Pull Request Hygene
+- GitHub for Issue and Project Tracking
+- Automating Builds and Testing; Sharing Builds
+- GitHub Pages
+- Documentation
+
+
+- Next steps/further reading
+
+
+
