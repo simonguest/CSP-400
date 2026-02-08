@@ -213,7 +213,7 @@
     "href": "src/03/slides.html#main-is-always-production-ready",
     "title": "GitHub Best Practices",
     "section": "4. Main Is Always Production Ready",
-    "text": "4. Main Is Always Production Ready\n\nDon’t break main\n\nYou’ll annoy your team members :)\nYou want to be in a workable/demoable state at all times\nBuild systems will build from main - and you don’t want to break them either\n\nRisk of breaking main\n\nWork on a feature branch instead",
+    "text": "4. Main Is Always Production Ready\n\nDon’t break main\n\nYou’ll annoy your team members :)\nYou want main be in a workable/demoable state at all times\nBuild systems will build from main - and you don’t want to break them either\n\nRisk of breaking main?\n\nWork on a feature branch instead",
     "crumbs": [
       "Lecture: GitHub Best Practices",
       "Slides"
@@ -224,7 +224,7 @@
     "href": "src/03/slides.html#frequent-small-commits-and-rebasing",
     "title": "GitHub Best Practices",
     "section": "5. Frequent, Small Commits and Rebasing",
-    "text": "5. Frequent, Small Commits and Rebasing\n\nCommit frequently (either to main or your feature branch)\n\nMultiple times per day\nSaves your work\nYour team members won’t have to spend a day debugging a massive commit\nCreates a culture where imperfection is OK",
+    "text": "5. Frequent, Small Commits and Rebasing\n\nCommit frequently (either to main or your feature branch)\n\nMultiple times per day\nSaves your work\nYour team members won’t have to spend a day debugging a massive commit\nCreates a culture where imperfection is OK\n(And you can squash commits on merge)",
     "crumbs": [
       "Lecture: GitHub Best Practices",
       "Slides"
