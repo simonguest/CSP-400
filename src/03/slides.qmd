@@ -135,9 +135,9 @@ SECRET = os.environ["SECRET"]
 
 - Don't break `main`
   - You'll annoy your team members :)
-  - You want to be in a workable/demoable state at all times
+  - You want `main` be in a workable/demoable state at all times
   - Build systems will build from `main` - and you don't want to break them either
-- Risk of breaking `main`
+- Risk of breaking `main`?
   - Work on a feature branch instead
 
 ## 5. Frequent, Small Commits and Rebasing
@@ -147,6 +147,7 @@ SECRET = os.environ["SECRET"]
   - Saves your work
   - Your team members won't have to spend a day debugging a massive commit
   - Creates a culture where imperfection is OK
+  - (And you can squash commits on merge)
 
 ## 6. Good Pull Request (PRs) Hygene
 
