@@ -289,7 +289,7 @@ Simon Guest
 <ul>
 <li class="fragment">Secrets
 <ul>
-<li class="fragment">API keys and other secrets should be part of a <code>.env</code>file at the root</li>
+<li class="fragment">API keys and other secrets should be part of a <code>.env</code> file at the root</li>
 <li class="fragment">(add <code>.env</code> to <code>.gitignore</code>)</li>
 <li class="fragment">You can also create <code>.env.example</code> to help other engineers</li>
 <li class="fragment">Use <code>dotenv</code> or equivalent libraries to load these at runtime</li>
@@ -298,20 +298,24 @@ Simon Guest
 </section>
 <section id="what-not-to-check-in-2" class="slide level2">
 <h2>2. What Not To Check In</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> os</span>
-<span id="cb1-2"><a></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
-<span id="cb1-3"><a></a></span>
-<span id="cb1-4"><a></a>load_dotenv() <span class="co"># Loads .env as env vars</span></span>
-<span id="cb1-5"><a></a></span>
-<span id="cb1-6"><a></a>SECRET <span class="op">=</span> os.environ[<span class="st">"SECRET"</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource ini number-lines code-with-copy"><code class="sourceCode ini"><span id="cb1-1"><a></a><span class="dt">SECRET_API_KEY</span><span class="ot">=</span><span class="st">abc123</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="what-not-to-check-in-3" class="slide level2">
+<h2>2. What Not To Check In</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="im">import</span> os</span>
+<span id="cb2-2"><a></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
+<span id="cb2-3"><a></a></span>
+<span id="cb2-4"><a></a>load_dotenv() <span class="co"># Loads .env as env vars</span></span>
+<span id="cb2-5"><a></a></span>
+<span id="cb2-6"><a></a>SECRET_API_KEY <span class="op">=</span> os.environ[<span class="st">"SECRET_API_KEY"</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="what-not-to-check-in-4" class="slide level2">
 <h2>2. What Not To Check In</h2>
 <ul>
 <li class="fragment">Large binary files
 <ul>
 <li class="fragment">Is there another place to put these instead?</li>
-<li class="fragment">s3?</li>
+<li class="fragment">AWS S3</li>
 <li class="fragment">Hugging Face (for AI model files)</li>
 </ul></li>
 <li class="fragment">If you must check these (&gt;100MB) in…
@@ -322,7 +326,7 @@ Simon Guest
 </ul></li>
 </ul>
 </section>
-<section id="what-not-to-check-in-4" class="slide level2">
+<section id="what-not-to-check-in-5" class="slide level2">
 <h2>2. What Not To Check In</h2>
 <ul>
 <li class="fragment"><code>.gitignore</code> file
@@ -357,7 +361,8 @@ Simon Guest
 <ul>
 <li class="fragment">Don’t check-in directly into <code>main</code></li>
 <li class="fragment">Use feature branches for your own work/feature</li>
-<li class="fragment">Merge after discussing with the rest of the team</li>
+<li class="fragment">Use <code>name/feature</code> naming convention</li>
+<li class="fragment">Merge (and delete!) after discussing with the rest of the team</li>
 <li class="fragment">Pull Requests (PRs) useful if remote team</li>
 </ul></li>
 </ul>
@@ -370,6 +375,7 @@ Simon Guest
 <li class="fragment">Don’t check-in directly into <code>main</code></li>
 <li class="fragment">Use feature branches for your own work/feature</li>
 <li class="fragment">Pull Requests (PR) for majority of work</li>
+<li class="fragment">Delete branches after PR is merged</li>
 </ul></li>
 </ul>
 </section>
@@ -408,12 +414,12 @@ Simon Guest
 <li class="fragment">Saves your work</li>
 <li class="fragment">Your team members won’t have to spend a day debugging a massive commit</li>
 <li class="fragment">Creates a culture where imperfection is OK</li>
-<li class="fragment">(And you can squash commits on merge)</li>
+<li class="fragment">(Plus, you can squash commits on merge)</li>
 </ul></li>
 </ul>
 </section>
-<section id="good-pull-request-prs-hygene" class="slide level2">
-<h2>6. Good Pull Request (PRs) Hygene</h2>
+<section id="good-pull-request-pr-hygene" class="slide level2">
+<h2>6. Good Pull Request (PR) Hygene</h2>
 <ul>
 <li class="fragment">Small, focused PRs
 <ul>
@@ -424,8 +430,8 @@ Simon Guest
 </ul></li>
 </ul>
 </section>
-<section id="good-pull-request-prs-hygene-1" class="slide level2">
-<h2>6. Good Pull Request (PRs) Hygene</h2>
+<section id="good-pull-request-pr-hygene-1" class="slide level2">
+<h2>6. Good Pull Request (PR) Hygene</h2>
 <ul>
 <li class="fragment">Clear PR descriptions
 <ul>
@@ -437,8 +443,8 @@ Simon Guest
 </ul></li>
 </ul>
 </section>
-<section id="good-pull-request-prs-hygene-2" class="slide level2">
-<h2>6. Good Pull Request (PRs) Hygene</h2>
+<section id="good-pull-request-pr-hygene-2" class="slide level2">
+<h2>6. Good Pull Request (PR) Hygene</h2>
 <ul>
 <li class="fragment">Respond to PR feedback constructively
 <ul>
@@ -465,9 +471,10 @@ Simon Guest
 <ul>
 <li class="fragment">A commit to <code>main</code> (or a PR merge into <code>main</code>) should trigger a workflow
 <ul>
-<li class="fragment">Build your code</li>
+<li class="fragment">Run the linter on your code</li>
 <li class="fragment">Run your tests</li>
-<li class="fragment">Any deployment to staging/production servers</li>
+<li class="fragment">Build/package/publish your code</li>
+<li class="fragment">Deploy to staging/production servers</li>
 <li class="fragment">Email you (the team) when things go wrong (e.g., the build breaks)</li>
 </ul></li>
 </ul>
@@ -478,42 +485,43 @@ Simon Guest
 <li class="fragment">GitHub Actions
 <ul>
 <li class="fragment">Container-based workflows that run on GitHub’s servers</li>
+<li class="fragment">Free for open source projects</li>
 <li class="fragment"><code>.github/workflows/*.yaml</code> get executed on commit</li>
 </ul></li>
 </ul>
 </section>
 <section id="automating-workflows-2" class="slide level2">
 <h2>8. Automating Workflows</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a></a><span class="fu">on</span><span class="kw">:</span></span>
-<span id="cb2-2"><a></a><span class="at">  </span><span class="fu">workflow_dispatch</span><span class="kw">:</span></span>
-<span id="cb2-3"><a></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
-<span id="cb2-4"><a></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> main</span></span>
-<span id="cb2-5"><a></a></span>
-<span id="cb2-6"><a></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Quarto Publish</span></span>
-<span id="cb2-7"><a></a></span>
-<span id="cb2-8"><a></a><span class="fu">jobs</span><span class="kw">:</span></span>
-<span id="cb2-9"><a></a><span class="at">  </span><span class="fu">build-deploy</span><span class="kw">:</span></span>
-<span id="cb2-10"><a></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
-<span id="cb2-11"><a></a><span class="at">    </span><span class="fu">permissions</span><span class="kw">:</span></span>
-<span id="cb2-12"><a></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> write</span></span>
-<span id="cb2-13"><a></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
-<span id="cb2-14"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Check out repository</span></span>
-<span id="cb2-15"><a></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
-<span id="cb2-16"><a></a></span>
-<span id="cb2-17"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Set up Quarto</span></span>
-<span id="cb2-18"><a></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> quarto-dev/quarto-actions/setup@v2</span></span>
-<span id="cb2-19"><a></a></span>
-<span id="cb2-20"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Render and Publish</span></span>
-<span id="cb2-21"><a></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> quarto-dev/quarto-actions/publish@v2</span></span>
-<span id="cb2-22"><a></a><span class="at">        </span><span class="fu">with</span><span class="kw">:</span></span>
-<span id="cb2-23"><a></a><span class="at">          </span><span class="fu">target</span><span class="kw">:</span><span class="at"> gh-pages</span></span>
-<span id="cb2-24"><a></a><span class="at">        </span><span class="fu">env</span><span class="kw">:</span></span>
-<span id="cb2-25"><a></a><span class="at">          </span><span class="fu">GITHUB_TOKEN</span><span class="kw">:</span><span class="at"> ${{ secrets.GITHUB_TOKEN }}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb3-2"><a></a><span class="at">  </span><span class="fu">workflow_dispatch</span><span class="kw">:</span></span>
+<span id="cb3-3"><a></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
+<span id="cb3-4"><a></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> main</span></span>
+<span id="cb3-5"><a></a></span>
+<span id="cb3-6"><a></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Quarto Publish</span></span>
+<span id="cb3-7"><a></a></span>
+<span id="cb3-8"><a></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb3-9"><a></a><span class="at">  </span><span class="fu">build-deploy</span><span class="kw">:</span></span>
+<span id="cb3-10"><a></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
+<span id="cb3-11"><a></a><span class="at">    </span><span class="fu">permissions</span><span class="kw">:</span></span>
+<span id="cb3-12"><a></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> write</span></span>
+<span id="cb3-13"><a></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb3-14"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Check out repository</span></span>
+<span id="cb3-15"><a></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
+<span id="cb3-16"><a></a></span>
+<span id="cb3-17"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Set up Quarto</span></span>
+<span id="cb3-18"><a></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> quarto-dev/quarto-actions/setup@v2</span></span>
+<span id="cb3-19"><a></a></span>
+<span id="cb3-20"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Render and Publish</span></span>
+<span id="cb3-21"><a></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> quarto-dev/quarto-actions/publish@v2</span></span>
+<span id="cb3-22"><a></a><span class="at">        </span><span class="fu">with</span><span class="kw">:</span></span>
+<span id="cb3-23"><a></a><span class="at">          </span><span class="fu">target</span><span class="kw">:</span><span class="at"> gh-pages</span></span>
+<span id="cb3-24"><a></a><span class="at">        </span><span class="fu">env</span><span class="kw">:</span></span>
+<span id="cb3-25"><a></a><span class="at">          </span><span class="fu">GITHUB_TOKEN</span><span class="kw">:</span><span class="at"> ${{ secrets.GITHUB_TOKEN }}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="github-pages" class="slide level2">
 <h2>9. GitHub Pages</h2>
 <ul>
-<li class="fragment">A convenient way to host your content related to your repo
+<li class="fragment">A convenient way to host content related to your repo
 <ul>
 <li class="fragment">Simple demo app or examples</li>
 <li class="fragment">Doc pages for your open source library</li>
@@ -525,7 +533,7 @@ Simon Guest
 <ul>
 <li class="fragment">GitHub Pages
 <ul>
-<li class="fragment">Custom branch of your repo <code>gh-pages</code> that gets published to GitHub servers</li>
+<li class="fragment">Custom branch of your repo (<code>gh-pages</code>) that gets published to GitHub servers</li>
 <li class="fragment">Accessed via <code>https://[username].github.io/[reponame]</code></li>
 <li class="fragment">Published manually or automatically via GitHub Actions</li>
 <li class="fragment">Static web content only (HTML, JS, CSS, etc.)</li>
@@ -549,9 +557,9 @@ Simon Guest
 <section id="repo-documentation-1" class="slide level2">
 <h2>10. Repo Documentation</h2>
 <ul>
-<li class="fragment">Sub <code>README.md</code> files for large components or areas of the repo
+<li class="fragment"><code>README.md</code> files in sub-folders for large components or areas of the repo
 <ul>
-<li class="fragment">e.g., <code>/examples</code> folder</li>
+<li class="fragment">e.g., <code>/examples</code> to describe what examples show</li>
 </ul></li>
 <li class="fragment"><code>ARCHITECUTURE.md</code> file
 <ul>
@@ -587,7 +595,8 @@ Simon Guest
 <ul>
 <li class="fragment">Ten “Best Practices” that I’ve seen and/or used throughout my career</li>
 <li class="fragment">Many of these can be useful for your project this semester, personal projects, and common when working with others in open source/industry</li>
-<li class="fragment">Recommend looking at other popular open source projects - great learning experience</li>
+<li class="fragment">This slide deck: <a href="https://simonguest.github.io/CSP" class="external" target="_blank">https://simonguest.github.io/CSP</a></li>
+<li class="fragment">Recommend looking at popular, large open source projects - great learning experience</li>
 </ul>
 
 
