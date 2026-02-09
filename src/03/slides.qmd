@@ -64,10 +64,16 @@ logo: ../../src/logos/DigiPen_RGB_Red.png
 ## 2. What Not To Check In
 
 - Secrets
-  - API keys and other secrets should be part of a `.env`file at the root
+  - API keys and other secrets should be part of a `.env` file at the root
   - (add `.env` to `.gitignore`)
   - You can also create `.env.example` to help other engineers
   - Use `dotenv` or equivalent libraries to load these at runtime
+
+## 2. What Not To Check In
+
+```ini
+SECRET_API_KEY=abc123
+```
 
 ## 2. What Not To Check In
 
@@ -77,14 +83,14 @@ from dotenv import load_dotenv
 
 load_dotenv() # Loads .env as env vars
 
-SECRET = os.environ["SECRET"]
+SECRET_API_KEY = os.environ["SECRET_API_KEY"]
 ```
 
 ## 2. What Not To Check In
 
 - Large binary files
   - Is there another place to put these instead?
-  - s3?
+  - AWS S3
   - Hugging Face (for AI model files)
 - If you must check these (>100MB) in...
   - Enable LFS (Large File Storage)
@@ -114,7 +120,8 @@ SECRET = os.environ["SECRET"]
 - Small Team (2 or 3 engineers)
   - Don't check-in directly into `main`
   - Use feature branches for your own work/feature
-  - Merge after discussing with the rest of the team
+  - Use `name/feature` naming convention
+  - Merge (and delete!) after discussing with the rest of the team
   - Pull Requests (PRs) useful if remote team
 
 ## 3. Right-sized Branching Strategy
@@ -123,6 +130,7 @@ SECRET = os.environ["SECRET"]
   - Don't check-in directly into `main`
   - Use feature branches for your own work/feature
   - Pull Requests (PR) for majority of work
+  - Delete branches after PR is merged
 
 ## 3. Right-sized Branching Strategy
 
@@ -147,9 +155,9 @@ SECRET = os.environ["SECRET"]
   - Saves your work
   - Your team members won't have to spend a day debugging a massive commit
   - Creates a culture where imperfection is OK
-  - (And you can squash commits on merge)
+  - (Plus, you can squash commits on merge)
 
-## 6. Good Pull Request (PRs) Hygene
+## 6. Good Pull Request (PR) Hygene
 
 - Small, focused PRs
   - PRs should be <400 lines, single feature
@@ -157,7 +165,7 @@ SECRET = os.environ["SECRET"]
   - Makes it easier to review
   - Makes it easier to revert
 
-## 6. Good Pull Request (PRs) Hygene
+## 6. Good Pull Request (PR) Hygene
 
 - Clear PR descriptions
   - What the PR does and **why**
@@ -166,7 +174,7 @@ SECRET = os.environ["SECRET"]
   - Ask for areas that you want feedback on vs. generic
   - Templates can help team/organization 
 
-## 6. Good Pull Request (PRs) Hygene
+## 6. Good Pull Request (PR) Hygene
 
 - Respond to PR feedback constructively
   - Engage, even if you disagree
@@ -184,15 +192,17 @@ SECRET = os.environ["SECRET"]
 ## 8. Automating Workflows
 
 - A commit to `main` (or a PR merge into `main`) should trigger a workflow
-  - Build your code
+  - Run the linter on your code
   - Run your tests
-  - Any deployment to staging/production servers
+  - Build/package/publish your code
+  - Deploy to staging/production servers
   - Email you (the team) when things go wrong (e.g., the build breaks)
 
 ## 8. Automating Workflows
 
 - GitHub Actions
   - Container-based workflows that run on GitHub's servers
+  - Free for open source projects
   - `.github/workflows/*.yaml` get executed on commit
 
 ## 8. Automating Workflows
@@ -227,14 +237,14 @@ jobs:
 
 ## 9. GitHub Pages
 
-- A convenient way to host your content related to your repo
+- A convenient way to host content related to your repo
   - Simple demo app or examples
   - Doc pages for your open source library
 
 ## 9. GitHub Pages
 
 - GitHub Pages
-  - Custom branch of your repo `gh-pages` that gets published to GitHub servers
+  - Custom branch of your repo (`gh-pages`) that gets published to GitHub servers
   - Accessed via `https://[username].github.io/[reponame]`
   - Published manually or automatically via GitHub Actions
   - Static web content only (HTML, JS, CSS, etc.)
@@ -251,8 +261,8 @@ jobs:
 
 ## 10. Repo Documentation
 
-- Sub `README.md` files for large components or areas of the repo
-  - e.g., `/examples` folder
+- `README.md` files in sub-folders for large components or areas of the repo
+  - e.g., `/examples` to describe what examples show
 - `ARCHITECUTURE.md` file
   - Can be useful for large systems / deployments
 - `LICENSE` file
@@ -272,4 +282,5 @@ jobs:
 
 - Ten "Best Practices" that I've seen and/or used throughout my career
 - Many of these can be useful for your project this semester, personal projects, and common when working with others in open source/industry
-- Recommend looking at other popular open source projects - great learning experience
+- This slide deck: [https://simonguest.github.io/CSP](https://simonguest.github.io/CSP){.external target="_blank"}
+- Recommend looking at popular, large open source projects - great learning experience
