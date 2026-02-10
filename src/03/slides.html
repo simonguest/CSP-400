@@ -243,12 +243,12 @@ Simon Guest
 <h2>1. Repo Structure</h2>
 <ul>
 <li class="fragment">Your repo should have a consistent, easy-to-understand structure</li>
-<li class="fragment">What your repo should contain (at minimum)
+<li class="fragment">What your repo should contain (at minimum):
 <ul>
 <li class="fragment">README.md</li>
 <li class="fragment">LICENSE</li>
-<li class="fragment">Build files (e.g., package.json, .lock files)</li>
-<li class="fragment">dotfiles for consistency (e.g., .python)</li>
+<li class="fragment">Build files (e.g., pyproject.toml, package.json, .lock files)</li>
+<li class="fragment">dotfiles for configurations (e.g., .python)</li>
 <li class="fragment">Consistent folder structure</li>
 </ul></li>
 </ul>
@@ -256,7 +256,7 @@ Simon Guest
 <section id="repo-structure-1" class="slide level2">
 <h2>1. Repo Structure</h2>
 <ul>
-<li class="fragment">Folder naming best practices
+<li class="fragment">Folder naming best practices:
 <ul>
 <li class="fragment"><strong>src</strong> = Source Code</li>
 <li class="fragment"><strong>tests</strong> = Tests</li>
@@ -280,7 +280,7 @@ Simon Guest
 <li class="fragment">Supports multiple architectures</li>
 <li class="fragment">Easier to upgrade</li>
 <li class="fragment">Clearer licensing</li>
-<li class="fragment">Still pin versions if needed</li>
+<li class="fragment">Can run dependabot to check for vulns</li>
 </ul></li>
 </ul>
 </section>
@@ -329,9 +329,8 @@ Simon Guest
 <section id="what-not-to-check-in-5" class="slide level2">
 <h2>2. What Not To Check In</h2>
 <ul>
-<li class="fragment"><code>.gitignore</code> file
+<li class="fragment">Every repo should have a <code>.gitignore</code> file
 <ul>
-<li class="fragment">Every repo should have one</li>
 <li class="fragment">List of RegEx patterns to exclude files/folders across your repo</li>
 <li class="fragment">Excludes everything we’ve talked about, plus more (e.g., <code>__pycache__/</code>, <code>.DS_Store</code>)</li>
 <li class="fragment">AI tools (e.g., Claude Code) are excellent at auto-generating .gitignore files</li>
@@ -439,7 +438,7 @@ Simon Guest
 <li class="fragment">Include context and link to existing issues (see later section)</li>
 <li class="fragment">Before/after screenshots can be useful</li>
 <li class="fragment">Ask for areas that you want feedback on vs.&nbsp;generic</li>
-<li class="fragment">Templates can help team/organization</li>
+<li class="fragment">Templates can help maintain consistency</li>
 </ul></li>
 </ul>
 </section>

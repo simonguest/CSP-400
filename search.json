@@ -81,7 +81,7 @@
     "href": "src/03/slides.html#repo-structure",
     "title": "GitHub Best Practices",
     "section": "1. Repo Structure",
-    "text": "1. Repo Structure\n\nYour repo should have a consistent, easy-to-understand structure\nWhat your repo should contain (at minimum)\n\nREADME.md\nLICENSE\nBuild files (e.g., package.json, .lock files)\ndotfiles for consistency (e.g., .python)\nConsistent folder structure",
+    "text": "1. Repo Structure\n\nYour repo should have a consistent, easy-to-understand structure\nWhat your repo should contain (at minimum):\n\nREADME.md\nLICENSE\nBuild files (e.g., pyproject.toml, package.json, .lock files)\ndotfiles for configurations (e.g., .python)\nConsistent folder structure",
     "crumbs": [
       "Lecture: GitHub Best Practices",
       "Slides"
@@ -92,7 +92,7 @@
     "href": "src/03/slides.html#repo-structure-1",
     "title": "GitHub Best Practices",
     "section": "1. Repo Structure",
-    "text": "1. Repo Structure\n\nFolder naming best practices\n\nsrc = Source Code\ntests = Tests\ndocs = Docs\nscripts = Scripts, esp. for deployment\nlib = External libraries (to an extent)\ndist or build = Your build files (which you should not check in…)",
+    "text": "1. Repo Structure\n\nFolder naming best practices:\n\nsrc = Source Code\ntests = Tests\ndocs = Docs\nscripts = Scripts, esp. for deployment\nlib = External libraries (to an extent)\ndist or build = Your build files (which you should not check in…)",
     "crumbs": [
       "Lecture: GitHub Best Practices",
       "Slides"
@@ -103,7 +103,7 @@
     "href": "src/03/slides.html#what-not-to-check-in",
     "title": "GitHub Best Practices",
     "section": "2. What Not To Check In",
-    "text": "2. What Not To Check In\n\nThe output of your project!\n\nYou can share builds via GitHub, but please not via the code tree\n\n3rd party dependencies\n\nOK to add an occasional .js in /lib, but most dependencies should be pulled in as part of your build script\nSupports multiple architectures\nEasier to upgrade\nClearer licensing\nStill pin versions if needed",
+    "text": "2. What Not To Check In\n\nThe output of your project!\n\nYou can share builds via GitHub, but please not via the code tree\n\n3rd party dependencies\n\nOK to add an occasional .js in /lib, but most dependencies should be pulled in as part of your build script\nSupports multiple architectures\nEasier to upgrade\nClearer licensing\nCan run dependabot to check for vulns",
     "crumbs": [
       "Lecture: GitHub Best Practices",
       "Slides"
@@ -158,7 +158,7 @@
     "href": "src/03/slides.html#what-not-to-check-in-5",
     "title": "GitHub Best Practices",
     "section": "2. What Not To Check In",
-    "text": "2. What Not To Check In\n\n.gitignore file\n\nEvery repo should have one\nList of RegEx patterns to exclude files/folders across your repo\nExcludes everything we’ve talked about, plus more (e.g., __pycache__/, .DS_Store)\nAI tools (e.g., Claude Code) are excellent at auto-generating .gitignore files",
+    "text": "2. What Not To Check In\n\nEvery repo should have a .gitignore file\n\nList of RegEx patterns to exclude files/folders across your repo\nExcludes everything we’ve talked about, plus more (e.g., __pycache__/, .DS_Store)\nAI tools (e.g., Claude Code) are excellent at auto-generating .gitignore files",
     "crumbs": [
       "Lecture: GitHub Best Practices",
       "Slides"
@@ -257,7 +257,7 @@
     "href": "src/03/slides.html#good-pull-request-pr-hygene-1",
     "title": "GitHub Best Practices",
     "section": "6. Good Pull Request (PR) Hygene",
-    "text": "6. Good Pull Request (PR) Hygene\n\nClear PR descriptions\n\nWhat the PR does and why\nInclude context and link to existing issues (see later section)\nBefore/after screenshots can be useful\nAsk for areas that you want feedback on vs. generic\nTemplates can help team/organization",
+    "text": "6. Good Pull Request (PR) Hygene\n\nClear PR descriptions\n\nWhat the PR does and why\nInclude context and link to existing issues (see later section)\nBefore/after screenshots can be useful\nAsk for areas that you want feedback on vs. generic\nTemplates can help maintain consistency",
     "crumbs": [
       "Lecture: GitHub Best Practices",
       "Slides"
