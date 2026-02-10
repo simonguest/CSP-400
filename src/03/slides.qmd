@@ -33,16 +33,16 @@ logo: ../../src/logos/DigiPen_RGB_Red.png
 ## 1. Repo Structure
 
 - Your repo should have a consistent, easy-to-understand structure
-- What your repo should contain (at minimum)
+- What your repo should contain (at minimum):
   - README.md
   - LICENSE
-  - Build files (e.g., package.json, .lock files)
-  - dotfiles for consistency (e.g., .python)
+  - Build files (e.g., pyproject.toml, package.json, .lock files)
+  - dotfiles for configurations (e.g., .python)
   - Consistent folder structure
 
 ## 1. Repo Structure
 
-- Folder naming best practices
+- Folder naming best practices:
   - **src** = Source Code
   - **tests** = Tests
   - **docs** = Docs
@@ -59,7 +59,7 @@ logo: ../../src/logos/DigiPen_RGB_Red.png
   - Supports multiple architectures
   - Easier to upgrade
   - Clearer licensing
-  - Still pin versions if needed
+  - Can run dependabot to check for vulns
 
 ## 2. What Not To Check In
 
@@ -99,8 +99,7 @@ SECRET_API_KEY = os.environ["SECRET_API_KEY"]
 
 ## 2. What Not To Check In
 
-- `.gitignore` file
-  - Every repo should have one
+- Every repo should have a `.gitignore` file
   - List of RegEx patterns to exclude files/folders across your repo
   - Excludes everything we've talked about, plus more (e.g., `__pycache__/`, `.DS_Store`)
   - AI tools (e.g., Claude Code) are excellent at auto-generating .gitignore files
@@ -172,7 +171,7 @@ SECRET_API_KEY = os.environ["SECRET_API_KEY"]
   - Include context and link to existing issues (see later section)
   - Before/after screenshots can be useful
   - Ask for areas that you want feedback on vs. generic
-  - Templates can help team/organization 
+  - Templates can help maintain consistency
 
 ## 6. Good Pull Request (PR) Hygene
 
