@@ -48,6 +48,11 @@ website:
           - text: "Slides"
             href: src/03/slides.qmd
             target: blank
+      - section: "Lecture: Presentation Skills"
+        contents:
+          - text: "Slides"
+            href: src/04/slides.qmd
+            target: blank
       - section: "Networking Protocols"
         contents:
           - text: "WebSockets"
