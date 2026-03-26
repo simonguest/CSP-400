@@ -55,11 +55,11 @@
     ]
   },
   {
-    "objectID": "src/04/slides.html#beyond-your-project-presentation",
-    "href": "src/04/slides.html#beyond-your-project-presentation",
+    "objectID": "src/04/slides.html#beyond-this-semester",
+    "href": "src/04/slides.html#beyond-this-semester",
     "title": "Presentation Skills",
-    "section": "Beyond Your Project Presentation",
-    "text": "Beyond Your Project Presentation\n\nPitching a VC for funding\nSpeaking at a conference\nTeaching at DigiPen!",
+    "section": "Beyond This Semester",
+    "text": "Beyond This Semester\n\nPitching a VC for funding\nSpeaking at a conference\nTeaching at DigiPen!",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
@@ -103,40 +103,40 @@
     "href": "src/04/slides.html#who-is-your-audience",
     "title": "Presentation Skills",
     "section": "Who Is Your Audience?",
-    "text": "Who Is Your Audience?\n\nWhat are the personas for your audience?\n\n100 level? 400 level?\nInternal / External\n\nWhat does success look like for them?\nHow much are you costing your audience?",
+    "text": "Who Is Your Audience?\n\nDo you have personas for your audience?\n\n100 level? 400 level?\nInternal? External?\n\nWhat does success look like for them?\nHow much are you costing your audience?",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
     ]
   },
   {
-    "objectID": "src/04/slides.html#constructing-slides",
-    "href": "src/04/slides.html#constructing-slides",
+    "objectID": "src/04/slides.html#presentation-flow-1",
+    "href": "src/04/slides.html#presentation-flow-1",
     "title": "Presentation Skills",
-    "section": "Constructing Slides",
-    "text": "Constructing Slides\n\nDon’t start by opening PowerPoint!\nInstead, create a layout (mind map)",
+    "section": "Presentation Flow",
+    "text": "Presentation Flow\n\nDon’t start by opening PowerPoint!\nCreate the flow of the presentation\nMind Map can be a great tool",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
     ]
   },
   {
-    "objectID": "src/04/slides.html#constructing-slides-1",
-    "href": "src/04/slides.html#constructing-slides-1",
+    "objectID": "src/04/slides.html#presentation-flow-2",
+    "href": "src/04/slides.html#presentation-flow-2",
     "title": "Presentation Skills",
-    "section": "Constructing Slides",
-    "text": "Constructing Slides",
+    "section": "Presentation Flow",
+    "text": "Presentation Flow",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
     ]
   },
   {
-    "objectID": "src/04/slides.html#constructing-slides-2",
-    "href": "src/04/slides.html#constructing-slides-2",
+    "objectID": "src/04/slides.html#presentation-flow-3",
+    "href": "src/04/slides.html#presentation-flow-3",
     "title": "Presentation Skills",
-    "section": "Constructing Slides",
-    "text": "Constructing Slides\n\nMind map will help you:\n\nBring balance to your presentation (10/85/5)\nHelp you categorize (power of 3, 5, 7, and 10)\nEnable you to rehearse before you have any slides!",
+    "section": "Presentation Flow",
+    "text": "Presentation Flow\n\nMind map will help you:\n\nBring balance to your presentation (10/85/5)\nHelp you categorize (power of 3, 5, 7, and 10)\nEnable you to rehearse before you have any slides!",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
@@ -157,8 +157,8 @@
     "objectID": "src/04/slides.html#brains-y-switch",
     "href": "src/04/slides.html#brains-y-switch",
     "title": "Presentation Skills",
-    "section": "Brain’s Y Switch",
-    "text": "Brain’s Y Switch\n\nYour audience is listening to you or they are reading your slide\nFew, if any, can do both",
+    "section": "Brain’s “Y Switch”",
+    "text": "Brain’s “Y Switch”\n\nYour audience is listening to you or they are reading your slide\nFew, if any, can do both",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
@@ -168,19 +168,19 @@
     "objectID": "src/04/slides.html#brains-y-switch-1",
     "href": "src/04/slides.html#brains-y-switch-1",
     "title": "Presentation Skills",
-    "section": "Brain’s Y Switch",
-    "text": "Brain’s Y Switch\n\nIf you have a lot of text, introduce it gradually",
+    "section": "Brain’s “Y Switch”",
+    "text": "Brain’s “Y Switch”\n\nIf you have a lot of text, introduce it gradually",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
     ]
   },
   {
-    "objectID": "src/04/slides.html#where-is-your-demo",
-    "href": "src/04/slides.html#where-is-your-demo",
+    "objectID": "src/04/slides.html#when-is-your-demo",
+    "href": "src/04/slides.html#when-is-your-demo",
     "title": "Presentation Skills",
-    "section": "Where Is Your Demo?",
-    "text": "Where Is Your Demo?\n\nGet to your demo as soon as you can\nToo many “10 min presentation with 9 mins of slides and a 1 min rushed demo”\nAudience: “I get it. Now show me the demo.”",
+    "section": "When Is Your Demo?",
+    "text": "When Is Your Demo?\n\nGet to your demo as soon as you can\n“10 min presentation with 9 mins of slides and a 1 min rushed demo”\nTipping Point: “I get it. Now show me the demo.”",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
@@ -191,18 +191,7 @@
     "href": "src/04/slides.html#live-demos",
     "title": "Presentation Skills",
     "section": "Live Demos",
-    "text": "Live Demos\n\nLive demos are scary\nBut they beat videos or screenshots every time",
-    "crumbs": [
-      "Lecture: Presentation Skills",
-      "Slides"
-    ]
-  },
-  {
-    "objectID": "src/04/slides.html#demo-script",
-    "href": "src/04/slides.html#demo-script",
-    "title": "Presentation Skills",
-    "section": "Demo Script",
-    "text": "Demo Script\n\nWhat needs to be reset/running at the start of your demo?\nWhich windows needs to be open/closed?\nWhat are the steps?\n\nTip: Write large if you are typing code live",
+    "text": "Live Demos\n\nLive demos are scary\nBut they beat videos or screenshots every time\nLive demos provide authenticity",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
@@ -220,11 +209,22 @@
     ]
   },
   {
-    "objectID": "src/04/slides.html#demo-gods-1",
-    "href": "src/04/slides.html#demo-gods-1",
+    "objectID": "src/04/slides.html#demo-script",
+    "href": "src/04/slides.html#demo-script",
     "title": "Presentation Skills",
-    "section": "Demo Gods",
-    "text": "Demo Gods\n\nWhat’s your backup plan?\n\nPre-recorded video is a must\nBackup screenshots in appendix\nKnow when to move on…",
+    "section": "Demo Script",
+    "text": "Demo Script\n\nWhat needs to be reset/running at the start of your demo?\nWhich windows needs to be open/closed?\nWhat are the steps?\n\nTip: Write large if you are typing code live",
+    "crumbs": [
+      "Lecture: Presentation Skills",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/04/slides.html#demo-backup",
+    "href": "src/04/slides.html#demo-backup",
+    "title": "Presentation Skills",
+    "section": "Demo Backup",
+    "text": "Demo Backup\n\nWhat’s your backup plan?\n\nPre-recorded video is a must\nBackup screenshots in appendix\nKnow when to move on…",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
@@ -235,7 +235,7 @@
     "href": "src/04/slides.html#location",
     "title": "Presentation Skills",
     "section": "Location",
-    "text": "Location\n\nSize of the room?\nAV needs?\n\nEspecially if you are playing audio\n\nIf this is a new room, can you test/rehearse beforehand?",
+    "text": "Location\n\nSize of the room?\nAV needs?\n\nEspecially if you are playing audio\n\nNew room?\n\nCan you test/rehearse beforehand?",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
@@ -257,7 +257,7 @@
     "href": "src/04/slides.html#more-nerves",
     "title": "Presentation Skills",
     "section": "More Nerves",
-    "text": "More Nerves\n\nDo you have water?\n\nIs it open? But not too much!\n\nEye contact with the audience\n\nFigure of 8\n\nBuild off the prior presentation\n\n“I can do better!”\n“I can’t let the audience down after that!”",
+    "text": "More Nerves\n\nDo you have water?\n\nIs it open? But not too much!\n\nEye contact with the audience\n\nFigure of 8\n\nEnergy from the prior presentation\n\n“I can do better!”\n“I can’t let the audience down after that!”",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
