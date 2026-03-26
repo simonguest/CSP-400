@@ -9,12 +9,14 @@ format:
     theme: default
     transition: fade
     transition-speed: fast
+title-slide-attributes:
+  data-background-gradient: "linear-gradient(135deg, #0a0e1a 0%, #0d2137 60%, #1a1f35 100%)"
 logo: ../../src/logos/DigiPen_RGB_Red.png
 ---
 
-# "Your slides have really nice colors" {.justify background-image="backgrounds/paint.png" background-opacity="0.3"}
+# "Your slides have really nice colors, Simon" {.justify background-image="backgrounds/paint.png" background-opacity="0.3"}
 
-## Beyond Your Project Presentation {.blurred background-image="backgrounds/paint.png" background-opacity="0.3"}
+## Beyond This Semester {.blurred background-image="backgrounds/paint.png" background-opacity="0.3"}
 
 - Pitching a VC for funding
 - Speaking at a conference
@@ -42,118 +44,119 @@ logo: ../../src/logos/DigiPen_RGB_Red.png
 - What problem are you trying to solve for people?
 - How much impact could this have?
 
-# Every Story Needs An Audience
+# Every Story Needs An Audience {.darken .white .blurred background-image="backgrounds/audience.png" background-opacity="0.9"}
 
-## Who Is Your Audience?
+## Who Is Your Audience? {.darken .white .blurred background-image="backgrounds/audience.png" background-opacity="0.9"}
 
-- What are the **personas** for your audience?
+- Do you have **personas** for your audience?
   - 100 level? 400 level?
-  - Internal / External
+  - Internal? External?
 - What does success look like for **them**?
 - How much are you **costing** your audience?
 
-# Slides
+# Presentation Flow {.red background-image="backgrounds/flow.png" background-opacity="0.5"}
 
-## Constructing Slides
+## Presentation Flow {.blurred .red background-image="backgrounds/flow.png" background-opacity="0.5"}
 
 - Don't start by opening PowerPoint!
-- Instead, create a layout (mind map)
+- Create the flow of the presentation
+- Mind Map can be a great tool
 
-## Constructing Slides
+## Presentation Flow {.blurred .red background-image="backgrounds/flow.png" background-opacity="0.5"}
 
 ![](images/mindmap.png){.lightbox fig-align="center" width="1000px"}
 
-## Constructing Slides
+## Presentation Flow {.blurred .red background-image="backgrounds/flow.png" background-opacity="0.5"}
 
 - Mind map will help you:
   - Bring balance to your presentation (10/85/5)
   - Help you categorize (power of 3, 5, 7, and 10)
   - Enable you to rehearse before you have any slides!
 
-# Your Slides
+# Your Slides {.red background-image="backgrounds/blankslide.png" background-opacity="0.3"}
 
-## Your Slides
+## Your Slides {.blurred .red background-image="backgrounds/blankslide.png" background-opacity="0.3"}
 
 - Text in slides should be supportive "cues" to your spoken word
 - They avoid you having to read from your speaker notes
   - (or worse, your phone!)
 
-# The Brain's Y Switch
-
-## Brain's Y Switch
+## Brain's "Y Switch" {.blurred .red background-image="backgrounds/blankslide.png" background-opacity="0.3"}
 
 - Your audience is listening to you or they are reading your slide
 - Few, if any, can do both
 
 # TBD: Example wall of text slide
 
-## Brain's Y Switch
+## Brain's "Y Switch" {.blurred .red background-image="backgrounds/blankslide.png" background-opacity="0.3"}
 
 - If you have a lot of text, introduce it gradually
 
 # TBD: Example wall of text slide, animated
 
-# Demos
+# {background-image="backgrounds/demo.png" background-opacity="0.9"}
 
-## Where Is Your Demo?
+## When Is Your Demo? {.blurred background-image="backgrounds/demo.png" background-opacity="0.2"}
 
 - Get to your demo as soon as you can
-- Too many "10 min presentation with 9 mins of slides and a 1 min rushed demo"
-- Audience: "I get it. Now show me the demo."
+- "10 min presentation with 9 mins of slides and a 1 min rushed demo"
+- Tipping Point: "I get it. Now show me the demo."
 
-## Live Demos
+## Live Demos {.blurred background-image="backgrounds/demo.png" background-opacity="0.2"}
 
 - Live demos are scary
 - But they beat videos or screenshots **every time**
+- Live demos provide **authenticity**
 
-## Demo Script
-
-- What needs to be reset/running at the start of your demo?
-- Which windows needs to be open/closed?
-- What are the steps?
-  - Tip: Write large if you are typing code live
-
-## Demo Gods
+## Demo Gods {.blurred background-image="backgrounds/demo.png" background-opacity="0.2"}
 
 - "It worked just before class..."
   - Can't share my display on the projector
   - WiFi magically disappears or runs slow
   - That Windows update you've been postponing...
 
-## Demo Gods
+## Demo Script {.blurred background-image="backgrounds/demo.png" background-opacity="0.2"}
+
+- What needs to be reset/running at the start of your demo?
+- Which windows needs to be open/closed?
+- What are the steps?
+  - Tip: Write large if you are typing code live
+
+## Demo Backup {.blurred background-image="backgrounds/demo.png" background-opacity="0.2"}
 
 - What's your backup plan?
   - Pre-recorded video is a must
   - Backup screenshots in appendix
   - Know when to move on...
 
-# The Big Day!
+# On The Day {.white background-image="backgrounds/mic.png" background-opacity="0.9"}
 
-## Location
+## Location {.white .blurred .darken background-image="backgrounds/mic.png" background-opacity="0.9"}
 
 - Size of the room?
 - AV needs?
   - Especially if you are playing audio
-- If this is a new room, can you test/rehearse beforehand?
+- New room? 
+  - Can you test/rehearse beforehand?
 
-## Nerves
+## Nerves {.white .blurred .darken background-image="backgrounds/mic.png" background-opacity="0.9"}
 
 - They never go away
   - My "PDC Demo" story
 - Rehearse, rehearse, rehearse
 - Loosen up by speaking to the audience beforehand
 
-## More Nerves
+## More Nerves {.white .blurred .darken background-image="backgrounds/mic.png" background-opacity="0.9"}
 
 - Do you have water? 
   - Is it open? But not too much!
 - Eye contact with the audience
   - Figure of 8
-- Build off the prior presentation
+- Energy from the prior presentation
   - "I can do better!"
   - "I can't let the audience down after that!"
 
-## Humor
+## Humor {.white .blurred .darken background-image="backgrounds/mic.png" background-opacity="0.9"}
 
 - Don't force-fit humor or jokes
   - Be yourself
@@ -161,7 +164,7 @@ logo: ../../src/logos/DigiPen_RGB_Red.png
   - And never mention politics or religion
 - Never laugh at your own jokes
 
-## Taking Questions
+## Taking Questions {.white .blurred .darken background-image="backgrounds/mic.png" background-opacity="0.9"}
 
 - During or wait until the end?
   - Redirect if running out of time
@@ -169,7 +172,7 @@ logo: ../../src/logos/DigiPen_RGB_Red.png
 - It's OK not to know the answer
   - "I'm not sure on that, but I'll follow up with you"
 
-# Have Fun!
+# Have Fun! {.white .blurred .darken background-image="backgrounds/mic.png" background-opacity="0.9"}
 
 ## Presentation Take Aways
 
@@ -199,11 +202,18 @@ logo: ../../src/logos/DigiPen_RGB_Red.png
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
 }
+#title-slide h1, #title-slide h2, #title-slide p, #title-slide .author,
+#title-slide .quarto-title-author-name, #title-slide .quarto-title-authors {
+  color: white !important;
+}
 .justify {
   text-align: center;
 }
-.white, .white h2, .white h3, .white p, .white li {
+.white, .white h1, .white h2, .white h3, .white p, .white li {
   color: white !important;
+}
+.red, .red h1, .red h2, .red h3, .red p, .red li {
+  color:  #8B0000 !important;
 }
 </style>
 
