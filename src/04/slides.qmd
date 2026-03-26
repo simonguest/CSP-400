@@ -22,7 +22,7 @@ logo: ../../src/logos/DigiPen_RGB_Red.png
 - Speaking at a conference
 - Teaching at DigiPen!
 
-## What We Will Cover Today
+## What We Will Cover Today { .white background="linear-gradient(135deg, #0a0e1a 0%, #0d2137 60%, #1a1f35 100%)"}
 
 - The importance of **Storytelling**
 - Constructing **Slides**
@@ -77,52 +77,63 @@ logo: ../../src/logos/DigiPen_RGB_Red.png
 
 ## Your Slides {.blurred .red background-image="backgrounds/blankslide.png" background-opacity="0.3"}
 
-- Text in slides should be supportive "cues" to your spoken word
+- Text in slides should be supportive "cues"
+- Trigger memory
 - They avoid you having to read from your speaker notes
   - (or worse, your phone!)
 
 ## Brain's "Y Switch" {.blurred .red background-image="backgrounds/blankslide.png" background-opacity="0.3"}
 
-- Your audience is listening to you or they are reading your slide
+- Listening to you vs. Reading your slide
 - Few, if any, can do both
+- (Even if they think they can)
 
-# TBD: Example wall of text slide
+## Our Game Engine Architecture {.nonincremental style="font-size: 0.6em"}
+
+Our custom game engine is built on a multi-layered architecture that separates concerns across rendering, physics, audio, and input systems. The rendering pipeline uses OpenGL 4.6 with a deferred shading model, supporting up to 512 dynamic lights per scene through a clustered lighting approach. The physics engine integrates a rigid body solver with support for convex hull collision detection using the GJK algorithm, with a broadphase BVH tree for spatial partitioning. We implemented a custom entity-component system (ECS) using a sparse set architecture to maximize cache coherency, with archetypes stored in contiguous memory pools. 
+
+The audio system leverages OpenAL Soft with a custom DSP chain for reverb, occlusion, and distance attenuation. Input is handled through a buffered event queue that abstracts platform-specific APIs (Win32, SDL2) behind a unified interface. Our asset pipeline runs as a separate tool that compiles raw assets (FBX, PNG, WAV) into a custom binary format for fast runtime loading. The scripting layer exposes engine functionality to Lua via a hand-written binding layer, allowing designers to author gameplay logic without recompiling. Networking uses a lockstep model with deterministic simulation and delta-compressed snapshots sent at 20Hz, with client-side prediction and server reconciliation to mask latency. Memory management is handled through a hierarchy of allocators: a stack allocator for per-frame data, a pool allocator for fixed-size objects, and a general-purpose heap for everything else.
 
 ## Brain's "Y Switch" {.blurred .red background-image="backgrounds/blankslide.png" background-opacity="0.3"}
 
-- If you have a lot of text, introduce it gradually
+- If you have a lot of text...
+  - Delete (and delete again)
+  - Compress (and compress again)
+  - Talk through "on click"
 
-# TBD: Example wall of text slide, animated
+## Brain's "Y Switch" {.blurred .red background-image="backgrounds/blankslide.png" background-opacity="0.3"}
+
+![](images/remote.png){.lightbox fig-align="center" width="500px"}
 
 # {background-image="backgrounds/demo.png" background-opacity="0.9"}
 
-## When Is Your Demo? {.blurred background-image="backgrounds/demo.png" background-opacity="0.2"}
+## Your Demo {.white .blurred .darken background-image="backgrounds/demo.png" background-opacity="0.9"}
 
 - Get to your demo as soon as you can
 - "10 min presentation with 9 mins of slides and a 1 min rushed demo"
 - Tipping Point: "I get it. Now show me the demo."
 
-## Live Demos {.blurred background-image="backgrounds/demo.png" background-opacity="0.2"}
+## Live Demos {.white .blurred .darken background-image="backgrounds/demo.png" background-opacity="0.9"}
 
 - Live demos are scary
 - But they beat videos or screenshots **every time**
 - Live demos provide **authenticity**
 
-## Demo Gods {.blurred background-image="backgrounds/demo.png" background-opacity="0.2"}
+## Demo Gods {.white .blurred .darken background-image="backgrounds/demo.png" background-opacity="0.9"}
 
 - "It worked just before class..."
   - Can't share my display on the projector
   - WiFi magically disappears or runs slow
   - That Windows update you've been postponing...
 
-## Demo Script {.blurred background-image="backgrounds/demo.png" background-opacity="0.2"}
+## Demo Script {.white .blurred .darken background-image="backgrounds/demo.png" background-opacity="0.9"}
 
 - What needs to be reset/running at the start of your demo?
 - Which windows needs to be open/closed?
 - What are the steps?
   - Tip: Write large if you are typing code live
 
-## Demo Backup {.blurred background-image="backgrounds/demo.png" background-opacity="0.2"}
+## Demo Backup {.white .blurred .darken background-image="backgrounds/demo.png" background-opacity="0.9"}
 
 - What's your backup plan?
   - Pre-recorded video is a must
@@ -166,25 +177,44 @@ logo: ../../src/logos/DigiPen_RGB_Red.png
 
 ## Taking Questions {.white .blurred .darken background-image="backgrounds/mic.png" background-opacity="0.9"}
 
-- During or wait until the end?
+- During? Or wait until the end?
   - Redirect if running out of time
 - Ack; Answer; Confirm
 - It's OK not to know the answer
   - "I'm not sure on that, but I'll follow up with you"
 
-# Have Fun! {.white .blurred .darken background-image="backgrounds/mic.png" background-opacity="0.9"}
+# Enjoy It! {.white .blurred .darken background-image="backgrounds/mic.png" background-opacity="0.9"}
 
-## Presentation Take Aways
+# {background-image="backgrounds/theend.png" background-opacity="0.9"}
 
-- What do you want to acheive **after** the presentation?
-- Do you have the right CTAs (Call To Action) at the end?
-  - e.g., Scan this QR code and download my app!
+## How To End {.blurred background-image="backgrounds/theend.png" background-opacity="0.2"}
 
-# TBD
+- Endings can be abrupt
+- Short conclusion of what you covered
+- Takeaways for the audience
 
+## Presentation Takeaways {.blurred background-image="backgrounds/theend.png" background-opacity="0.2"}
 
-# Conclusion
+- CTAs (Calls To Action)
+  - Download my game!
+  - Checkout my GitHub Repo
+  - Complete my survey
+- Are you going to share your slides?
+- How to contact you
 
+## To Conclude { .white background="linear-gradient(135deg, #0a0e1a 0%, #0d2137 60%, #1a1f35 100%)"}
+
+- The importance of **Storytelling**
+- Constructing **Slides**
+- Nailing the **Demos**
+- Being prepared **On The Day**
+- Your Presentation **Takeaways**
+
+## To Conclude { .white background="linear-gradient(135deg, #0a0e1a 0%, #0d2137 60%, #1a1f35 100%)"}
+
+- TBD
+
+# Questions? { .white background="linear-gradient(135deg, #0a0e1a 0%, #0d2137 60%, #1a1f35 100%)"}
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
