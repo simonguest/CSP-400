@@ -7,18 +7,20 @@ format:
     incremental: true
     center-title-slide: true
     theme: default
+    transition: fade
+    transition-speed: fast
 logo: ../../src/logos/DigiPen_RGB_Red.png
 ---
 
-# "Your slides have really nice colors"
+# "Your slides have really nice colors" {.justify background-image="backgrounds/paint.png" background-opacity="0.3"}
 
-## Beyond Presenting Your Project
+## Beyond Your Project Presentation {.blurred background-image="backgrounds/paint.png" background-opacity="0.3"}
 
 - Pitching a VC for funding
 - Speaking at a conference
-- Coming back and teaching at DigiPen!
+- Teaching at DigiPen!
 
-## Five Areas for Presentations
+## What We Will Cover Today
 
 - The importance of **Storytelling**
 - Constructing **Slides**
@@ -26,18 +28,19 @@ logo: ../../src/logos/DigiPen_RGB_Red.png
 - Being prepared **On The Day**
 - Your Presentation **Takeaways**
 
-# Storytelling
+# {.justify background-image="backgrounds/story.png" background-opacity="1.0"}
 
-## The Importance of Storytelling
+## The Importance of Storytelling {.darken .white .blurred background-image="backgrounds/story.png" background-opacity="0.9"}
 
 - Many presentations get into the **what** and **how**, but miss the **why**
 - Stories help frame the **why**
 - Especially if that story has a personal connection
 
-## The Importance of Storytelling
+## The Importance of Storytelling {.darken .white .blurred background-image="backgrounds/story.png" background-opacity="0.9"}
 
 - Why did you choose this project?
-- TBD more
+- What problem are you trying to solve for people?
+- How much impact could this have?
 
 # Every Story Needs An Audience
 
@@ -56,16 +59,20 @@ logo: ../../src/logos/DigiPen_RGB_Red.png
 - Don't start by opening PowerPoint!
 - Instead, create a layout (mind map)
 
-# TBD: My mind map for this presentation
+## Constructing Slides
+
+![](images/mindmap.png){.lightbox fig-align="center" width="1000px"}
 
 ## Constructing Slides
 
 - Mind map will help you:
   - Bring balance to your presentation (10/85/5)
-  - Help you categorize your areas (power of 3, 5, 7, and 10)
+  - Help you categorize (power of 3, 5, 7, and 10)
   - Enable you to rehearse before you have any slides!
 
-## Slide Text
+# Your Slides
+
+## Your Slides
 
 - Text in slides should be supportive "cues" to your spoken word
 - They avoid you having to read from your speaker notes
@@ -164,19 +171,41 @@ logo: ../../src/logos/DigiPen_RGB_Red.png
 
 # Have Fun!
 
-# Presentation Take Aways
+## Presentation Take Aways
 
 - What do you want to acheive **after** the presentation?
 - Do you have the right CTAs (Call To Action) at the end?
   - e.g., Scan this QR code and download my app!
 
-TBD
+# TBD
 
 
 # Conclusion
 
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
+.reveal, .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  font-family: 'Inter', sans-serif;
+}
+                                                                        
+.slide-background.blurred .slide-background-content {
+  filter: blur(8px);
+}
+.slide-background.darken .slide-background-content::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.justify {
+  text-align: center;
+}
+.white, .white h2, .white h3, .white p, .white li {
+  color: white !important;
+}
+</style>
 
 
 
