@@ -157,7 +157,7 @@ Simon Guest
 <li class="fragment">Teaching at DigiPen!</li>
 </ul>
 </section>
-<section id="what-we-will-cover-today" class="slide level2">
+<section id="what-we-will-cover-today" class="slide level2 white" data-background="linear-gradient(135deg, #0a0e1a 0%, #0d2137 60%, #1a1f35 100%)">
 <h2>What We Will Cover Today</h2>
 <ul>
 <li class="fragment">The importance of <strong>Storytelling</strong></li>
@@ -245,7 +245,8 @@ Simon Guest
 <section id="your-slides-1" class="slide level2 blurred red" data-background-image="backgrounds/blankslide.png" data-background-opacity="0.3">
 <h2>Your Slides</h2>
 <ul>
-<li class="fragment">Text in slides should be supportive “cues” to your spoken word</li>
+<li class="fragment">Text in slides should be supportive “cues”</li>
+<li class="fragment">Trigger memory</li>
 <li class="fragment">They avoid you having to read from your speaker notes
 <ul>
 <li class="fragment">(or worse, your phone!)</li>
@@ -255,40 +256,49 @@ Simon Guest
 <section id="brains-y-switch" class="slide level2 blurred red" data-background-image="backgrounds/blankslide.png" data-background-opacity="0.3">
 <h2>Brain’s “Y Switch”</h2>
 <ul>
-<li class="fragment">Your audience is listening to you or they are reading your slide</li>
+<li class="fragment">Listening to you vs.&nbsp;Reading your slide</li>
 <li class="fragment">Few, if any, can do both</li>
+<li class="fragment">(Even if they think they can)</li>
 </ul>
-</section></section>
-<section>
-<section id="tbd-example-wall-of-text-slide" class="title-slide slide level1 center">
-<h1>TBD: Example wall of text slide</h1>
-
+</section>
+<section id="our-game-engine-architecture" class="slide level2 nonincremental" style="font-size: 0.6em">
+<h2>Our Game Engine Architecture</h2>
+<p>Our custom game engine is built on a multi-layered architecture that separates concerns across rendering, physics, audio, and input systems. The rendering pipeline uses OpenGL 4.6 with a deferred shading model, supporting up to 512 dynamic lights per scene through a clustered lighting approach. The physics engine integrates a rigid body solver with support for convex hull collision detection using the GJK algorithm, with a broadphase BVH tree for spatial partitioning. We implemented a custom entity-component system (ECS) using a sparse set architecture to maximize cache coherency, with archetypes stored in contiguous memory pools.</p>
+<p>The audio system leverages OpenAL Soft with a custom DSP chain for reverb, occlusion, and distance attenuation. Input is handled through a buffered event queue that abstracts platform-specific APIs (Win32, SDL2) behind a unified interface. Our asset pipeline runs as a separate tool that compiles raw assets (FBX, PNG, WAV) into a custom binary format for fast runtime loading. The scripting layer exposes engine functionality to Lua via a hand-written binding layer, allowing designers to author gameplay logic without recompiling. Networking uses a lockstep model with deterministic simulation and delta-compressed snapshots sent at 20Hz, with client-side prediction and server reconciliation to mask latency. Memory management is handled through a hierarchy of allocators: a stack allocator for per-frame data, a pool allocator for fixed-size objects, and a general-purpose heap for everything else.</p>
 </section>
 <section id="brains-y-switch-1" class="slide level2 blurred red" data-background-image="backgrounds/blankslide.png" data-background-opacity="0.3">
 <h2>Brain’s “Y Switch”</h2>
 <ul>
-<li class="fragment">If you have a lot of text, introduce it gradually</li>
+<li class="fragment">If you have a lot of text…
+<ul>
+<li class="fragment">Delete (and delete again)</li>
+<li class="fragment">Compress (and compress again)</li>
+<li class="fragment">Talk through “on click”</li>
+</ul></li>
 </ul>
-</section></section>
-<section id="tbd-example-wall-of-text-slide-animated" class="title-slide slide level1 center">
-<h1>TBD: Example wall of text slide, animated</h1>
-
 </section>
-
+<section id="brains-y-switch-2" class="slide level2 blurred red" data-background-image="backgrounds/blankslide.png" data-background-opacity="0.3">
+<h2>Brain’s “Y Switch”</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="images/remote.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="images/remote.png" class="quarto-figure quarto-figure-center" width="500"></a></p>
+</figure>
+</div>
+</section></section>
 <section>
 <section id="section-1" class="title-slide slide level1 center" data-background-image="backgrounds/demo.png" data-background-opacity="0.9">
 <h1></h1>
 
 </section>
-<section id="when-is-your-demo" class="slide level2 blurred" data-background-image="backgrounds/demo.png" data-background-opacity="0.2">
-<h2>When Is Your Demo?</h2>
+<section id="your-demo" class="slide level2 white blurred darken" data-background-image="backgrounds/demo.png" data-background-opacity="0.9">
+<h2>Your Demo</h2>
 <ul>
 <li class="fragment">Get to your demo as soon as you can</li>
 <li class="fragment">“10 min presentation with 9 mins of slides and a 1 min rushed demo”</li>
 <li class="fragment">Tipping Point: “I get it. Now show me the demo.”</li>
 </ul>
 </section>
-<section id="live-demos" class="slide level2 blurred" data-background-image="backgrounds/demo.png" data-background-opacity="0.2">
+<section id="live-demos" class="slide level2 white blurred darken" data-background-image="backgrounds/demo.png" data-background-opacity="0.9">
 <h2>Live Demos</h2>
 <ul>
 <li class="fragment">Live demos are scary</li>
@@ -296,7 +306,7 @@ Simon Guest
 <li class="fragment">Live demos provide <strong>authenticity</strong></li>
 </ul>
 </section>
-<section id="demo-gods" class="slide level2 blurred" data-background-image="backgrounds/demo.png" data-background-opacity="0.2">
+<section id="demo-gods" class="slide level2 white blurred darken" data-background-image="backgrounds/demo.png" data-background-opacity="0.9">
 <h2>Demo Gods</h2>
 <ul>
 <li class="fragment">“It worked just before class…”
@@ -307,7 +317,7 @@ Simon Guest
 </ul></li>
 </ul>
 </section>
-<section id="demo-script" class="slide level2 blurred" data-background-image="backgrounds/demo.png" data-background-opacity="0.2">
+<section id="demo-script" class="slide level2 white blurred darken" data-background-image="backgrounds/demo.png" data-background-opacity="0.9">
 <h2>Demo Script</h2>
 <ul>
 <li class="fragment">What needs to be reset/running at the start of your demo?</li>
@@ -318,7 +328,7 @@ Simon Guest
 </ul></li>
 </ul>
 </section>
-<section id="demo-backup" class="slide level2 blurred" data-background-image="backgrounds/demo.png" data-background-opacity="0.2">
+<section id="demo-backup" class="slide level2 white blurred darken" data-background-image="backgrounds/demo.png" data-background-opacity="0.9">
 <h2>Demo Backup</h2>
 <ul>
 <li class="fragment">What’s your backup plan?
@@ -394,7 +404,7 @@ Simon Guest
 <section id="taking-questions" class="slide level2 white blurred darken" data-background-image="backgrounds/mic.png" data-background-opacity="0.9">
 <h2>Taking Questions</h2>
 <ul>
-<li class="fragment">During or wait until the end?
+<li class="fragment">During? Or wait until the end?
 <ul>
 <li class="fragment">Redirect if running out of time</li>
 </ul></li>
@@ -405,28 +415,55 @@ Simon Guest
 </ul></li>
 </ul>
 </section></section>
-<section>
-<section id="have-fun" class="title-slide slide level1 white blurred darken center" data-background-image="backgrounds/mic.png" data-background-opacity="0.9">
-<h1>Have Fun!</h1>
+<section id="enjoy-it" class="title-slide slide level1 white blurred darken center" data-background-image="backgrounds/mic.png" data-background-opacity="0.9">
+<h1>Enjoy It!</h1>
 
 </section>
-<section id="presentation-take-aways" class="slide level2">
-<h2>Presentation Take Aways</h2>
+
+<section>
+<section id="section-2" class="title-slide slide level1 center" data-background-image="backgrounds/theend.png" data-background-opacity="0.9">
+<h1></h1>
+
+</section>
+<section id="how-to-end" class="slide level2 blurred" data-background-image="backgrounds/theend.png" data-background-opacity="0.2">
+<h2>How To End</h2>
 <ul>
-<li class="fragment">What do you want to acheive <strong>after</strong> the presentation?</li>
-<li class="fragment">Do you have the right CTAs (Call To Action) at the end?
+<li class="fragment">Endings can be abrupt</li>
+<li class="fragment">Short conclusion of what you covered</li>
+<li class="fragment">Takeaways for the audience</li>
+</ul>
+</section>
+<section id="presentation-takeaways" class="slide level2 blurred" data-background-image="backgrounds/theend.png" data-background-opacity="0.2">
+<h2>Presentation Takeaways</h2>
 <ul>
-<li class="fragment">e.g., Scan this QR code and download my app!</li>
+<li class="fragment">CTAs (Calls To Action)
+<ul>
+<li class="fragment">Download my game!</li>
+<li class="fragment">Checkout my GitHub Repo</li>
+<li class="fragment">Complete my survey</li>
 </ul></li>
+<li class="fragment">Are you going to share your slides?</li>
+<li class="fragment">How to contact you</li>
+</ul>
+</section>
+<section id="to-conclude" class="slide level2 white" data-background="linear-gradient(135deg, #0a0e1a 0%, #0d2137 60%, #1a1f35 100%)">
+<h2>To Conclude</h2>
+<ul>
+<li class="fragment">The importance of <strong>Storytelling</strong></li>
+<li class="fragment">Constructing <strong>Slides</strong></li>
+<li class="fragment">Nailing the <strong>Demos</strong></li>
+<li class="fragment">Being prepared <strong>On The Day</strong></li>
+<li class="fragment">Your Presentation <strong>Takeaways</strong></li>
+</ul>
+</section>
+<section id="to-conclude-1" class="slide level2 white" data-background="linear-gradient(135deg, #0a0e1a 0%, #0d2137 60%, #1a1f35 100%)">
+<h2>To Conclude</h2>
+<ul>
+<li class="fragment">TBD</li>
 </ul>
 </section></section>
-<section id="tbd" class="title-slide slide level1 center">
-<h1>TBD</h1>
-
-</section>
-
-<section id="conclusion" class="title-slide slide level1 center">
-<h1>Conclusion</h1>
+<section id="questions" class="title-slide slide level1 white center" data-background="linear-gradient(135deg, #0a0e1a 0%, #0d2137 60%, #1a1f35 100%)">
+<h1>Questions?</h1>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
