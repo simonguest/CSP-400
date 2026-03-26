@@ -155,7 +155,8 @@ The audio system leverages OpenAL Soft with a custom DSP chain for reverb, occlu
 - They never go away
   - My "PDC Demo" story
 - Rehearse, rehearse, rehearse
-- Loosen up by speaking to the audience beforehand
+- Slow down and breathe!
+  - Tip: "Go slower!" Post it note
 
 ## More Nerves {.white .blurred .darken background-image="backgrounds/mic.png" background-opacity="0.9"}
 
@@ -197,8 +198,8 @@ The audio system leverages OpenAL Soft with a custom DSP chain for reverb, occlu
 
 - CTAs (Calls To Action)
   - Download my game!
-  - Checkout my GitHub Repo
-  - Complete my survey
+  - Check out my GitHub Repo!
+  - Complete my survey!
 - Are you going to share your slides?
 - How to contact you
 
@@ -212,7 +213,14 @@ The audio system leverages OpenAL Soft with a custom DSP chain for reverb, occlu
 
 ## To Conclude { .white background="linear-gradient(135deg, #0a0e1a 0%, #0d2137 60%, #1a1f35 100%)"}
 
-- TBD
+::: {.columns}
+:::: {.column width="50%"}
+![](images/fnp.png){fig-align="center" width="80%"}
+::::
+:::: {.column width="50%"}
+![](images/qrcode.png){fig-align="center" width="100%"}
+::::
+:::
 
 # Questions? { .white background="linear-gradient(135deg, #0a0e1a 0%, #0d2137 60%, #1a1f35 100%)"}
 
