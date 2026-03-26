@@ -55,22 +55,22 @@
     ]
   },
   {
-    "objectID": "src/04/slides.html#beyond-presenting-your-project",
-    "href": "src/04/slides.html#beyond-presenting-your-project",
+    "objectID": "src/04/slides.html#beyond-your-project-presentation",
+    "href": "src/04/slides.html#beyond-your-project-presentation",
     "title": "Presentation Skills",
-    "section": "Beyond Presenting Your Project",
-    "text": "Beyond Presenting Your Project\n\nPitching a VC for funding\nSpeaking at a conference\nComing back and teaching at DigiPen!",
+    "section": "Beyond Your Project Presentation",
+    "text": "Beyond Your Project Presentation\n\nPitching a VC for funding\nSpeaking at a conference\nTeaching at DigiPen!",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
     ]
   },
   {
-    "objectID": "src/04/slides.html#five-areas-for-presentations",
-    "href": "src/04/slides.html#five-areas-for-presentations",
+    "objectID": "src/04/slides.html#what-we-will-cover-today",
+    "href": "src/04/slides.html#what-we-will-cover-today",
     "title": "Presentation Skills",
-    "section": "Five Areas for Presentations",
-    "text": "Five Areas for Presentations\n\nThe importance of Storytelling\nConstructing Slides\nNailing the Demos\nBeing prepared On The Day\nYour Presentation Takeaways",
+    "section": "What We Will Cover Today",
+    "text": "What We Will Cover Today\n\nThe importance of Storytelling\nConstructing Slides\nNailing the Demos\nBeing prepared On The Day\nYour Presentation Takeaways",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
@@ -92,7 +92,7 @@
     "href": "src/04/slides.html#the-importance-of-storytelling-1",
     "title": "Presentation Skills",
     "section": "The Importance of Storytelling",
-    "text": "The Importance of Storytelling\n\nWhy did you choose this project?\nTBD more",
+    "text": "The Importance of Storytelling\n\nWhy did you choose this project?\nWhat problem are you trying to solve for people?\nHow much impact could this have?",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
@@ -125,18 +125,29 @@
     "href": "src/04/slides.html#constructing-slides-1",
     "title": "Presentation Skills",
     "section": "Constructing Slides",
-    "text": "Constructing Slides\n\nMind map will help you:\n\nBring balance to your presentation (10/85/5)\nHelp you categorize your areas (power of 3, 5, 7, and 10)\nEnable you to rehearse before you have any slides!",
+    "text": "Constructing Slides",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
     ]
   },
   {
-    "objectID": "src/04/slides.html#slide-text",
-    "href": "src/04/slides.html#slide-text",
+    "objectID": "src/04/slides.html#constructing-slides-2",
+    "href": "src/04/slides.html#constructing-slides-2",
     "title": "Presentation Skills",
-    "section": "Slide Text",
-    "text": "Slide Text\n\nText in slides should be supportive “cues” to your spoken word\nThey avoid you having to read from your speaker notes\n\n(or worse, your phone!)",
+    "section": "Constructing Slides",
+    "text": "Constructing Slides\n\nMind map will help you:\n\nBring balance to your presentation (10/85/5)\nHelp you categorize (power of 3, 5, 7, and 10)\nEnable you to rehearse before you have any slides!",
+    "crumbs": [
+      "Lecture: Presentation Skills",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/04/slides.html#your-slides-1",
+    "href": "src/04/slides.html#your-slides-1",
+    "title": "Presentation Skills",
+    "section": "Your Slides",
+    "text": "Your Slides\n\nText in slides should be supportive “cues” to your spoken word\nThey avoid you having to read from your speaker notes\n\n(or worse, your phone!)",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
@@ -269,6 +280,17 @@
     "title": "Presentation Skills",
     "section": "Taking Questions",
     "text": "Taking Questions\n\nDuring or wait until the end?\n\nRedirect if running out of time\n\nAck; Answer; Confirm\nIt’s OK not to know the answer\n\n“I’m not sure on that, but I’ll follow up with you”",
+    "crumbs": [
+      "Lecture: Presentation Skills",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/04/slides.html#presentation-take-aways",
+    "href": "src/04/slides.html#presentation-take-aways",
+    "title": "Presentation Skills",
+    "section": "Presentation Take Aways",
+    "text": "Presentation Take Aways\n\nWhat do you want to acheive after the presentation?\nDo you have the right CTAs (Call To Action) at the end?\n\ne.g., Scan this QR code and download my app!",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
