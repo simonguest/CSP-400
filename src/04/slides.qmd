@@ -10,7 +10,9 @@ format:
     transition: fade
     transition-speed: fast
 title-slide-attributes:
-  data-background-gradient: "linear-gradient(135deg, #0a0e1a 0%, #0d2137 60%, #1a1f35 100%)"
+  data-background-gradient: "linear-gradient(135deg, #ba1127 0%,  #850022 20%, #000000 100%)"
+  data-background-image: "backgrounds/dragon.png"
+  data-background-opacity: "0.3"
 logo: ../../src/logos/DigiPen_RGB_Red.png
 ---
 
@@ -22,7 +24,7 @@ logo: ../../src/logos/DigiPen_RGB_Red.png
 - Speaking at a conference
 - Teaching at DigiPen!
 
-## What We Will Cover Today { .white background="linear-gradient(135deg, #0a0e1a 0%, #0d2137 60%, #1a1f35 100%)"}
+## What We Will Cover Today { .white background="linear-gradient(135deg, #ba1127 0%,  #850022 20%, #000000 100%)" background-image="backgrounds/dragon.png" background-opacity="0.3"}
 
 - The importance of **Storytelling**
 - Constructing **Slides**
@@ -203,7 +205,7 @@ The audio system leverages OpenAL Soft with a custom DSP chain for reverb, occlu
 - Are you going to share your slides?
 - How to contact you
 
-## To Conclude { .white background="linear-gradient(135deg, #0a0e1a 0%, #0d2137 60%, #1a1f35 100%)"}
+## To Conclude { .white background="linear-gradient(135deg, #ba1127 0%,  #850022 20%, #000000 100%)" background-image="backgrounds/dragon.png" background-opacity="0.3"}
 
 - The importance of **Storytelling**
 - Constructing **Slides**
@@ -211,7 +213,7 @@ The audio system leverages OpenAL Soft with a custom DSP chain for reverb, occlu
 - Being prepared **On The Day**
 - Your Presentation **Takeaways**
 
-## To Conclude { .white background="linear-gradient(135deg, #0a0e1a 0%, #0d2137 60%, #1a1f35 100%)"}
+## To Conclude { .white background="linear-gradient(135deg, #ba1127 0%,  #850022 20%, #000000 100%)" background-image="backgrounds/dragon.png" background-opacity="0.3"}
 
 ::: {.columns}
 :::: {.column width="50%"}
@@ -222,7 +224,7 @@ The audio system leverages OpenAL Soft with a custom DSP chain for reverb, occlu
 ::::
 :::
 
-# Questions? { .white background="linear-gradient(135deg, #0a0e1a 0%, #0d2137 60%, #1a1f35 100%)"}
+# Questions? { .white background="linear-gradient(135deg, #ba1127 0%, #850022 20%, #000000 100%)" background-image="backgrounds/dragon.png" background-opacity="0.3"}
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
