@@ -114,7 +114,7 @@
     "href": "src/04/slides.html#presentation-flow-1",
     "title": "Presentation Skills",
     "section": "Presentation Flow",
-    "text": "Presentation Flow\n\nDon’t start by opening PowerPoint!\nCreate the flow of the presentation\nMind Map can be a great tool",
+    "text": "Presentation Flow\n\nDon’t start by opening PowerPoint!\nCreate the flow of the presentation\nMind mapping can be a great tool",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
@@ -147,7 +147,7 @@
     "href": "src/04/slides.html#your-slides-1",
     "title": "Presentation Skills",
     "section": "Your Slides",
-    "text": "Your Slides\n\nText in slides should be supportive “cues”\nTrigger memory\nThey avoid you having to read from your speaker notes\n\n(or worse, your phone!)",
+    "text": "Your Slides\n\nText in slides should be supportive “cues”\nTrigger memory\nThey avoid you having to read from your speaker notes\n\nOr worse, your phone!",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
@@ -180,7 +180,7 @@
     "href": "src/04/slides.html#brains-y-switch-1",
     "title": "Presentation Skills",
     "section": "Brain’s “Y Switch”",
-    "text": "Brain’s “Y Switch”\n\nIf you have a lot of text…\n\nDelete (and delete again)\nCompress (and compress again)\nTalk through “on click”",
+    "text": "Brain’s “Y Switch”\n\nIf you have a lot of text…\n\nDelete (and delete again)\nCompress (and compress again)\nIntroduce new information “on click”",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
@@ -235,7 +235,18 @@
     "href": "src/04/slides.html#demo-script",
     "title": "Presentation Skills",
     "section": "Demo Script",
-    "text": "Demo Script\n\nWhat needs to be reset/running at the start of your demo?\nWhich windows needs to be open/closed?\nWhat are the steps?\n\nTip: Write large if you are typing code live",
+    "text": "Demo Script\n\nThings that need to be reset/running\nThe steps of your demo\n\nTip: Write large if you are typing code live\n\nSettings to make your demo viewable\n\nFont sizes for the back of the room\nAbility to zoom-in on demand",
+    "crumbs": [
+      "Lecture: Presentation Skills",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/04/slides.html#demo-script-1",
+    "href": "src/04/slides.html#demo-script-1",
+    "title": "Presentation Skills",
+    "section": "Demo Script",
+    "text": "Demo Script",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
@@ -246,7 +257,7 @@
     "href": "src/04/slides.html#demo-backup",
     "title": "Presentation Skills",
     "section": "Demo Backup",
-    "text": "Demo Backup\n\nWhat’s your backup plan?\n\nPre-recorded video is a must\nBackup screenshots in appendix\nKnow when to move on…",
+    "text": "Demo Backup\n\nWhat’s your backup plan?\n\nAn emergency pre-recorded video\nBackup screenshots in appendix\nKnow when to move on…",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
@@ -257,7 +268,7 @@
     "href": "src/04/slides.html#location",
     "title": "Presentation Skills",
     "section": "Location",
-    "text": "Location\n\nSize of the room?\nAV needs?\n\nEspecially if you are playing audio\n\nNew room?\n\nCan you test/rehearse beforehand?",
+    "text": "Location\n\nNew room?\n\nCan you test/rehearse beforehand?\n\nSize of the room?\nAudio Visual (AV) needs?\n\nEspecially if you are playing audio",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
@@ -286,11 +297,11 @@
     ]
   },
   {
-    "objectID": "src/04/slides.html#humor",
-    "href": "src/04/slides.html#humor",
+    "objectID": "src/04/slides.html#timing",
+    "href": "src/04/slides.html#timing",
     "title": "Presentation Skills",
-    "section": "Humor",
-    "text": "Humor\n\nDon’t force-fit humor or jokes\n\nBe yourself\n\nIf you have jokes, rehearse the timing\n\nAnd never mention politics or religion\n\nNever laugh at your own jokes",
+    "section": "Timing",
+    "text": "Timing\n\nAccurate timing can be difficult\n\nDefault is to run too long\n“Squeezed presentations” add to your nerves\n\nRehearsals really help\nDemo timing checkpoints with clock",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
@@ -308,11 +319,22 @@
     ]
   },
   {
+    "objectID": "src/04/slides.html#humor",
+    "href": "src/04/slides.html#humor",
+    "title": "Presentation Skills",
+    "section": "Humor",
+    "text": "Humor\n\nDon’t force-fit humor or jokes\n\nBe yourself\n\nIf you have jokes, rehearse the timing\n\nAnd never mention politics or religion\n\nTry not to laugh at your own jokes",
+    "crumbs": [
+      "Lecture: Presentation Skills",
+      "Slides"
+    ]
+  },
+  {
     "objectID": "src/04/slides.html#how-to-end",
     "href": "src/04/slides.html#how-to-end",
     "title": "Presentation Skills",
     "section": "How To End",
-    "text": "How To End\n\nEndings can be abrupt\nShort conclusion of what you covered\nTakeaways for the audience",
+    "text": "How To End\n\nEndings can be abrupt\nShort conclusion of what you covered\nTakeaways for your audience",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
@@ -346,6 +368,17 @@
     "title": "Presentation Skills",
     "section": "To Conclude",
     "text": "To Conclude",
+    "crumbs": [
+      "Lecture: Presentation Skills",
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "src/04/slides.html#questions",
+    "href": "src/04/slides.html#questions",
+    "title": "Presentation Skills",
+    "section": "Questions?",
+    "text": "Questions?\n\n\nSlides: https://simonguest.github.io/CSP/\nsimon.guest@digipen.edu",
     "crumbs": [
       "Lecture: Presentation Skills",
       "Slides"
