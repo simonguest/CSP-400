@@ -62,7 +62,7 @@ logo: ../../src/logos/DigiPen_RGB_Red.png
 
 - Don't start by opening PowerPoint!
 - Create the flow of the presentation
-- Mind Map can be a great tool
+- Mind mapping can be a great tool
 
 ## Presentation Flow {.blurred .red background-image="backgrounds/flow.png" background-opacity="0.5"}
 
@@ -82,7 +82,7 @@ logo: ../../src/logos/DigiPen_RGB_Red.png
 - Text in slides should be supportive "cues"
 - Trigger memory
 - They avoid you having to read from your speaker notes
-  - (or worse, your phone!)
+  - Or worse, your phone!
 
 ## Brain's "Y Switch" {.blurred .red background-image="backgrounds/blankslide.png" background-opacity="0.3"}
 
@@ -101,11 +101,11 @@ The audio system leverages OpenAL Soft with a custom DSP chain for reverb, occlu
 - If you have a lot of text...
   - Delete (and delete again)
   - Compress (and compress again)
-  - Talk through "on click"
+  - Introduce new information "on click"
 
 ## Brain's "Y Switch" {.blurred .red background-image="backgrounds/blankslide.png" background-opacity="0.3"}
 
-![](images/remote.png){.lightbox fig-align="center" width="500px"}
+![](images/remote.png){.lightbox fig-align="center" width="700px"}
 
 # {background-image="backgrounds/demo.png" background-opacity="0.9"}
 
@@ -130,15 +130,21 @@ The audio system leverages OpenAL Soft with a custom DSP chain for reverb, occlu
 
 ## Demo Script {.white .blurred .darken background-image="backgrounds/demo.png" background-opacity="0.9"}
 
-- What needs to be reset/running at the start of your demo?
-- Which windows needs to be open/closed?
-- What are the steps?
+- Things that need to be reset/running
+- The steps of your demo
   - Tip: Write large if you are typing code live
+- Settings to make your demo viewable
+  - Font sizes for the back of the room
+  - Ability to zoom-in on demand
+
+## Demo Script {.white .blurred .darken background-image="backgrounds/demo.png" background-opacity="0.9"}
+
+![](images/zoomit.png){.lightbox fig-align="center" width="800px"}
 
 ## Demo Backup {.white .blurred .darken background-image="backgrounds/demo.png" background-opacity="0.9"}
 
 - What's your backup plan?
-  - Pre-recorded video is a must
+  - An emergency pre-recorded video
   - Backup screenshots in appendix
   - Know when to move on...
 
@@ -146,11 +152,11 @@ The audio system leverages OpenAL Soft with a custom DSP chain for reverb, occlu
 
 ## Location {.white .blurred .darken background-image="backgrounds/mic.png" background-opacity="0.9"}
 
-- Size of the room?
-- AV needs?
-  - Especially if you are playing audio
 - New room? 
   - Can you test/rehearse beforehand?
+- Size of the room?
+- Audio Visual (AV) needs?
+  - Especially if you are playing audio
 
 ## Nerves {.white .blurred .darken background-image="backgrounds/mic.png" background-opacity="0.9"}
 
@@ -170,13 +176,13 @@ The audio system leverages OpenAL Soft with a custom DSP chain for reverb, occlu
   - "I can do better!"
   - "I can't let the audience down after that!"
 
-## Humor {.white .blurred .darken background-image="backgrounds/mic.png" background-opacity="0.9"}
+## Timing {.white .blurred .darken background-image="backgrounds/mic.png" background-opacity="0.9"}
 
-- Don't force-fit humor or jokes
-  - Be yourself
-- If you have jokes, rehearse the timing
-  - And never mention politics or religion
-- Never laugh at your own jokes
+- Accurate timing can be difficult
+  - Default is to run too long
+  - "Squeezed presentations" add to your nerves
+- Rehearsals **really** help
+- Demo timing checkpoints with clock
 
 ## Taking Questions {.white .blurred .darken background-image="backgrounds/mic.png" background-opacity="0.9"}
 
@@ -186,6 +192,14 @@ The audio system leverages OpenAL Soft with a custom DSP chain for reverb, occlu
 - It's OK not to know the answer
   - "I'm not sure on that, but I'll follow up with you"
 
+## Humor {.white .blurred .darken background-image="backgrounds/mic.png" background-opacity="0.9"}
+
+- Don't force-fit humor or jokes
+  - Be yourself
+- If you have jokes, rehearse the timing
+  - And never mention politics or religion
+- Try not to laugh at your own jokes
+
 # Enjoy It! {.white .blurred .darken background-image="backgrounds/mic.png" background-opacity="0.9"}
 
 # {background-image="backgrounds/theend.png" background-opacity="0.9"}
@@ -194,7 +208,7 @@ The audio system leverages OpenAL Soft with a custom DSP chain for reverb, occlu
 
 - Endings can be abrupt
 - Short conclusion of what you covered
-- Takeaways for the audience
+- Takeaways for your audience
 
 ## Presentation Takeaways {.blurred background-image="backgrounds/theend.png" background-opacity="0.2"}
 
@@ -224,7 +238,21 @@ The audio system leverages OpenAL Soft with a custom DSP chain for reverb, occlu
 ::::
 :::
 
-# Questions? { .white background="linear-gradient(135deg, #ba1127 0%, #850022 20%, #000000 100%)" background-image="backgrounds/dragon.png" background-opacity="0.3"}
+## Questions? { .white background="linear-gradient(135deg, #ba1127 0%, #850022 20%, #000000 100%)" background-image="backgrounds/dragon.png" background-opacity="0.3"}
+
+::: {.columns}
+:::: {.column width="50%"}
+Slides: [https://simonguest.github.io/CSP/](https://simonguest.github.io/CSP/)
+
+simon.guest@digipen.edu
+::::
+:::: {.column width="50%"}
+![](images/qrcode.png){fig-align="center" width="100%"}
+::::
+:::
+
+# Thank you! { .white background="linear-gradient(135deg, #ba1127 0%, #850022 20%, #000000 100%)" background-image="backgrounds/dragon.png" background-opacity="0.3"}
+
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
